@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Corpo run_007.png-9c78b7e1e010b907f41ff6123a6a3169.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Personaggio 1.1/Animazioni z order corretto/Run/Corpo/Corpo run_007.png"
+dest_files=[ "res://.import/Corpo run_007.png-9c78b7e1e010b907f41ff6123a6a3169.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

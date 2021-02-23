@@ -1,0 +1,112 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Knight/Knight corpo.png" type="Texture" id=1]
+[ext_resource path="res://Position2D.gd" type="Script" id=2]
+[ext_resource path="res://Personaggio bozza/braccio sinistro scudo.png" type="Texture" id=3]
+[ext_resource path="res://Knight/Knight testa.png" type="Texture" id=4]
+[ext_resource path="res://Personaggio bozza/Braccia.png" type="Texture" id=5]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=6]
+[ext_resource path="res://Personaggio bozza/Testa dietro.png" type="Texture" id=7]
+[ext_resource path="res://Knight/Knight braccio sinistro.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14.198, 5.78665 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.6984, 105.531 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 80.5581, 178.736 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+position = Vector2( -2, -3.5 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 6 )
+
+[node name="braspada" type="Sprite" parent="."]
+position = Vector2( -923.033, -38.9035 )
+rotation = 0.0498173
+scale = Vector2( 4.30066, 2.53974 )
+texture = ExtResource( 8 )
+offset = Vector2( 211.386, -7.20887 )
+
+[node name="Muzzle" type="Position2D" parent="braspada"]
+position = Vector2( 241.87, 21.7724 )
+scale = Vector2( 0.307929, 1 )
+
+[node name="Area2D" type="Area2D" parent="braspada"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="braspada/Area2D"]
+position = Vector2( 234.881, 12.7703 )
+rotation = 0.905684
+shape = SubResource( 1 )
+
+[node name="braccioscudo" type="Sprite" parent="."]
+position = Vector2( -1.74377, 11.8718 )
+rotation = -0.0611287
+scale = Vector2( 0.999999, 0.999999 )
+texture = ExtResource( 3 )
+offset = Vector2( -82.1954, 41.1119 )
+flip_h = true
+
+[node name="Braccia" type="Sprite" parent="."]
+position = Vector2( 3.86856, 24.4995 )
+rotation = -0.057776
+scale = Vector2( 0.999999, 0.999999 )
+texture = ExtResource( 5 )
+offset = Vector2( -0.705799, 36.5001 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -6.68927, 3.71623 )
+scale = Vector2( 4.02876, 3.74151 )
+texture = ExtResource( 1 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -4.57764e-05, -8.17579 )
+scale = Vector2( 2.41218, 2.32811 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="Sprite6" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="Sprite5" type="Sprite" parent="."]
+visible = false
+position = Vector2( -8.76678, 5.82361 )
+rotation = -2.18935
+texture = ExtResource( 5 )
+offset = Vector2( 7.72962, 73.3378 )
+
+[node name="Area2D" type="Area2D" parent="Sprite5" groups=[
+"sw",
+]]
+position = Vector2( 9.45591, -177.141 )
+rotation = 0.0236669
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite5/Area2D"]
+position = Vector2( -164.023, 386.901 )
+rotation = 0.524829
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 6.31012, 31.3214 )
+shape = SubResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 4 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0.708496, 8.70703 )
+script = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Position2D"]
+current = true
+smoothing_enabled = true
+editor_draw_screen = false
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

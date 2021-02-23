@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Isometric/stoneWall_E.png" type="Texture" id=1]
+
+[node name="stoneWall_E" type="StaticBody2D"]
+position = Vector2( -116.476, -185.69 )
+
+[node name="stoneWall_E" type="Sprite" parent="."]
+position = Vector2( 114.603, 187.549 )
+texture = ExtResource( 1 )
+offset = Vector2( 48.431, -146.567 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 68.3997, 246.342, 196.4, 184.342, 151.645, 159.487, 24.8065, 225.712 )

@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://isotile.tres" type="TileSet" id=1]
+[ext_resource path="res://Node2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://stoneWall_S.tscn" type="PackedScene" id=4]
+[ext_resource path="res://stoneWall_E.tscn" type="PackedScene" id=5]
+[ext_resource path="res://woodenCrate_E.tscn" type="PackedScene" id=6]
+[ext_resource path="res://gvvnvnvn.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 760.573, 179.075 )
+current = true
+zoom = Vector2( 1.862, 1.818 )
+
+[node name="stoneWall_S2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1055.45, -290.991 )
+
+[node name="stoneWall_S3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1182.44, -227.495 )
+
+[node name="stoneWall_E" parent="." instance=ExtResource( 5 )]
+position = Vector2( 704.387, -395.975 )
+
+[node name="stoneWall_E2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 574.22, -332.478 )
+
+[node name="stoneWall_E3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 445.641, -268.982 )
+
+[node name="stoneWall_E4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 193.244, -141.99 )
+
+[node name="stoneWall_S" parent="." instance=ExtResource( 4 )]
+position = Vector2( 926.87, -351.313 )
+
+[node name="stoneWall_E7" parent="." instance=ExtResource( 5 )]
+position = Vector2( -184.557, 37.386 )
+
+[node name="stoneWall_E5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 69.4268, -81.6691 )
+
+[node name="TileMap" type="TileMap" parent="."]
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 256, 128 )
+cell_tile_origin = 2
+cell_y_sort = true
+format = 1
+tile_data = PoolIntArray( -524289, 149, 0, -589824, 149, 0, -589823, 149, 0, -589822, 145, 0, -589821, 145, 0, -589820, 137, 0, -458754, 131, 0, -458753, 119, 0, -524288, 83, 0, -524287, 83, 0, -524286, 83, 0, -524285, 83, 0, -524284, 131, 0, -393218, 131, 0, -393217, 119, 0, -458752, 97, 0, -458751, 97, 0, -458750, 83, 0, -458749, 115, 0, -458748, 131, 0, -327682, 131, 0, -327681, 119, 0, -393216, 97, 0, -393215, 83, 0, -393214, 83, 0, -393213, 115, 0, -393212, 131, 0, -262146, 135, 0, -262145, 83, 0, -327680, 97, 0, -327679, 106, 0, -327678, 106, 0, -327677, 83, 0, -327676, 131, 0, -196610, 131, 0, -196609, 83, 0, -262144, 83, 0, -262143, 106, 0, -262142, 106, 0, -262141, 119, 0, -262140, 131, 0, -131074, 131, 0, -131073, 93, 0, -196608, 83, 0, -196607, 106, 0, -196606, 106, 0, -196605, 119, 0, -196604, 131, 0, -65538, 131, 0, -65537, 93, 0, -131072, 93, 0, -131071, 106, 0, -131070, 83, 0, -131069, 83, 0, -131068, 131, 0, -2, 131, 0, -1, 83, 0, -65536, 83, 0, -65535, 106, 0, -65534, 83, 0, -65533, 83, 0, -65532, 131, 0, 65535, 130, 0, 0, 130, 0, 1, 130, 0, 2, 130, 0, 3, 130, 0, 4, 130, 0 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="KinematicBody2D" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 704.715, 27.0618 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="woodenCrate_E" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 98.4188, -315.893 )
+
+[node name="woodenCrate_E2" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 642.897, -206.362 )
+
+[node name="woodenCrate_E3" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 607.974, -188.901 )
+
+[node name="woodenCrate_E5" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 536.541, -188.901 )
+
+[node name="woodenCrate_E4" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 574.639, -173.027 )
+
+[node name="Node2D3" type="Node2D" parent="YSort"]
+
+[node name="Node2D4" type="Node2D" parent="YSort"]
+
+[node name="gvvnvnvn" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 434.948, 236.523 )
+
+[node name="gvvnvnvn2" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 546.065, 184.138 )
+
+[node name="gvvnvnvn3" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 727.029, 257.159 )
+
+[node name="gvvnvnvn4" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 604.799, 319.067 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1062.63, -61.1445 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1200.58, 110.101 )
+scale = Vector2( 0.1, 0.1 )

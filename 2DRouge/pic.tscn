@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://pp.gd" type="Script" id=1]
+[ext_resource path="res://little grumpy skull-01.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 55.0091
+
+[sub_resource type="OccluderPolygon2D" id=3]
+polygon = PoolVector2Array( -65.073, 46.4673, -63.1165, 10.8667, -51.3777, -10.1285, -23.0089, -32.0365, 0.468669, -33.8621, 30.7939, -27.4723, 51.3368, -13.7798, 70.9015, -18.344, 65.0321, -9.21561, 56.228, -2.82578, 62.0974, 6.30257, 65.0321, 27.2978, 64.0539, 41.9031, 66.9886, 59.247, 60.141, 68.3753, 37.6416, 70.201, 18.0769, 69.2881, 8.29457, 58.3341, 8.29457, 53.7699, -1.48778, 55.5956, -15.1831, 55.5956, -23.0089, 55.5956, -18.1178, 62.8983, -23.0089, 66.5496, -37.6824, 70.201, -63.1165, 69.2881, -71.9206, 61.0726, -73.8771, 49.2058 )
+
+[node name="pic" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.5, -16 )
+texture = ExtResource( 2 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Sprite"]
+occluder = SubResource( 3 )
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
