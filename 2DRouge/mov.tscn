@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Oggetti proxy/baule aperto.png" type="Texture" id=1]
-[ext_resource path="res://Oggetti proxy/baule.png" type="Texture" id=2]
+[ext_resource path="res://Oggetti/baule chiuso.png" type="Texture" id=1]
+[ext_resource path="res://Oggetti/baule aperto.png" type="Texture" id=2]
 [ext_resource path="res://mov.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -9,7 +9,7 @@ extents = Vector2( 29.9461, 21.0182 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": false,
 "name": "default",
 "speed": 5.0

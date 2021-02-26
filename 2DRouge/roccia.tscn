@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Oggetti proxy/roccia.png" type="Texture" id=1]
+[ext_resource path="res://Oggetti/roccia.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 49.2706, 31.1265 )
+extents = Vector2( 42.1354, 38.8563 )
 
 [node name="roccia" type="StaticBody2D"]
 

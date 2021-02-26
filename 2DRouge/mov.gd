@@ -22,6 +22,7 @@ func _on_Area2D_area_entered(area):
 	print('_on_Area2D_area_entered')
 	if spawn==true:
 		var b = chiave.instance()
+		b.connect('keyPicked', 	get_parent(), '_on_chiave_keyPicked')
 		b.position = global_position
 		get_parent().add_child(b)
 		spawn=false
