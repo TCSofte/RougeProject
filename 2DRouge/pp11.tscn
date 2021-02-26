@@ -297,34 +297,39 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 14
+frame = 23
 speed_scale = 8.0
 playing = true
 
-[node name="mani" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="mani" type="Sprite" parent="Sprite"]
 position = Vector2( -0.675949, 12.2795 )
+rotation = 0.412556
 scale = Vector2( 0.760015, 0.939482 )
 texture = ExtResource( 3 )
 offset = Vector2( 22.0329, -8.3331 )
 flip_h = true
 
-[node name="Muzzle" type="Position2D" parent="mani"]
-position = Vector2( 152.364, -25.0661 )
+[node name="Muzzle" type="Position2D" parent="Sprite/mani"]
+position = Vector2( 154.883, -25.9818 )
+rotation = 5.46714
+scale = Vector2( 1.18828, 0.856507 )
 
-[node name="Area2D" type="Area2D" parent="mani"]
+[node name="Area2D" type="Area2D" parent="Sprite/mani"]
 position = Vector2( -6.65003, 0 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="mani/Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/mani/Area2D"]
 position = Vector2( -64.1276, 13.1442 )
 scale = Vector2( 1.72878, 1.20811 )
 shape = SubResource( 4 )
 
-[node name="Area2D2" type="Area2D" parent="mani" groups=[
+[node name="Area2D2" type="Area2D" parent="Sprite/mani" groups=[
 "sword",
 ]]
 position = Vector2( -2.34708, 0.316437 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="mani/Area2D2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/mani/Area2D2"]
 polygon = PoolVector2Array( 74.8907, -5.05011, 92.5637, -19.0297, 132.238, -20.0848, 104.105, 2.86287, 78.1368, 1.54404, 80.6615, 6.5556, 73.8087, 11.3034, 64.7919, -7.42401, 70.5626, -10.5892 )
 
 [node name="DropBombCooldown" type="Timer" parent="."]
@@ -356,7 +361,7 @@ position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 15
+frame = 24
 speed_scale = 8.0
 playing = true
 
@@ -366,7 +371,7 @@ position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 24
+frame = 3
 speed_scale = 8.0
 playing = true
 

@@ -29,32 +29,32 @@
 [ext_resource path="res://coin.tscn" type="PackedScene" id=37]
 [ext_resource path="res://chiave.tscn" type="PackedScene" id=38]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 14.0171, 160.577 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 371.707, 10 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 10, 385.679 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 726.988, 10 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 10, 377.88 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 98.5208 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 93.5413, 10.4782 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=8]
 size = 50
 font_data = ExtResource( 13 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=9]
 size = 50
 font_data = ExtResource( 13 )
 
@@ -108,22 +108,6 @@ flip_h = true
 position = Vector2( 2265.89, -1050.59 )
 scale = Vector2( 0.6, 0.6 )
 
-[node name="erbaccia" type="Sprite" parent="."]
-position = Vector2( 4472.74, 351.207 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia2" type="Sprite" parent="."]
-position = Vector2( 4467.4, 287.062 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia5" type="Sprite" parent="."]
-position = Vector2( 3213.01, 345.862 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia6" type="Sprite" parent="."]
-position = Vector2( 3207.67, 281.717 )
-texture = ExtResource( 15 )
-
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 visible = false
 color = Color( 0, 0, 0, 0.756863 )
@@ -137,76 +121,158 @@ position = Vector2( 1298.07, -2481.8 )
 [node name="mov4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 4396.14, -260.746 )
 
-[node name="erbaccia3" type="Sprite" parent="."]
-position = Vector2( 2510.29, -224.214 )
+[node name="Erba" type="Node" parent="."]
+
+[node name="erbaccia" type="Sprite" parent="Erba"]
+position = Vector2( 4472.74, 348.207 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia4" type="Sprite" parent="."]
-position = Vector2( 2462.19, -220.65 )
+[node name="erbaccia2" type="Sprite" parent="Erba"]
+position = Vector2( 4467.4, 284.062 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia7" type="Sprite" parent="."]
-position = Vector2( 2534.26, -757.611 )
+[node name="erbaccia5" type="Sprite" parent="Erba"]
+position = Vector2( 3213.01, 342.862 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia8" type="Sprite" parent="."]
-position = Vector2( 2486.16, -754.047 )
+[node name="erbaccia3" type="Sprite" parent="Erba"]
+position = Vector2( 2510.29, -227.214 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia9" type="Sprite" parent="."]
-position = Vector2( 2534.26, -826.533 )
+[node name="erbaccia4" type="Sprite" parent="Erba"]
+position = Vector2( 2462.19, -223.65 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia10" type="Sprite" parent="."]
-position = Vector2( 2486.16, -822.969 )
+[node name="erbaccia7" type="Sprite" parent="Erba"]
+position = Vector2( 2534.26, -760.611 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia11" type="Sprite" parent="."]
-position = Vector2( 2534.26, -1335.96 )
+[node name="erbaccia8" type="Sprite" parent="Erba"]
+position = Vector2( 2486.16, -757.047 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia12" type="Sprite" parent="."]
-position = Vector2( 2486.16, -1332.39 )
+[node name="erbaccia9" type="Sprite" parent="Erba"]
+position = Vector2( 2534.26, -829.533 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia13" type="Sprite" parent="."]
-position = Vector2( 2534.26, -1404.88 )
+[node name="erbaccia10" type="Sprite" parent="Erba"]
+position = Vector2( 2486.16, -825.969 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia14" type="Sprite" parent="."]
-position = Vector2( 2486.16, -1401.32 )
+[node name="erbaccia11" type="Sprite" parent="Erba"]
+position = Vector2( 2534.26, -1338.96 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia15" type="Sprite" parent="."]
-position = Vector2( 1335.62, -1335.96 )
+[node name="erbaccia12" type="Sprite" parent="Erba"]
+position = Vector2( 2486.16, -1335.39 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia16" type="Sprite" parent="."]
-position = Vector2( 1287.52, -1332.39 )
+[node name="erbaccia13" type="Sprite" parent="Erba"]
+position = Vector2( 2534.26, -1407.88 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia17" type="Sprite" parent="."]
-position = Vector2( 1335.62, -1404.88 )
+[node name="erbaccia14" type="Sprite" parent="Erba"]
+position = Vector2( 2486.16, -1404.32 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia18" type="Sprite" parent="."]
-position = Vector2( 1287.52, -1401.32 )
+[node name="erbaccia15" type="Sprite" parent="Erba"]
+position = Vector2( 1335.62, -1338.96 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia19" type="Sprite" parent="."]
-position = Vector2( 1335.62, -757.612 )
+[node name="erbaccia16" type="Sprite" parent="Erba"]
+position = Vector2( 1287.52, -1335.39 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia20" type="Sprite" parent="."]
-position = Vector2( 1287.52, -754.048 )
+[node name="erbaccia17" type="Sprite" parent="Erba"]
+position = Vector2( 1335.62, -1407.88 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia21" type="Sprite" parent="."]
-position = Vector2( 1335.62, -826.533 )
+[node name="erbaccia18" type="Sprite" parent="Erba"]
+position = Vector2( 1287.52, -1404.32 )
 texture = ExtResource( 15 )
 
-[node name="erbaccia22" type="Sprite" parent="."]
-position = Vector2( 1287.52, -822.969 )
+[node name="erbaccia19" type="Sprite" parent="Erba"]
+position = Vector2( 1335.62, -760.612 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia20" type="Sprite" parent="Erba"]
+position = Vector2( 1287.52, -757.048 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia21" type="Sprite" parent="Erba"]
+position = Vector2( 1335.62, -829.533 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia22" type="Sprite" parent="Erba"]
+position = Vector2( 1287.52, -825.969 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia6" type="Sprite" parent="Erba"]
+position = Vector2( 3207.67, 278.717 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia23" type="Sprite" parent="Erba"]
+position = Vector2( 2541.61, -4008.87 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia24" type="Sprite" parent="Erba"]
+position = Vector2( 2493.51, -4005.31 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia25" type="Sprite" parent="Erba"]
+position = Vector2( 2541.61, -4077.79 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia26" type="Sprite" parent="Erba"]
+position = Vector2( 2493.51, -4074.23 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia27" type="Sprite" parent="Erba"]
+position = Vector2( 2445.34, -4008.87 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia28" type="Sprite" parent="Erba"]
+position = Vector2( 2397.24, -4005.31 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia29" type="Sprite" parent="Erba"]
+position = Vector2( 2445.34, -4077.79 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia30" type="Sprite" parent="Erba"]
+position = Vector2( 2397.24, -4074.23 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia31" type="Sprite" parent="Erba"]
+position = Vector2( 1422.18, -4586.52 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia32" type="Sprite" parent="Erba"]
+position = Vector2( 1374.08, -4582.96 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia33" type="Sprite" parent="Erba"]
+position = Vector2( 1422.18, -4655.44 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia34" type="Sprite" parent="Erba"]
+position = Vector2( 1374.08, -4651.88 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia35" type="Sprite" parent="Erba"]
+position = Vector2( 1325.9, -4586.52 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia36" type="Sprite" parent="Erba"]
+position = Vector2( 1277.8, -4582.96 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia37" type="Sprite" parent="Erba"]
+position = Vector2( 1325.9, -4655.44 )
+texture = ExtResource( 15 )
+
+[node name="erbaccia38" type="Sprite" parent="Erba"]
+position = Vector2( 1277.8, -4651.88 )
 texture = ExtResource( 15 )
 
 [node name="mov3" parent="." instance=ExtResource( 23 )]
@@ -215,191 +281,196 @@ position = Vector2( 1452.04, -203.765 )
 [node name="mov6" parent="." instance=ExtResource( 23 )]
 position = Vector2( 1891.54, -2159.04 )
 
-[node name="roccia" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3300.48, 362.824 )
+[node name="rocce" type="Node" parent="."]
 
-[node name="roccia2" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3300.48, 265.28 )
+[node name="roccia" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 3300.48, 359.824 )
 
-[node name="roccia6" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1682.23, -2908.95 )
+[node name="roccia2" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 3300.48, 262.28 )
 
-[node name="roccia7" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -2908.95 )
+[node name="roccia6" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1682.23, -2911.95 )
 
-[node name="roccia8" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -2908.95 )
+[node name="roccia7" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1581.32, -2911.95 )
 
-[node name="roccia9" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -2908.95 )
+[node name="roccia8" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1480.41, -2911.95 )
 
-[node name="roccia10" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -2908.95 )
+[node name="roccia9" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1386.23, -2911.95 )
 
-[node name="roccia27" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3342.85 )
+[node name="roccia10" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -2911.95 )
 
-[node name="roccia11" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1877.32, -3110.76 )
+[node name="roccia27" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3345.85 )
 
-[node name="roccia16" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3110.76 )
+[node name="roccia11" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1877.32, -3113.76 )
 
-[node name="roccia17" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3110.76 )
+[node name="roccia16" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1984.95, -3113.76 )
 
-[node name="roccia18" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3013.22 )
+[node name="roccia17" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2082.5, -3113.76 )
 
-[node name="roccia19" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -2908.95 )
+[node name="roccia18" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2082.5, -3016.22 )
 
-[node name="roccia46" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3013.22 )
+[node name="roccia19" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2082.5, -2911.95 )
 
-[node name="roccia47" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -2908.95 )
+[node name="roccia46" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1984.95, -3016.22 )
 
-[node name="roccia51" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2524.23, -1940.98 )
+[node name="roccia47" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1984.95, -2911.95 )
 
-[node name="roccia52" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2426.69, -1940.98 )
+[node name="roccia51" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2524.23, -1943.98 )
 
-[node name="roccia57" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1880, -1089.17 )
+[node name="roccia52" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2426.69, -1943.98 )
 
-[node name="roccia53" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2426.69, -1836.71 )
+[node name="roccia57" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1880, -1092.17 )
 
-[node name="roccia29" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3339.49 )
+[node name="roccia53" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2426.69, -1839.71 )
 
-[node name="roccia30" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3241.94 )
+[node name="roccia29" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2301.13, -3342.49 )
 
-[node name="roccia31" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3137.67 )
+[node name="roccia30" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2301.13, -3244.94 )
 
-[node name="roccia32" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3339.49 )
+[node name="roccia31" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2301.13, -3140.67 )
 
-[node name="roccia33" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3241.94 )
+[node name="roccia32" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2405.4, -3342.49 )
 
-[node name="roccia34" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3137.67 )
+[node name="roccia33" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2405.4, -3244.94 )
 
-[node name="roccia12" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1776.41, -3110.76 )
+[node name="roccia34" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2405.4, -3140.67 )
 
-[node name="roccia13" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3110.76 )
+[node name="roccia12" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1776.41, -3113.76 )
 
-[node name="roccia14" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3110.76 )
+[node name="roccia13" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1675.5, -3113.76 )
 
-[node name="roccia15" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3110.76 )
+[node name="roccia14" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1581.32, -3113.76 )
 
-[node name="roccia20" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1877.32, -3346.21 )
+[node name="roccia15" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1480.41, -3113.76 )
 
-[node name="roccia21" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3346.21 )
+[node name="roccia20" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1877.32, -3349.21 )
 
-[node name="roccia22" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3346.21 )
+[node name="roccia21" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1984.95, -3349.21 )
 
-[node name="roccia28" parent="." instance=ExtResource( 14 )]
-position = Vector2( 2190.13, -3346.21 )
+[node name="roccia22" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2082.5, -3349.21 )
 
-[node name="roccia35" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3346.21 )
+[node name="roccia28" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2190.13, -3349.21 )
 
-[node name="roccia23" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1776.41, -3346.21 )
+[node name="roccia35" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1386.23, -3349.21 )
 
-[node name="roccia24" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3346.21 )
+[node name="roccia23" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1776.41, -3349.21 )
 
-[node name="roccia25" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3346.21 )
+[node name="roccia24" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1675.5, -3349.21 )
 
-[node name="roccia26" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3346.21 )
+[node name="roccia25" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1581.32, -3349.21 )
 
-[node name="roccia36" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3449.03 )
+[node name="roccia26" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1480.41, -3349.21 )
 
-[node name="roccia37" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3452.39 )
+[node name="roccia36" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3452.03 )
 
-[node name="roccia38" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3452.39 )
+[node name="roccia37" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1386.23, -3455.39 )
 
-[node name="roccia54" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1396.12, -2379.69 )
+[node name="roccia38" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1675.5, -3455.39 )
 
-[node name="roccia58" parent="." instance=ExtResource( 14 )]
-position = Vector2( -0.306152, -2163.93 )
+[node name="roccia54" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1396.12, -2382.69 )
 
-[node name="roccia59" parent="." instance=ExtResource( 14 )]
-position = Vector2( 614, -2484.57 )
+[node name="roccia58" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -0.306152, -2166.93 )
 
-[node name="roccia60" parent="." instance=ExtResource( 14 )]
-position = Vector2( 614, -1837.3 )
+[node name="roccia59" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 614, -2487.57 )
 
-[node name="roccia61" parent="." instance=ExtResource( 14 )]
-position = Vector2( -623.602, -2484.57 )
+[node name="roccia60" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 614, -1840.3 )
 
-[node name="roccia62" parent="." instance=ExtResource( 14 )]
-position = Vector2( -623.602, -1837.3 )
+[node name="roccia61" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -623.602, -2487.57 )
 
-[node name="roccia55" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1301.94, -2379.69 )
+[node name="roccia62" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -623.602, -1840.3 )
 
-[node name="roccia56" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1396.12, -2485.87 )
+[node name="roccia55" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1301.94, -2382.69 )
 
-[node name="roccia39" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3452.39 )
+[node name="roccia56" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1396.12, -2488.87 )
 
-[node name="roccia40" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3452.39 )
+[node name="roccia39" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1581.32, -3455.39 )
 
-[node name="roccia41" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3554.76 )
+[node name="roccia40" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1480.41, -3455.39 )
 
-[node name="roccia48" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3016.58 )
+[node name="roccia41" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3557.76 )
 
-[node name="roccia49" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3122.76 )
+[node name="roccia48" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3019.58 )
 
-[node name="roccia50" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3228.49 )
+[node name="roccia49" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3125.76 )
 
-[node name="roccia42" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3558.12 )
+[node name="roccia50" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1285.33, -3231.49 )
 
-[node name="roccia43" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3558.12 )
+[node name="roccia42" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1386.23, -3561.12 )
 
-[node name="roccia44" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3558.12 )
+[node name="roccia43" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1675.5, -3561.12 )
 
-[node name="roccia45" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3558.12 )
+[node name="roccia44" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1581.32, -3561.12 )
 
-[node name="roccia4" parent="." instance=ExtResource( 14 )]
-position = Vector2( 4351.75, 352.133 )
+[node name="roccia45" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1480.41, -3561.12 )
 
-[node name="roccia5" parent="." instance=ExtResource( 14 )]
-position = Vector2( 4351.75, 254.589 )
+[node name="roccia4" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 4351.75, 349.133 )
 
-[node name="roccia3" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1433.57, 244.441 )
+[node name="roccia5" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 4351.75, 251.589 )
+
+[node name="roccia3" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1433.57, 241.441 )
+
+[node name="roccia63" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1897.97, -4320.09 )
 
 [node name="slime" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3540.93, -164.997 )
@@ -417,12 +488,6 @@ collision_mask = 3
 position = Vector2( -308.854, -2170.14 )
 collision_mask = 3
 
-[node name="doordw" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -644.881 )
-
-[node name="doorup" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -410.255 )
-
 [node name="Sprite11" type="Sprite" parent="."]
 position = Vector2( 1917.78, -4318.96 )
 scale = Vector2( 0.995692, 1.01007 )
@@ -434,105 +499,78 @@ scale = Vector2( 0.995692, 0.996438 )
 texture = ExtResource( 17 )
 flip_h = true
 
-[node name="doordx5" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2652.95, -4310.25 )
-
-[node name="doorsx5" parent="." instance=ExtResource( 24 )]
-position = Vector2( 3096.02, -4300.26 )
-
 [node name="Sprite9" type="Sprite" parent="."]
 position = Vector2( 3826.18, -1082.11 )
 scale = Vector2( 0.995692, 0.996438 )
 texture = ExtResource( 17 )
 flip_h = true
 
-[node name="doordx4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2652.95, -1069.07 )
+[node name="Sprite10" type="Sprite" parent="."]
+position = Vector2( -1896.09, -2161.1 )
+scale = Vector2( 0.995692, 1.01007 )
+texture = ExtResource( 17 )
 
-[node name="doorsx4" parent="." instance=ExtResource( 24 )]
-position = Vector2( 3096.02, -1059.09 )
+[node name="Porte" type="Node" parent="."]
 
-[node name="doordw2" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -1732.5 )
+[node name="doordx5" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 2652.95, -4313.25 )
 
-[node name="doorup2" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -1516.87 )
+[node name="doordx4" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 2652.95, -1072.07 )
 
-[node name="doordw3" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -2806.8 )
+[node name="doorsx4" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 3096.02, -1062.09 )
 
-[node name="doorup3" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -2591.17 )
+[node name="doordw2" parent="Porte" instance=ExtResource( 20 )]
+position = Vector2( 1886.56, -1735.5 )
 
-[node name="erbaccia23" type="Sprite" parent="."]
-position = Vector2( 2541.61, -4005.87 )
-texture = ExtResource( 15 )
+[node name="doorup2" parent="Porte" instance=ExtResource( 19 )]
+position = Vector2( 1897.7, -1519.87 )
 
-[node name="erbaccia24" type="Sprite" parent="."]
-position = Vector2( 2493.51, -4002.31 )
-texture = ExtResource( 15 )
+[node name="doordw3" parent="Porte" instance=ExtResource( 20 )]
+position = Vector2( 1886.56, -2809.8 )
 
-[node name="erbaccia25" type="Sprite" parent="."]
-position = Vector2( 2541.61, -4074.79 )
-texture = ExtResource( 15 )
+[node name="doorup3" parent="Porte" instance=ExtResource( 19 )]
+position = Vector2( 1897.7, -2594.17 )
 
-[node name="erbaccia26" type="Sprite" parent="."]
-position = Vector2( 2493.51, -4071.23 )
-texture = ExtResource( 15 )
+[node name="doordw4" parent="Porte" instance=ExtResource( 20 )]
+position = Vector2( 1886.56, -3886.14 )
 
-[node name="erbaccia27" type="Sprite" parent="."]
-position = Vector2( 2445.34, -4005.87 )
-texture = ExtResource( 15 )
+[node name="doorup4" parent="Porte" instance=ExtResource( 19 )]
+position = Vector2( 1897.7, -3670.52 )
 
-[node name="erbaccia28" type="Sprite" parent="."]
-position = Vector2( 2397.24, -4002.31 )
-texture = ExtResource( 15 )
+[node name="doordx" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 2652.95, 31.1812 )
 
-[node name="erbaccia29" type="Sprite" parent="."]
-position = Vector2( 2445.34, -4074.79 )
-texture = ExtResource( 15 )
+[node name="doorsx" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 3096.02, 41.1704 )
 
-[node name="erbaccia30" type="Sprite" parent="."]
-position = Vector2( 2397.24, -4071.23 )
-texture = ExtResource( 15 )
+[node name="doordx2" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 739.173, -1075.93 )
 
-[node name="erbaccia31" type="Sprite" parent="."]
-position = Vector2( 1422.18, -4583.52 )
-texture = ExtResource( 15 )
+[node name="doorsx2" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 1182.24, -1071.94 )
 
-[node name="erbaccia32" type="Sprite" parent="."]
-position = Vector2( 1374.08, -4579.96 )
-texture = ExtResource( 15 )
+[node name="doordx6" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( -1165.98, -2171.37 )
 
-[node name="erbaccia33" type="Sprite" parent="."]
-position = Vector2( 1422.18, -4652.44 )
-texture = ExtResource( 15 )
+[node name="doorsx6" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( -722.906, -2177.38 )
 
-[node name="erbaccia34" type="Sprite" parent="."]
-position = Vector2( 1374.08, -4648.88 )
-texture = ExtResource( 15 )
+[node name="doordx3" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 739.173, -2159.93 )
 
-[node name="erbaccia35" type="Sprite" parent="."]
-position = Vector2( 1325.9, -4583.52 )
-texture = ExtResource( 15 )
+[node name="doorsx3" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 1182.24, -2148.94 )
 
-[node name="erbaccia36" type="Sprite" parent="."]
-position = Vector2( 1277.8, -4579.96 )
-texture = ExtResource( 15 )
+[node name="doorsx5" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 3096.02, -4303.26 )
 
-[node name="erbaccia37" type="Sprite" parent="."]
-position = Vector2( 1325.9, -4652.44 )
-texture = ExtResource( 15 )
+[node name="doordw" parent="Porte" instance=ExtResource( 20 )]
+position = Vector2( 1886.56, -647.881 )
 
-[node name="erbaccia38" type="Sprite" parent="."]
-position = Vector2( 1277.8, -4648.88 )
-texture = ExtResource( 15 )
-
-[node name="doordw4" parent="." instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -3883.14 )
-
-[node name="doorup4" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -3667.52 )
+[node name="doorup" parent="Porte" instance=ExtResource( 19 )]
+position = Vector2( 1897.7, -413.255 )
 
 [node name="coin" parent="." instance=ExtResource( 37 )]
 position = Vector2( 2471.47, -297.864 )
@@ -543,32 +581,6 @@ position = Vector2( 4141.12, 339.55 )
 [node name="coin3" parent="." instance=ExtResource( 37 )]
 position = Vector2( 4452.69, 161.169 )
 
-[node name="doordx" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2652.95, 34.1812 )
-
-[node name="doorsx" parent="." instance=ExtResource( 24 )]
-position = Vector2( 3096.02, 44.1704 )
-
-[node name="Sprite10" type="Sprite" parent="."]
-position = Vector2( -1896.09, -2161.1 )
-scale = Vector2( 0.995692, 1.01007 )
-texture = ExtResource( 17 )
-
-[node name="doordx2" parent="." instance=ExtResource( 22 )]
-position = Vector2( 739.173, -1072.93 )
-
-[node name="doorsx2" parent="." instance=ExtResource( 24 )]
-position = Vector2( 1182.24, -1068.94 )
-
-[node name="doordx6" parent="." instance=ExtResource( 22 )]
-position = Vector2( -1165.98, -2168.37 )
-
-[node name="doorsx6" parent="." instance=ExtResource( 24 )]
-position = Vector2( -722.906, -2174.38 )
-
-[node name="roccia63" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1897.97, -4317.09 )
-
 [node name="slime5" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2289.47, -4449.31 )
 collision_mask = 3
@@ -576,12 +588,6 @@ collision_mask = 3
 [node name="slime6" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1604.99, -4078.79 )
 collision_mask = 3
-
-[node name="doordx3" parent="." instance=ExtResource( 22 )]
-position = Vector2( 739.173, -2156.93 )
-
-[node name="doorsx3" parent="." instance=ExtResource( 24 )]
-position = Vector2( 1182.24, -2145.94 )
 
 [node name="pp11" parent="." groups=[
 "player",
@@ -637,361 +643,361 @@ collision_mask = 3
 [node name="chiave" parent="." instance=ExtResource( 38 )]
 position = Vector2( 2533.09, -1843.74 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Bordi" type="Node" parent="."]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Node"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Bordi"]
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3130.56, -194.443 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3130.07, 288.76 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D27" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2610.71, -202.443 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D28" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2610.22, 280.76 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1225.34, -2385.4 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1224.85, -1916.72 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2354.36, -2554.35 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D11" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -2554.35 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D12" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -1775.7 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D10" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2343.87, -1774.1 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2608.69, -2162.59 )
-shape = SubResource( 7 )
+shape = SubResource( 3 )
 
-[node name="CollisionShape2D13" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1225.34, -1304.75 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D14" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1224.85, -836.068 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2354.36, -1473.7 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D16" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -1473.7 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D31" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2354.36, -373.254 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D32" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -373.254 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D17" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -695.047 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D18" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2343.87, -693.445 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2608.69, -1081.94 )
-shape = SubResource( 7 )
+shape = SubResource( 3 )
 
-[node name="CollisionShape2D19" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1225.34, -3467.11 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D20" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1224.85, -2998.42 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D21" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2354.36, -3636.06 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D22" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -3636.06 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D63" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D63" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1583.21, -4712.07 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D23" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -2857.4 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D24" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2343.87, -2855.8 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2608.69, -3244.29 )
-shape = SubResource( 7 )
+shape = SubResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, -364.713 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D25" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, 402.562 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D30" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1899.43, 396.562 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D26" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 4517.06, 19.3247 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D29" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1226.78, 16.3247 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D33" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 696.534, -1301.84 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D34" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 696.044, -818.636 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D35" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 351.18, -1471.65 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D36" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -383.688, -1471.65 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D37" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -14.7458, -693.834 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D38" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -685.394, -1083.07 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D39" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3130.56, -1297.7 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D40" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3130.07, -814.496 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D41" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, -1467.97 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D42" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, -700.695 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D43" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D43" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 4517.06, -1083.93 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D44" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D44" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -1201.55, -2385.37 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D45" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D45" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -1202.04, -1915.17 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D46" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D46" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -1563.9, -2555.18 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D47" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D47" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -2298.77, -2555.18 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D48" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D48" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -1929.83, -1777.37 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D50" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D50" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 698.308, -2385.37 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D51" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D51" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 697.818, -1915.17 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D55" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D55" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -689.124, -2385.37 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D56" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D56" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -689.614, -1915.17 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D52" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D52" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 335.953, -2555.18 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D53" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D53" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -398.914, -2555.18 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D54" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D54" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -29.9722, -1777.37 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D49" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D49" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( -2586.47, -2165.6 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D57" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D57" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2611.14, -4543.45 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D58" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D58" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2610.65, -4074.77 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
-[node name="CollisionShape2D59" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D59" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2319.36, -4711.4 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D60" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D60" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1439.49, -3933.75 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
-[node name="CollisionShape2D61" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D61" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2343.87, -3932.15 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D62" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 1229.62, -4320.64 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D64" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 3130.56, -4538.87 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D65" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 3130.07, -4055.67 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D66" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 3807.64, -4709.14 )
 shape = SubResource( 4 )
 
-[node name="CollisionShape2D62" type="CollisionShape2D" parent="Node/StaticBody2D"]
-position = Vector2( 1229.62, -4320.64 )
-shape = SubResource( 7 )
-
-[node name="CollisionShape2D64" type="CollisionShape2D" parent="Node/StaticBody2D"]
-position = Vector2( 3130.56, -4538.87 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D65" type="CollisionShape2D" parent="Node/StaticBody2D"]
-position = Vector2( 3130.07, -4055.67 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D66" type="CollisionShape2D" parent="Node/StaticBody2D"]
-position = Vector2( 3807.64, -4709.14 )
-shape = SubResource( 8 )
-
-[node name="CollisionShape2D67" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D67" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, -3941.87 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
-[node name="CollisionShape2D68" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D68" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 4517.06, -4325.11 )
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
-[node name="CollisionShape2D69" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D69" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 3135.25, 49.5262 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D79" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D79" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 2603.38, 49.5262 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D71" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D71" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( -685.143, -2137.79 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D72" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D72" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 689.58, -2137.79 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D76" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D76" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 689.58, -1056.02 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D78" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D78" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 3135.48, -1063.51 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D73" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D73" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 2607.54, -4302.75 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D74" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D74" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 3134.35, -4302.75 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D75" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D75" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( -1206.56, -2157.52 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
-[node name="CollisionShape2D80" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D80" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -373.413 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D81" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D81" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -692.121 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D83" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D83" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -1777.07 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D84" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D84" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -2551.73 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D85" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D85" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -2854.92 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D86" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D86" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -3635.92 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
-[node name="CollisionShape2D87" type="CollisionShape2D" parent="Node/StaticBody2D"]
+[node name="CollisionShape2D87" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( 1893.34, -3932.77 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -1089,7 +1095,7 @@ margin_left = 50.137
 margin_top = 998.338
 margin_right = 90.137
 margin_bottom = 1048.34
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -1103,7 +1109,7 @@ margin_left = 49.0
 margin_top = 901.0
 margin_right = 79.0
 margin_bottom = 952.0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -1117,7 +1123,7 @@ margin_left = 56.0
 margin_top = 775.0
 margin_right = 73.0
 margin_bottom = 825.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )

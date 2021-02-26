@@ -22,7 +22,7 @@ func get_input():
 #		$Sprite5.rotation -= aim_speed
 	
 		
-	$mani.look_at(get_global_mouse_position())
+	$Sprite.look_at(get_global_mouse_position())
 	
 	#$braccioscudo.look_at(get_global_mouse_position())
 	
@@ -55,11 +55,11 @@ func get_input():
 		
 		
 		
-	#if Input.is_action_just_pressed('mouse_click'):
+	if Input.is_action_just_pressed('mouse_click'):
 		
 		#isAttacking=true
 		#$AnimatedSprite.play("Attack")
-		#shoot()	
+		shoot()	
 		
 	velocity = velocity.normalized() * speed
 	
@@ -115,16 +115,17 @@ func _physics_process(delta):
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
 	var b = Bullet.instance()
-	print('$aaaaaaaaaaaaaaaaaaa',$mani/Muzzle.global_position)
+
 	
-	#b.shoot22($mani/Muzzle.global_position)
-	b.shoot($mani/Muzzle.global_position, $mani.rotation)
+	#b.shoot22($Sprite/mani/Muzzle.global_position)
+	b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
 	
 
 	get_parent().add_child(b)
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	pass
 	
 
 func _on_Area2D_area_entered(area):
