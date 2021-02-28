@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 # Node references
 var player
-
+signal killed
 # Random number generator
 var rng = RandomNumberGenerator.new()
 
@@ -58,4 +58,5 @@ func _on_Timer_timeout():
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("sword"):
+		emit_signal("killed")
 		queue_free()

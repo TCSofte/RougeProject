@@ -1,11 +1,10 @@
-extends Node2D
+extends Area2D
 
-
+var open = 0
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var score = 0
-var key = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,23 +13,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass	
-
-func update_score(score):
-	$coins.text = str(score)
-
-
-func _on_coin_picked():
-	score = score+1
-	$CanvasLayer/coins.text = str(score)
+	if open==4:
+		$AnimatedSprite.play("default")
+		$CollisionShape2D.disabled = false
 
 
 
-
-
-func _on_chiave_keyPicked():
-	key = key+1
-	$CanvasLayer/key.text = str(key)
-
-
-
+func _on_piccolonemico_killed():
+	open = open+1

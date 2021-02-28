@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 # Node references
 var player
-
+onready var Bullet = preload("res://Bullet.tscn")
 # Random number generator
 var rng = RandomNumberGenerator.new()
 
@@ -54,3 +54,18 @@ func _on_Timer_timeout():
 	# Update bounce countdown
 	if bounce_countdown > 0:
 		bounce_countdown = bounce_countdown - 1
+
+
+func _on_Timerrocket_timeout():
+	var b = Bullet.instance()
+	b.shoot($Position2D.global_position, $Position2D.rotation)
+	get_parent().add_child(b)
+	var b1 = Bullet.instance()
+	b1.shoot($Position2D2.global_position, $Position2D2.rotation)
+	get_parent().add_child(b1)
+	var b2 = Bullet.instance()
+	b2.shoot($Position2D3.global_position, $Position2D3.rotation)
+	get_parent().add_child(b2)
+	var b3 = Bullet.instance()
+	b3.shoot($Position2D4.global_position, $Position2D4.rotation)
+	get_parent().add_child(b3)

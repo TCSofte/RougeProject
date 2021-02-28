@@ -512,6 +512,9 @@ texture = ExtResource( 17 )
 
 [node name="Porte" type="Node" parent="."]
 
+[node name="doorsx" parent="Porte" instance=ExtResource( 24 )]
+position = Vector2( 3094.02, 41.1704 )
+
 [node name="doordx5" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 2652.95, -4313.25 )
 
@@ -541,9 +544,6 @@ position = Vector2( 1897.7, -3670.52 )
 
 [node name="doordx" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 2652.95, 31.1812 )
-
-[node name="doorsx" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( 3096.02, 41.1704 )
 
 [node name="doordx2" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 739.173, -1075.93 )
@@ -616,6 +616,18 @@ next_scene_path = "res://sc11.tscn"
 position = Vector2( 3572.13, -23.3631 )
 collision_mask = 3
 
+[node name="piccolonemico8" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4217.74, 276.789 )
+collision_mask = 3
+
+[node name="piccolonemico9" parent="." instance=ExtResource( 26 )]
+position = Vector2( 4081.82, 163.524 )
+collision_mask = 3
+
+[node name="piccolonemico2" parent="." instance=ExtResource( 26 )]
+position = Vector2( 3377.69, -144.179 )
+collision_mask = 3
+
 [node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
 position = Vector2( 2143.92, -2139.61 )
 collision_mask = 3
@@ -636,32 +648,12 @@ collision_mask = 3
 position = Vector2( 2418.28, -2343.25 )
 collision_mask = 3
 
-[node name="piccolonemico2" parent="." instance=ExtResource( 26 )]
-position = Vector2( 3412.13, -131.363 )
-collision_mask = 3
-
 [node name="chiave" parent="." instance=ExtResource( 38 )]
 position = Vector2( 2533.09, -1843.74 )
 
 [node name="Bordi" type="Node" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Bordi"]
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 3130.56, -194.443 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 3130.07, 288.76 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape2D27" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 2610.71, -202.443 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape2D28" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 2610.22, 280.76 )
-shape = SubResource( 1 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1225.34, -2385.4 )
@@ -707,22 +699,6 @@ shape = SubResource( 2 )
 position = Vector2( 1439.49, -1473.7 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape2D31" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 2354.36, -373.254 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2D32" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 1439.49, -373.254 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2D17" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 1439.49, -695.047 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2D18" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 2343.87, -693.445 )
-shape = SubResource( 2 )
-
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2608.69, -1081.94 )
 shape = SubResource( 3 )
@@ -763,6 +739,14 @@ shape = SubResource( 3 )
 position = Vector2( 3807.64, -364.713 )
 shape = SubResource( 4 )
 
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 1924.63, -369.713 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 1924.63, -692.744 )
+shape = SubResource( 4 )
+
 [node name="CollisionShape2D25" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 3807.64, 402.562 )
 shape = SubResource( 4 )
@@ -773,6 +757,14 @@ shape = SubResource( 4 )
 
 [node name="CollisionShape2D26" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 4517.06, 19.3247 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D69" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 3134.59, 19.3247 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D70" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 2607.09, 19.3247 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D29" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
@@ -919,16 +911,6 @@ shape = SubResource( 4 )
 position = Vector2( 4517.06, -4325.11 )
 shape = SubResource( 5 )
 
-[node name="CollisionShape2D69" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-light_mask = 2
-position = Vector2( 3135.25, 49.5262 )
-shape = SubResource( 6 )
-
-[node name="CollisionShape2D79" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-light_mask = 2
-position = Vector2( 2603.38, 49.5262 )
-shape = SubResource( 6 )
-
 [node name="CollisionShape2D71" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
 position = Vector2( -685.143, -2137.79 )
@@ -973,16 +955,6 @@ shape = SubResource( 6 )
 light_mask = 2
 position = Vector2( -1206.56, -2157.52 )
 shape = SubResource( 6 )
-
-[node name="CollisionShape2D80" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-light_mask = 2
-position = Vector2( 1893.34, -373.413 )
-shape = SubResource( 7 )
-
-[node name="CollisionShape2D81" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-light_mask = 2
-position = Vector2( 1893.34, -692.121 )
-shape = SubResource( 7 )
 
 [node name="CollisionShape2D83" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
@@ -1144,4 +1116,8 @@ __meta__ = {
 [connection signal="picked" from="coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin2" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin3" to="." method="_on_coin_picked"]
+[connection signal="killed" from="piccolonemico" to="Porte/doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico8" to="Porte/doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico9" to="Porte/doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico2" to="Porte/doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
