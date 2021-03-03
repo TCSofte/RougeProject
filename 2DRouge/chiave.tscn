@@ -1,20 +1,49 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Oggetti/chiave.png" type="Texture" id=1]
 [ext_resource path="res://chiave.gd" type="Script" id=2]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_19.png" type="Texture" id=4]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_18.png" type="Texture" id=5]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_17.png" type="Texture" id=6]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_16.png" type="Texture" id=7]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_15.png" type="Texture" id=8]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_14.png" type="Texture" id=9]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_13.png" type="Texture" id=10]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_12.png" type="Texture" id=11]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_11.png" type="Texture" id=12]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_10.png" type="Texture" id=13]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_9.png" type="Texture" id=14]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_8.png" type="Texture" id=15]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_7.png" type="Texture" id=16]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_6.png" type="Texture" id=17]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_5.png" type="Texture" id=18]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_4.png" type="Texture" id=19]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_3.png" type="Texture" id=20]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_2.png" type="Texture" id=21]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_1.png" type="Texture" id=22]
+[ext_resource path="res://Animazioni/Chiave/Raccolta/Chiave raccolta_0.png" type="Texture" id=23]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.0269, 23.9912 )
 
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "NewAnim",
+"speed": 5.0
+} ]
+
 [node name="chiave" type="Area2D"]
 script = ExtResource( 2 )
-
-[node name="chiave" type="Sprite" parent="."]
-position = Vector2( -3.45636, 1.49901 )
-scale = Vector2( 0.719697, 0.925 )
-texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2.6757, 2.97302 )
 shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "NewAnim"
+speed_scale = 10.0
 [connection signal="body_entered" from="." to="." method="_on_chiave_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

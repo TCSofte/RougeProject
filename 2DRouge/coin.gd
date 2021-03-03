@@ -23,4 +23,9 @@ func _on_coin_area_entered(area):
 func _on_coin_body_entered(body):
 	if body.is_in_group("player"):  
 		emit_signal("picked")
-		queue_free()
+		$AnimatedSprite.play("default")
+		#queue_free()
+
+
+func _on_AnimatedSprite_animation_finished():
+	queue_free()

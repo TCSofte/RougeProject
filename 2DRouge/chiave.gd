@@ -19,5 +19,10 @@ func _ready():
 func _on_chiave_body_entered(body):
 	if body.is_in_group("player"):  
 		emit_signal("keyPicked")
-		queue_free()
+		$AnimatedSprite.play("NewAnim")
+		#queue_free()
 
+
+
+func _on_AnimatedSprite_animation_finished():
+	queue_free()

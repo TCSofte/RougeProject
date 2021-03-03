@@ -113,6 +113,9 @@ visible = false
 color = Color( 0.12549, 0.164706, 0.384314, 0.756863 )
 
 [node name="mov2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2074.32, -204.582 )
+
+[node name="mov7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2375.19, 145.045 )
 
 [node name="mov5" parent="." instance=ExtResource( 3 )]
@@ -572,15 +575,6 @@ position = Vector2( 1886.56, -647.881 )
 [node name="doorup" parent="Porte" instance=ExtResource( 19 )]
 position = Vector2( 1897.7, -413.255 )
 
-[node name="coin" parent="." instance=ExtResource( 37 )]
-position = Vector2( 2471.47, -297.864 )
-
-[node name="coin2" parent="." instance=ExtResource( 37 )]
-position = Vector2( 4141.12, 339.55 )
-
-[node name="coin3" parent="." instance=ExtResource( 37 )]
-position = Vector2( 4452.69, 161.169 )
-
 [node name="slime5" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2289.47, -4449.31 )
 collision_mask = 3
@@ -611,6 +605,23 @@ margin_top = -491.709
 margin_right = 2767.42
 margin_bottom = 527.29
 next_scene_path = "res://sc11.tscn"
+
+[node name="coin4" type="Node" parent="."]
+
+[node name="coin" parent="coin4" instance=ExtResource( 37 )]
+position = Vector2( 2471.47, -300.864 )
+
+[node name="coin4" parent="coin4" instance=ExtResource( 37 )]
+position = Vector2( 1657.85, -214.028 )
+
+[node name="coin5" parent="coin4" instance=ExtResource( 37 )]
+position = Vector2( 1403, 46.4818 )
+
+[node name="coin2" parent="coin4" instance=ExtResource( 37 )]
+position = Vector2( 4141.12, 336.55 )
+
+[node name="coin3" parent="coin4" instance=ExtResource( 37 )]
+position = Vector2( 4452.69, 158.169 )
 
 [node name="piccolonemico" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3572.13, -23.3631 )
@@ -649,7 +660,10 @@ position = Vector2( 2418.28, -2343.25 )
 collision_mask = 3
 
 [node name="chiave" parent="." instance=ExtResource( 38 )]
-position = Vector2( 2533.09, -1843.74 )
+position = Vector2( 2075.81, -69.6821 )
+
+[node name="chiave2" parent="." instance=ExtResource( 38 )]
+position = Vector2( 2120.31, 193.065 )
 
 [node name="Bordi" type="Node" parent="."]
 
@@ -1113,11 +1127,14 @@ text = "1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="picked" from="coin" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin2" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin3" to="." method="_on_coin_picked"]
+[connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
+[connection signal="picked" from="coin4/coin4" to="." method="_on_coin_picked"]
+[connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
+[connection signal="picked" from="coin4/coin2" to="." method="_on_coin_picked"]
+[connection signal="picked" from="coin4/coin3" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="Porte/doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico8" to="Porte/doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico9" to="Porte/doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico2" to="Porte/doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
+[connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]
