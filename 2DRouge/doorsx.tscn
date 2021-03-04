@@ -28,3 +28,12 @@ disabled = true
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 flip_h = true
+
+[node name="Positionc1" type="Position2D" parent="."]
+position = Vector2( 658.29, 1.06302 )
+
+[node name="Positionc2" type="Position2D" parent="."]
+position = Vector2( 789.441, 1.06305 )
+
+[node name="Position" type="Position2D" parent="."]
+position = Vector2( 720.687, -41.4016 )

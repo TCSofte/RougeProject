@@ -6,15 +6,12 @@ var speed = 750
 var velocity = Vector2()
 
 func shoot(pos, dir):
-	print('shootshootshoot')
 	rotation = dir
 	position = pos
 	velocity = Vector2(speed, 0).rotated(rotation)
 	
 func shoot22(pos):
-	print('shoot22shoot22shoot22shoot22shoot22')
 	position = pos
-	print('position',position)
 	velocity = Vector2(speed, 0)
 
 func _physics_process(delta):

@@ -94,7 +94,7 @@ scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 17 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 1916.39, 14.875 )
+position = Vector2( 1917.39, 14.875 )
 scale = Vector2( 0.995692, 0.996438 )
 texture = ExtResource( 17 )
 
@@ -113,16 +113,17 @@ visible = false
 color = Color( 0.12549, 0.164706, 0.384314, 0.756863 )
 
 [node name="mov2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2074.32, -204.582 )
+position = Vector2( 2075.32, -204.582 )
+collision_layer = 0
+collision_mask = 2
 
 [node name="mov7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2375.19, 145.045 )
+collision_layer = 0
+collision_mask = 2
 
 [node name="mov5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1298.07, -2481.8 )
-
-[node name="mov4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4396.14, -260.746 )
 
 [node name="Erba" type="Node" parent="."]
 
@@ -476,7 +477,11 @@ position = Vector2( 1433.57, 241.441 )
 position = Vector2( 1897.97, -4320.09 )
 
 [node name="slime" parent="." instance=ExtResource( 25 )]
-position = Vector2( 3540.93, -164.997 )
+position = Vector2( 3797.8, 41.925 )
+collision_mask = 3
+
+[node name="slime7" parent="." instance=ExtResource( 25 )]
+position = Vector2( 1836.93, -128.997 )
 collision_mask = 3
 
 [node name="slime2" parent="." instance=ExtResource( 25 )]
@@ -513,10 +518,10 @@ position = Vector2( -1896.09, -2161.1 )
 scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 17 )
 
-[node name="Porte" type="Node" parent="."]
+[node name="doorsx" parent="." instance=ExtResource( 24 )]
+position = Vector2( 3094.02, 44.1704 )
 
-[node name="doorsx" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( 3094.02, 41.1704 )
+[node name="Porte" type="Node" parent="."]
 
 [node name="doordx5" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 2652.95, -4313.25 )
@@ -583,10 +588,9 @@ collision_mask = 3
 position = Vector2( 1604.99, -4078.79 )
 collision_mask = 3
 
-[node name="pp11" parent="." groups=[
-"player",
-] instance=ExtResource( 21 )]
+[node name="pp11" parent="." instance=ExtResource( 21 )]
 position = Vector2( 1804.93, 83.078 )
+collision_layer = 3
 
 [node name="Light2D2" type="Light2D" parent="pp11"]
 visible = false
@@ -617,14 +621,8 @@ position = Vector2( 1657.85, -214.028 )
 [node name="coin5" parent="coin4" instance=ExtResource( 37 )]
 position = Vector2( 1403, 46.4818 )
 
-[node name="coin2" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 4141.12, 336.55 )
-
-[node name="coin3" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 4452.69, 158.169 )
-
 [node name="piccolonemico" parent="." instance=ExtResource( 26 )]
-position = Vector2( 3572.13, -23.3631 )
+position = Vector2( 3573.13, -23.3631 )
 collision_mask = 3
 
 [node name="piccolonemico8" parent="." instance=ExtResource( 26 )]
@@ -637,6 +635,14 @@ collision_mask = 3
 
 [node name="piccolonemico2" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3377.69, -144.179 )
+collision_mask = 3
+
+[node name="piccolonemico10" parent="." instance=ExtResource( 26 )]
+position = Vector2( 2231.29, -39.5287 )
+collision_mask = 3
+
+[node name="piccolonemico11" parent="." instance=ExtResource( 26 )]
+position = Vector2( 2048.16, 126.96 )
 collision_mask = 3
 
 [node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
@@ -1127,14 +1133,15 @@ text = "1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin4" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin2" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin3" to="." method="_on_coin_picked"]
-[connection signal="killed" from="piccolonemico" to="Porte/doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico8" to="Porte/doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico9" to="Porte/doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico2" to="Porte/doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico8" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico9" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico10" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico11" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]

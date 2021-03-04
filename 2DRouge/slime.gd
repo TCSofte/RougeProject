@@ -3,6 +3,8 @@ extends KinematicBody2D
 # Node references
 var player
 onready var Bullet = preload("res://Bullet.tscn")
+var ene = 8
+signal killed
 # Random number generator
 var rng = RandomNumberGenerator.new()
 
@@ -69,3 +71,12 @@ func _on_Timerrocket_timeout():
 	var b3 = Bullet.instance()
 	b3.shoot($Position2D4.global_position, $Position2D4.rotation)
 	get_parent().add_child(b3)
+
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("sword"):
+		ene-=1
+		print('ene',ene)
+		if ene<=0:
+			emit_signal("killed")
+			queue_free()

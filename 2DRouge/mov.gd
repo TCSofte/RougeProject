@@ -18,16 +18,18 @@ func _ready():
 
 
 func _on_Area2D_area_entered(area):
-	$AnimatedSprite.play("default")
-	print('_on_Area2D_area_entered')
-	if spawn==true:
-		var b = chiave.instance()
-		b.connect('keyPicked', 	get_parent(), '_on_chiave_keyPicked')
-		b.position = global_position
-		get_parent().add_child(b)
-		spawn=false
+	if area.is_in_group("player"):
+		$AnimatedSprite.play("default")
+		print('_on_Area2D_area_entered')
+		if spawn==true:
+			var b = chiave.instance()
+			b.connect('keyPicked', 	get_parent(), '_on_chiave_keyPicked')
+			b.position = global_position
+			get_parent().add_child(b)
+			spawn=false
 
 
 func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
-	$AnimatedSprite.play("default")
-	print('_on_Area2D_area_shape_entered')
+	if area.is_in_group("player"):
+		$AnimatedSprite.play("default")
+		print('_on_Area2D_area_shape_entered')
