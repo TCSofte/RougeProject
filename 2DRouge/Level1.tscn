@@ -1038,20 +1038,20 @@ margin_bottom = 301.436
 texture = ExtResource( 29 )
 
 [node name="TextureRect5" type="TextureRect" parent="CanvasLayer"]
-margin_left = 14.0
-margin_top = 681.0
-margin_right = 110.0
-margin_bottom = 778.0
+margin_left = -70.0
+margin_top = 597.0
+margin_right = 186.0
+margin_bottom = 853.0
 texture = ExtResource( 31 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect6" type="TextureRect" parent="CanvasLayer"]
-margin_left = 37.7773
-margin_top = 827.15
-margin_right = 77.7773
-margin_bottom = 877.15
+margin_left = -126.223
+margin_top = 675.15
+margin_right = 129.777
+margin_bottom = 931.15
 rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 33 )
 __meta__ = {
@@ -1070,10 +1070,10 @@ __meta__ = {
 }
 
 [node name="TextureRect9" type="TextureRect" parent="CanvasLayer"]
-margin_left = 1822.66
-margin_top = 645.041
-margin_right = 1913.66
-margin_bottom = 727.041
+margin_left = 1780.61
+margin_top = 586.178
+margin_right = 2036.61
+margin_bottom = 842.178
 rect_scale = Vector2( 0.56, 0.639998 )
 texture = ExtResource( 35 )
 __meta__ = {
@@ -1081,10 +1081,10 @@ __meta__ = {
 }
 
 [node name="TextureRect10" type="TextureRect" parent="CanvasLayer"]
-margin_left = 1836.22
-margin_top = 537.392
-margin_right = 1943.22
-margin_bottom = 595.392
+margin_left = 1869.86
+margin_top = 443.212
+margin_right = 2125.86
+margin_bottom = 699.212
 rect_rotation = 48.3772
 rect_scale = Vector2( 0.730976, 0.857158 )
 texture = ExtResource( 34 )

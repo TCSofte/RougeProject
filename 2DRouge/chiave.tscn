@@ -43,5 +43,5 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "NewAnim"
-speed_scale = 3.0
+speed_scale = 6.0
 [connection signal="body_entered" from="." to="." method="_on_chiave_body_entered"]

@@ -41,7 +41,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-speed_scale = 3.0
+speed_scale = 6.0
 [connection signal="area_entered" from="." to="." method="_on_coin_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_coin_body_entered"]
 [connection signal="picked" from="." to="." method="_on_coin_picked"]
