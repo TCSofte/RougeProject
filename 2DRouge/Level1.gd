@@ -34,3 +34,7 @@ func _on_chiave_keyPicked():
 
 
 
+
+
+func _on_Cuore_picked():
+	pass # Replace with function body.

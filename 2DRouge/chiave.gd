@@ -19,7 +19,13 @@ func _ready():
 func _on_chiave_body_entered(body):
 	if body.is_in_group("player"):  
 		emit_signal("keyPicked")
+		$AnimatedSprite.play("Raccolta")
+		
+
+
+
+
+
+func _on_AnimatedSprite_animation_finished(anim_name):
+	if anim_name == "Raccolta":
 		queue_free()
-
-
-

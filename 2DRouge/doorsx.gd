@@ -6,6 +6,7 @@ var open = 0
 # var b = "text"
 onready var coin = preload("res://coin.tscn")
 onready var chiave = preload("res://chiave.tscn")
+onready var Cuore = preload("res://Cuore.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -20,8 +21,8 @@ func _process(delta):
 		c1.connect('picked', 	 get_parent(), '_on_coin_picked')
 		c1.position = $Positionc1.global_position
 		get_parent().add_child(c1)
-		var c2 = coin.instance()
-		c2.connect('picked', 	 get_parent(), '_on_coin_picked')
+		var c2 = Cuore.instance()
+		c2.connect('picked', 	 get_parent(), '_on_Cuore_picked')
 		c2.position = $Positionc2.global_position
 		get_parent().add_child(c2)
 

@@ -1,7 +1,9 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
+[ext_resource path="res://Bomba22.tscn" type="PackedScene" id=1]
 [ext_resource path="res://pic.tscn" type="PackedScene" id=2]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Cuore.tscn" type="PackedScene" id=4]
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Oggetti proxy/erbaccia.png" type="Texture" id=15]
@@ -480,10 +482,6 @@ position = Vector2( 1897.97, -4320.09 )
 position = Vector2( 3797.8, 41.925 )
 collision_mask = 3
 
-[node name="slime7" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1836.93, -128.997 )
-collision_mask = 3
-
 [node name="slime2" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2149.62, -2321.91 )
 collision_mask = 3
@@ -637,14 +635,6 @@ collision_mask = 3
 position = Vector2( 3377.69, -144.179 )
 collision_mask = 3
 
-[node name="piccolonemico10" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2231.29, -39.5287 )
-collision_mask = 3
-
-[node name="piccolonemico11" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2048.16, 126.96 )
-collision_mask = 3
-
 [node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
 position = Vector2( 2143.92, -2139.61 )
 collision_mask = 3
@@ -667,9 +657,6 @@ collision_mask = 3
 
 [node name="chiave" parent="." instance=ExtResource( 38 )]
 position = Vector2( 2075.81, -69.6821 )
-
-[node name="chiave2" parent="." instance=ExtResource( 38 )]
-position = Vector2( 2120.31, 193.065 )
 
 [node name="Bordi" type="Node" parent="."]
 
@@ -1133,6 +1120,12 @@ text = "1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Bomba" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2195.38, 311.13 )
+
+[node name="Cuore" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1706.54, 308.471 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin4" to="." method="_on_coin_picked"]
@@ -1141,7 +1134,5 @@ __meta__ = {
 [connection signal="killed" from="piccolonemico8" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico9" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico10" to="doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico11" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
-[connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]
+[connection signal="picked" from="Cuore" to="." method="_on_Cuore_picked"]
