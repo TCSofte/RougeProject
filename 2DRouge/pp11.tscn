@@ -303,6 +303,7 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
+frame = 5
 speed_scale = 8.0
 playing = true
 
@@ -366,7 +367,7 @@ position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 1
+frame = 6
 speed_scale = 8.0
 playing = true
 
@@ -376,7 +377,7 @@ position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 10
+frame = 15
 speed_scale = 8.0
 playing = true
 
@@ -388,6 +389,9 @@ script = ExtResource( 5 )
 position = Vector2( -12.7136, 8.47583 )
 current = true
 smoothing_enabled = true
+
+[node name="PositionBomba" type="Position2D" parent="."]
+position = Vector2( 52.5631, 49.8904 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]

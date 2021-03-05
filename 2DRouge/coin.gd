@@ -32,6 +32,6 @@ func _on_coin_body_entered(body):
 
 
 
-func _on_AnimatedSprite_animation_finished(anim_name):
-	if anim_name == "Raccolta":
+func _on_AnimatedSprite_animation_finished():
+	if $AnimatedSprite.get_animation()=="Raccolta":  
 		queue_free()

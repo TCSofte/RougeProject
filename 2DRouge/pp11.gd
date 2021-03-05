@@ -6,9 +6,9 @@ var velocity = Vector2()
 onready var Bullet = preload("res://Bullet.tscn")
 var isAttacking = false
 var can_drop_bomb = true
-onready var tilemap = get_node("/root//Level1/TileMap2")
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
 onready var _transition_rect := get_node("../SceneTransitionRect")
+onready var bomb = preload("res://Bomba22.tscn")
 
 func get_input():
 	
@@ -53,7 +53,8 @@ func get_input():
 		
 	
 		
-		
+	if Input.is_action_just_pressed('bomb') and can_drop_bomb==true:
+		placebomb()	
 		
 	if Input.is_action_just_pressed('mouse_click'):
 		
@@ -115,13 +116,18 @@ func _physics_process(delta):
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
 	var b = Bullet.instance()
-
-	
 	#b.shoot22($Sprite/mani/Muzzle.global_position)
 	b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
-	
-
 	get_parent().add_child(b)
+	
+func placebomb():
+	# "Muzzle" is a Position2D placed at the barrel of the gun.
+	var b = bomb.instance()
+	#b.shoot22($Sprite/mani/Muzzle.global_position)
+	b.position  = $PositionBomba.global_position
+	get_parent().add_child(b)	
+	
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
