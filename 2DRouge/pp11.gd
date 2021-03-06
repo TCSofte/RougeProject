@@ -1,10 +1,11 @@
 extends KinematicBody2D
 
-export (int) var speed = 400
+export (int) var speed = 200
 
 var velocity = Vector2()
 onready var Bullet = preload("res://Bullet.tscn")
 var isAttacking = false
+var isrolling = false
 var can_drop_bomb = true
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
 onready var _transition_rect := get_node("../SceneTransitionRect")
@@ -49,6 +50,12 @@ func get_input():
 		
 	if Input.is_action_pressed('ui_up') and isAttacking==false:
 		velocity.y -= 1
+	
+	if Input.is_action_pressed('roll') and isAttacking==false:
+		$Sprite.visible = false
+		$AnimatedSprite.play("roll")
+		isrolling=true
+		velocity.y -= 1
 		
 		
 	
@@ -78,17 +85,17 @@ func _physics_process(delta):
 #	if dir.length() > 5:
 #	   rotation = dir.angle()
 #	   velocity = move_and_slide(velocity)
-	if (velocity.x != 0  or velocity.y != 0) and isAttacking==false:
+	if (velocity.x != 0  or velocity.y != 0) and isAttacking==false and isrolling==false:
 		$AnimatedSprite.play("walk")
 
 		$AnimatedSprite.flip_v = false
 		# See the note below about boolean assignment
-		$AnimatedSprite.flip_h = velocity.x > 0
+		$AnimatedSprite.flip_h = velocity.x < 0
 		
 		
 
 	
-	elif  (velocity.x == 0  and velocity.y == 0) and isAttacking==false:
+	elif  (velocity.x == 0  and velocity.y == 0) and isAttacking==false and isrolling==false:
 			$AnimatedSprite.play("Idle")
 			
 #	elif velocity.y != 0:
@@ -167,6 +174,9 @@ func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation=="Attack":
 		$Area2D/CollisionShape2D.disabled=true
 		isAttacking=false
+	if $AnimatedSprite.animation=="roll":
+		isrolling=false
+		$Sprite.visible = true
 
 
 func _on_AnimatedSprite_frame_changed():

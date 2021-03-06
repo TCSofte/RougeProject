@@ -297,6 +297,15 @@ texture = ExtResource( 15 )
 [node name="mov3" parent="." instance=ExtResource( 23 )]
 position = Vector2( 1452.04, -203.765 )
 
+[node name="mov4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1789.95, -213.204 )
+
+[node name="mov10" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1542.65, 88.8361 )
+
+[node name="mov11" parent="." instance=ExtResource( 23 )]
+position = Vector2( 2243.01, 35.9791 )
+
 [node name="mov6" parent="." instance=ExtResource( 23 )]
 position = Vector2( 1891.54, -2159.04 )
 
