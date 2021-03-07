@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Porta di legno/porta aperta destra.png" type="Texture" id=1]
+[ext_resource path="res://Porta di legno/porta chiusa destra.png" type="Texture" id=2]
+[ext_resource path="res://doorsxop.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 57.1432, 85.8899 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="doorsxop" type="Area2D" groups=[
+"doorsx",
+]]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -4.28223, 7.87198 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+frame = 1
+flip_h = true
+
+[node name="Positionc1" type="Position2D" parent="."]
+position = Vector2( 658.29, 1.06302 )
+
+[node name="Positionc2" type="Position2D" parent="."]
+position = Vector2( 789.441, 1.06305 )
+
+[node name="Position" type="Position2D" parent="."]
+position = Vector2( 720.687, -41.4016 )

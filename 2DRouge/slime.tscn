@@ -44,7 +44,9 @@ rotation = 0.671509
 position = Vector2( -54.4539, -55.1266 )
 rotation = -2.35482
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=[
+"enemy",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -3.5636, -2.6727 )

@@ -250,7 +250,7 @@ animations = [ {
 radius = 25.7937
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 35.5, 35 )
+extents = Vector2( 83, 68.5 )
 
 [node name="Bomba22" type="RigidBody2D"]
 mode = 2
@@ -267,7 +267,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 43
+frame = 33
 speed_scale = 8.0
 playing = true
 
@@ -288,7 +288,6 @@ autostart = true
 
 [node name="Collisiondamage" type="CollisionShape2D" parent="Areadamage"]
 visible = false
-position = Vector2( 70.5, -2.5 )
 shape = SubResource( 4 )
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -10,7 +10,8 @@ var can_drop_bomb = true
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
 onready var _transition_rect := get_node("../SceneTransitionRect")
 onready var bomb = preload("res://Bomba22.tscn")
-
+var ene = 3
+var die = false
 func get_input():
 	
 #
@@ -34,92 +35,94 @@ func get_input():
 #		velocity = Vector2(-speed/3, 0).rotated(rotation)
 #	if Input.is_action_pressed('ui_down'):
 #		velocity = Vector2(speed, 0).rotated(rotation)
-  
-	
-	if Input.is_action_pressed('ui_right') and isAttacking==false:
-		velocity.x += 1
+   
+	if die == false:
+		if Input.is_action_pressed('ui_right') and isAttacking==false:
+			velocity.x += 1
 
-		$Exhaust2.emitting = false
-		$Exhaust.emitting = true
-	if Input.is_action_pressed('ui_left') and isAttacking==false:
-		$Exhaust.emitting = false
-		$Exhaust2.emitting = true
-		velocity.x -= 1
-	if Input.is_action_pressed('ui_down') and isAttacking==false:
-		velocity.y += 1
+			$Exhaust2.emitting = false
+			$Exhaust.emitting = true
+		if Input.is_action_pressed('ui_left') and isAttacking==false:
+			$Exhaust.emitting = false
+			$Exhaust2.emitting = true
+			velocity.x -= 1
+		if Input.is_action_pressed('ui_down') and isAttacking==false:
+			velocity.y += 1
+			
+		if Input.is_action_pressed('ui_up') and isAttacking==false:
+			velocity.y -= 1
 		
-	if Input.is_action_pressed('ui_up') and isAttacking==false:
-		velocity.y -= 1
-	
-	if Input.is_action_pressed('roll') and isAttacking==false:
-		$Sprite.visible = false
-		$AnimatedSprite.play("roll")
-		isrolling=true
-		velocity.y -= 1
+		if Input.is_action_pressed('roll') and isAttacking==false:
+			$Sprite.visible = false
+			$AnimatedSprite.play("roll")
+			isrolling=true
+			velocity.y -= 1
+			
+			
 		
-		
-	
-		
-	if Input.is_action_just_pressed('bomb') and can_drop_bomb==true:
-		placebomb()	
-		
-	if Input.is_action_just_pressed('mouse_click'):
-		
-		#isAttacking=true
-		#$AnimatedSprite.play("Attack")
-		shoot()	
-		
-	velocity = velocity.normalized() * speed
+			
+		if Input.is_action_just_pressed('bomb') and can_drop_bomb==true:
+			placebomb()	
+			
+		if Input.is_action_just_pressed('mouse_click'):
+			
+			#isAttacking=true
+			#$AnimatedSprite.play("Attack")
+			shoot()	
+			
+		velocity = velocity.normalized() * speed
 	
 	
 
 
 func _physics_process(delta):
-	get_input()
-
 	
-	#var dir = get_global_mouse_position() - global_position
-	# $Sprite5.rotation = (get_global_mouse_position() - sprite.position).angle() # Might need to add + PI / 2 here
-	
-	# print(get_global_mouse_position())
-#	if dir.length() > 5:
-#	   rotation = dir.angle()
-#	   velocity = move_and_slide(velocity)
-	if (velocity.x != 0  or velocity.y != 0) and isAttacking==false and isrolling==false:
-		$AnimatedSprite.play("walk")
+	if die == false:
+		get_input()
 
-		$AnimatedSprite.flip_v = false
-		# See the note below about boolean assignment
-		$AnimatedSprite.flip_h = velocity.x < 0
 		
+		#var dir = get_global_mouse_position() - global_position
+		# $Sprite5.rotation = (get_global_mouse_position() - sprite.position).angle() # Might need to add + PI / 2 here
 		
+		# print(get_global_mouse_position())
+	#	if dir.length() > 5:
+	#	   rotation = dir.angle()
+	#	   velocity = move_and_slide(velocity)
+		if (velocity.x != 0  or velocity.y != 0) and isAttacking==false and isrolling==false:
+			$AnimatedSprite.play("walk")
 
-	
-	elif  (velocity.x == 0  and velocity.y == 0) and isAttacking==false and isrolling==false:
-			$AnimatedSprite.play("Idle")
+			$AnimatedSprite.flip_v = false
+			# See the note below about boolean assignment
+			$AnimatedSprite.flip_h = velocity.x < 0
 			
-#	elif velocity.y != 0:
-#
-#		$AnimatedSprite.flip_v = velocity.y > 0
+			
+
 		
-	var aa = get_global_mouse_position()
-#	if(aa.y>=280):
-#
-#		$Sprite4.flip_h = false
-#		$Sprite6.flip_h = false
-#
-#	elif(aa.y<=280):
-#		$Sprite4.flip_h = true
-#		$Sprite6.flip_h = true
-	
+		elif  (velocity.x == 0  and velocity.y == 0) and isAttacking==false and isrolling==false:
+				$AnimatedSprite.play("Idle")
+				
+	#	elif velocity.y != 0:
+	#
+	#		$AnimatedSprite.flip_v = velocity.y > 0
+			
+		var aa = get_global_mouse_position()
+	#	if(aa.y>=280):
+	#
+	#		$Sprite4.flip_h = false
+	#		$Sprite6.flip_h = false
+	#
+	#	elif(aa.y<=280):
+	#		$Sprite4.flip_h = true
+	#		$Sprite6.flip_h = true
 		
-#	if(aa.x<=380):
-#		print('bmbmnmbmmnm')
-#		$Sprite6.visible  = true
-#	elif(aa.x>=380):
-#		print('bmbmnmbmmnm')
-#		$Sprite6.visible  = false
-	velocity = move_and_slide(velocity)
+			
+	#	if(aa.x<=380):
+	#		print('bmbmnmbmmnm')
+	#		$Sprite6.visible  = true
+	#	elif(aa.x>=380):
+	#		print('bmbmnmbmmnm')
+	#		$Sprite6.visible  = false
+		velocity = move_and_slide(velocity)
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
 	var b = Bullet.instance()
@@ -138,7 +141,7 @@ func placebomb():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	pass
+	$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = true
 	
 
 func _on_Area2D_area_entered(area):
@@ -153,6 +156,18 @@ func _on_Area2D_area_entered(area):
 		position.y-= 450
 	if area.is_in_group("doordw"):
 		position.y+= 450
+	if area.is_in_group("enemy"):
+		ene-=1
+		print('ene',ene)
+		if ene==2:get_node("../CanvasLayer/TextureRect4").visible = false
+		if ene==1:get_node("../CanvasLayer/TextureRect2").visible = false
+		if ene==0:get_node("../CanvasLayer/TextureRect3").visible = false
+		if ene<=0:
+			die = true
+			$Sprite.visible = false
+			$AnimatedSprite.play("die")
+			
+			
 	
 #	var view_size = get_viewport_rect().size
 #	if size.y < view_size.y:
@@ -177,6 +192,9 @@ func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation=="roll":
 		isrolling=false
 		$Sprite.visible = true
+	if $AnimatedSprite.animation=="die":
+		get_node("../CanvasLayer/Label").visible = true
+		
 
 
 func _on_AnimatedSprite_frame_changed():

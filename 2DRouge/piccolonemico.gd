@@ -58,7 +58,7 @@ func _on_Timer_timeout():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("sword"):
+	if area.is_in_group("sword") or area.is_in_group("Bullet"):
 		ene-=1
 		if ene<=0:
 			emit_signal("killed")

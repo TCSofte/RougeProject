@@ -74,7 +74,7 @@ func _on_Timerrocket_timeout():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("sword"):
+	if area.is_in_group("sword") or area.is_in_group("Bullet"):
 		ene-=1
 		print('ene',ene)
 		if ene<=0:

@@ -1,12 +1,14 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=44 format=2]
 
-[ext_resource path="res://Bomba22.tscn" type="PackedScene" id=1]
 [ext_resource path="res://pic.tscn" type="PackedScene" id=2]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cuore.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animazioni/Cuore 1/Idle/cuore 1 idle_0.png" type="Texture" id=5]
 [ext_resource path="res://Animazioni/Bomba/Idle/bomba idle_0.png" type="Texture" id=6]
 [ext_resource path="res://Animazioni/Puntina/Idle/puntina idle_0.png" type="Texture" id=7]
+[ext_resource path="res://erbaccia.tscn" type="PackedScene" id=8]
+[ext_resource path="res://doorsxop.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Oggetti/scettro.png" type="Texture" id=10]
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Oggetti proxy/erbaccia.png" type="Texture" id=15]
@@ -23,12 +25,10 @@
 [ext_resource path="res://piccolonemico.tscn" type="PackedScene" id=26]
 [ext_resource path="res://room11.tscn" type="PackedScene" id=27]
 [ext_resource path="res://HUD/hud.png" type="Texture" id=28]
-[ext_resource path="res://HUD/cuore metà.png" type="Texture" id=29]
 [ext_resource path="res://HUD/cuore.png" type="Texture" id=30]
 [ext_resource path="res://Oggetti/bomba.png" type="Texture" id=31]
 [ext_resource path="res://Oggetti/coin 5.png" type="Texture" id=32]
 [ext_resource path="res://Oggetti/chiave.png" type="Texture" id=33]
-[ext_resource path="res://Oggetti/spada.png" type="Texture" id=34]
 [ext_resource path="res://Oggetti/scudo.png" type="Texture" id=35]
 [ext_resource path="res://Level1.gd" type="Script" id=36]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=37]
@@ -61,6 +61,10 @@ font_data = ExtResource( 13 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 50
+font_data = ExtResource( 13 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 100
 font_data = ExtResource( 13 )
 
 [node name="Level1" type="Node2D"]
@@ -142,94 +146,6 @@ position = Vector2( 1298.07, -2481.8 )
 
 [node name="Erba" type="Node" parent="."]
 
-[node name="erbaccia" type="Sprite" parent="Erba"]
-position = Vector2( 4472.74, 348.207 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia2" type="Sprite" parent="Erba"]
-position = Vector2( 4467.4, 284.062 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia5" type="Sprite" parent="Erba"]
-position = Vector2( 3213.01, 342.862 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia3" type="Sprite" parent="Erba"]
-position = Vector2( 2510.29, -227.214 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia4" type="Sprite" parent="Erba"]
-position = Vector2( 2462.19, -223.65 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia7" type="Sprite" parent="Erba"]
-position = Vector2( 2534.26, -760.611 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia8" type="Sprite" parent="Erba"]
-position = Vector2( 2486.16, -757.047 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia9" type="Sprite" parent="Erba"]
-position = Vector2( 2534.26, -829.533 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia10" type="Sprite" parent="Erba"]
-position = Vector2( 2486.16, -825.969 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia11" type="Sprite" parent="Erba"]
-position = Vector2( 2534.26, -1338.96 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia12" type="Sprite" parent="Erba"]
-position = Vector2( 2486.16, -1335.39 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia13" type="Sprite" parent="Erba"]
-position = Vector2( 2534.26, -1407.88 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia14" type="Sprite" parent="Erba"]
-position = Vector2( 2486.16, -1404.32 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia15" type="Sprite" parent="Erba"]
-position = Vector2( 1335.62, -1338.96 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia16" type="Sprite" parent="Erba"]
-position = Vector2( 1287.52, -1335.39 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia17" type="Sprite" parent="Erba"]
-position = Vector2( 1335.62, -1407.88 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia18" type="Sprite" parent="Erba"]
-position = Vector2( 1287.52, -1404.32 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia19" type="Sprite" parent="Erba"]
-position = Vector2( 1335.62, -760.612 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia20" type="Sprite" parent="Erba"]
-position = Vector2( 1287.52, -757.048 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia21" type="Sprite" parent="Erba"]
-position = Vector2( 1335.62, -829.533 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia22" type="Sprite" parent="Erba"]
-position = Vector2( 1287.52, -825.969 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia6" type="Sprite" parent="Erba"]
-position = Vector2( 3207.67, 278.717 )
-texture = ExtResource( 15 )
-
 [node name="erbaccia23" type="Sprite" parent="Erba"]
 position = Vector2( 2541.61, -4008.87 )
 texture = ExtResource( 15 )
@@ -293,21 +209,6 @@ texture = ExtResource( 15 )
 [node name="erbaccia38" type="Sprite" parent="Erba"]
 position = Vector2( 1277.8, -4651.88 )
 texture = ExtResource( 15 )
-
-[node name="mov3" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1452.04, -203.765 )
-
-[node name="mov4" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1789.95, -213.204 )
-
-[node name="mov10" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1542.65, 88.8361 )
-
-[node name="mov11" parent="." instance=ExtResource( 23 )]
-position = Vector2( 2243.01, 35.9791 )
-
-[node name="mov6" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1891.54, -2159.04 )
 
 [node name="rocce" type="Node" parent="."]
 
@@ -549,9 +450,6 @@ position = Vector2( 2652.95, -4313.25 )
 [node name="doordx4" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 2652.95, -1072.07 )
 
-[node name="doorsx4" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( 3096.02, -1062.09 )
-
 [node name="doordw2" parent="Porte" instance=ExtResource( 20 )]
 position = Vector2( 1886.56, -1735.5 )
 
@@ -574,7 +472,7 @@ position = Vector2( 1897.7, -3670.52 )
 position = Vector2( 2652.95, 31.1812 )
 
 [node name="doordx2" parent="Porte" instance=ExtResource( 22 )]
-position = Vector2( 739.173, -1075.93 )
+position = Vector2( 741.173, -1075.93 )
 
 [node name="doordx6" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( -1165.98, -2171.37 )
@@ -594,8 +492,38 @@ position = Vector2( 3096.02, -4303.26 )
 [node name="doordw" parent="Porte" instance=ExtResource( 20 )]
 position = Vector2( 1886.56, -647.881 )
 
+[node name="doorsx2" parent="Porte" instance=ExtResource( 9 )]
+position = Vector2( 1184.75, -1077.79 )
+
+[node name="doorsx4" parent="Porte" instance=ExtResource( 9 )]
+position = Vector2( 3091.61, -1068.26 )
+
 [node name="doorup" parent="Porte" instance=ExtResource( 19 )]
 position = Vector2( 1897.7, -413.255 )
+
+[node name="vaso" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1909.49, -2136.83 )
+
+[node name="vaso2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1400.51, -272.149 )
+
+[node name="vaso3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1652.62, -274.528 )
+
+[node name="vaso4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1400.51, -105.66 )
+
+[node name="cuore 1 idle_0" type="Sprite" parent="."]
+position = Vector2( 265.934, -1054.04 )
+texture = ExtResource( 5 )
+
+[node name="puntina idle_0" type="Sprite" parent="."]
+position = Vector2( -265.302, -1048.01 )
+texture = ExtResource( 7 )
+
+[node name="bomba idle_0" type="Sprite" parent="."]
+position = Vector2( -17.1197, -1063.83 )
+texture = ExtResource( 6 )
 
 [node name="slime5" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2289.47, -4449.31 )
@@ -630,25 +558,7 @@ next_scene_path = "res://sc11.tscn"
 [node name="coin4" type="Node" parent="."]
 
 [node name="coin" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 2471.47, -300.864 )
-
-[node name="coin4" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1423.77, -757.7 )
-
-[node name="coin6" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1484.18, -755.036 )
-
-[node name="coin7" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1546.47, -753.149 )
-
-[node name="coin8" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1423.77, -808.669 )
-
-[node name="coin9" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1484.18, -806.006 )
-
-[node name="coin10" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1546.47, -804.118 )
+position = Vector2( 2240.54, -299.529 )
 
 [node name="coin5" parent="coin4" instance=ExtResource( 37 )]
 position = Vector2( 1403, 46.4818 )
@@ -972,7 +882,7 @@ shape = SubResource( 6 )
 
 [node name="CollisionShape2D76" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
-position = Vector2( 689.58, -1056.02 )
+position = Vector2( 695.93, -1055.23 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D82" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
@@ -982,7 +892,7 @@ shape = SubResource( 6 )
 
 [node name="CollisionShape2D78" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 light_mask = 2
-position = Vector2( 3135.48, -1063.51 )
+position = Vector2( 3119.59, -1060.33 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D73" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
@@ -1043,6 +953,9 @@ margin_top = 145.927
 margin_right = 108.486
 margin_bottom = 210.927
 texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
 margin_left = 20.4862
@@ -1059,7 +972,10 @@ margin_left = 18.1431
 margin_top = 236.436
 margin_right = 106.143
 margin_bottom = 301.436
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureRect5" type="TextureRect" parent="CanvasLayer"]
 margin_left = -70.0
@@ -1111,7 +1027,7 @@ margin_right = 2125.86
 margin_bottom = 699.212
 rect_rotation = 48.3772
 rect_scale = Vector2( 0.730976, 0.857158 )
-texture = ExtResource( 34 )
+texture = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1158,6 +1074,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label" type="Label" parent="CanvasLayer"]
+visible = false
+margin_left = 734.23
+margin_top = 460.103
+margin_right = 1506.23
+margin_bottom = 560.103
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Game Over"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="coins2" type="Label" parent="."]
 margin_left = -304.441
 margin_top = -1021.0
@@ -1200,31 +1129,73 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Bomba" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2195.38, 311.13 )
-
 [node name="Cuore" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1706.54, 308.471 )
 
-[node name="cuore 1 idle_0" type="Sprite" parent="."]
-position = Vector2( 265.934, -1054.04 )
-texture = ExtResource( 5 )
+[node name="erbaccia" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2547.78, -314.305 )
 
-[node name="puntina idle_0" type="Sprite" parent="."]
-position = Vector2( -265.302, -1048.01 )
-texture = ExtResource( 7 )
+[node name="erbaccia6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2547.78, -753.253 )
 
-[node name="bomba idle_0" type="Sprite" parent="."]
-position = Vector2( -17.1197, -1063.83 )
-texture = ExtResource( 6 )
+[node name="erbaccia7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2556.19, -1422.61 )
+
+[node name="erbaccia8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1288.12, -1425.97 )
+
+[node name="erbaccia9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1367.16, -1424.29 )
+
+[node name="erbaccia12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1288.12, -749.89 )
+
+[node name="erbaccia13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1372.2, -748.208 )
+
+[node name="erbaccia14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1286.43, -825.571 )
+
+[node name="erbaccia15" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1370.52, -823.889 )
+
+[node name="erbaccia16" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1289.8, -1350.29 )
+
+[node name="erbaccia17" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1373.89, -1348.61 )
+
+[node name="erbaccia18" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2477.14, -1351.97 )
+
+[node name="erbaccia19" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2561.23, -1350.29 )
+
+[node name="erbaccia20" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2468.73, -832.298 )
+
+[node name="erbaccia21" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2552.82, -830.616 )
+
+[node name="erbaccia10" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2478.82, -1425.97 )
+
+[node name="erbaccia11" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2473.78, -753.253 )
+
+[node name="erbaccia2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3209.38, 264.725 )
+
+[node name="erbaccia3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3208.19, 352.726 )
+
+[node name="erbaccia4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4444.97, 250.454 )
+
+[node name="erbaccia5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4443.78, 344.401 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin4" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin6" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin7" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin8" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin9" to="." method="_on_coin_picked"]
-[connection signal="picked" from="coin4/coin10" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico8" to="doorsx" method="_on_piccolonemico_killed"]
