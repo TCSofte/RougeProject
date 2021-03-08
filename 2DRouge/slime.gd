@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 # Node references
 var player
-onready var Bullet = preload("res://Bullet.tscn")
+onready var Bullet = preload("res://BulletSlime.tscn")
 var ene = 8
 signal killed
 # Random number generator
@@ -13,6 +13,7 @@ export var speed = 325
 var direction : Vector2
 var last_direction = Vector2(0, 1)
 var bounce_countdown = 0
+var colpito = false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -26,36 +27,40 @@ func _ready():
 #	pass
 
 func _physics_process(delta):
-	var movement = direction * speed * delta
 	
-	var collision = move_and_collide(movement)
-	
-	if collision != null and collision.collider.name != "Player":
-		direction = direction.rotated(rng.randf_range(PI/4, PI/2))
-		bounce_countdown = rng.randi_range(2, 5)
+	if colpito == false :
+		var movement = direction * speed * delta
+		
+		var collision = move_and_collide(movement)
+		
+		if collision != null and collision.collider.name != "Player" :
+			$AnimatedSprite.play("movimento")
+			direction = direction.rotated(rng.randf_range(PI/4, PI/2))
+			bounce_countdown = rng.randi_range(2, 5)
 		
 func _on_Timer_timeout():
-	# Calculate the position of the player relative to the skeleton
-	var player_relative_position = player.position - position
-	
-	if player_relative_position.length() <= 16:
-		# If player is near, don't move but turn toward it
-		direction = Vector2.ZERO
-		last_direction = player_relative_position.normalized()
-	elif player_relative_position.length() <= 400 and bounce_countdown == 0:
-		# If player is within range, move toward it
-		direction = player_relative_position.normalized()
-	elif bounce_countdown == 0:
-		# If player is too far, randomly decide whether to stand still or where to move
-		var random_number = rng.randf()
-		if random_number < 0.05:
+	# Calculate the position of the player relative to the slime
+	if colpito == false :
+		var player_relative_position = player.position - position
+		
+		if player_relative_position.length() <= 16:
+			# If player is near, don't move but turn toward it
 			direction = Vector2.ZERO
-		elif random_number < 0.1:
-			direction = Vector2.DOWN.rotated(rng.randf() * 2 * PI)
-	
-	# Update bounce countdown
-	if bounce_countdown > 0:
-		bounce_countdown = bounce_countdown - 1
+			last_direction = player_relative_position.normalized()
+		elif player_relative_position.length() <= 400 and bounce_countdown == 0:
+			# If player is within range, move toward it
+			direction = player_relative_position.normalized()
+		elif bounce_countdown == 0:
+			# If player is too far, randomly decide whether to stand still or where to move
+			var random_number = rng.randf()
+			if random_number < 0.05:
+				direction = Vector2.ZERO
+			elif random_number < 0.1:
+				direction = Vector2.DOWN.rotated(rng.randf() * 2 * PI)
+		
+		# Update bounce countdown
+		if bounce_countdown > 0:
+			bounce_countdown = bounce_countdown - 1
 
 
 func _on_Timerrocket_timeout():
@@ -75,8 +80,19 @@ func _on_Timerrocket_timeout():
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("sword") or area.is_in_group("Bullet"):
+		colpito = true
+		$AnimatedSprite.play("colpito",true)
 		ene-=1
 		print('ene',ene)
 		if ene<=0:
+			$AnimatedSprite.play("morte")
 			emit_signal("killed")
+			
+
+
+func _on_AnimatedSprite_animation_finished():
+	if $AnimatedSprite.animation=="colpito":
+		$AnimatedSprite.play("movimento")
+		colpito = false
+	if $AnimatedSprite.animation=="morte":
 			queue_free()

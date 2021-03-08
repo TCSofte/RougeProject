@@ -564,19 +564,11 @@ position = Vector2( 2240.54, -299.529 )
 position = Vector2( 1403, 46.4818 )
 
 [node name="piccolonemico" parent="." instance=ExtResource( 26 )]
-position = Vector2( 3573.13, -23.3631 )
-collision_mask = 3
-
-[node name="piccolonemico8" parent="." instance=ExtResource( 26 )]
-position = Vector2( 4217.74, 276.789 )
-collision_mask = 3
-
-[node name="piccolonemico9" parent="." instance=ExtResource( 26 )]
-position = Vector2( 4081.82, 163.524 )
+position = Vector2( 3440.19, -139.329 )
 collision_mask = 3
 
 [node name="piccolonemico2" parent="." instance=ExtResource( 26 )]
-position = Vector2( 3377.69, -144.179 )
+position = Vector2( 4104.87, 231.195 )
 collision_mask = 3
 
 [node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
@@ -1198,8 +1190,6 @@ position = Vector2( 4443.78, 344.401 )
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico8" to="doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico9" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]

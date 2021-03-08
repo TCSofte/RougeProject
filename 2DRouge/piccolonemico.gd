@@ -34,7 +34,7 @@ func _physics_process(delta):
 		bounce_countdown = rng.randi_range(2, 5)
 		
 func _on_Timer_timeout():
-	# Calculate the position of the player relative to the skeleton
+	# Calculate the position of the player relative to the slime
 	var player_relative_position = player.position - position
 	
 	if player_relative_position.length() <= 16:
