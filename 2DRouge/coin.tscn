@@ -173,6 +173,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Idle"
+frame = 29
 speed_scale = 12.0
 playing = true
 [connection signal="area_entered" from="." to="." method="_on_coin_area_entered"]

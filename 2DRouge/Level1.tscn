@@ -1,6 +1,6 @@
 [gd_scene load_steps=44 format=2]
 
-[ext_resource path="res://pic.tscn" type="PackedScene" id=2]
+[ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cuore.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animazioni/Cuore 1/Idle/cuore 1 idle_0.png" type="Texture" id=5]
@@ -112,10 +112,6 @@ position = Vector2( 3826.18, 21.1429 )
 scale = Vector2( 0.995692, 0.996438 )
 texture = ExtResource( 17 )
 flip_h = true
-
-[node name="pic" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2265.89, -1050.59 )
-scale = Vector2( 0.6, 0.6 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 visible = false
@@ -442,25 +438,65 @@ texture = ExtResource( 17 )
 [node name="doorsx" parent="." instance=ExtResource( 24 )]
 position = Vector2( 3094.02, 44.1704 )
 
+[node name="doorsx2" parent="." instance=ExtResource( 24 )]
+position = Vector2( 1184.5, -1074.92 )
+unlock = 4
+
+[node name="doorsx3" parent="." instance=ExtResource( 24 )]
+position = Vector2( 1185.13, -2155.19 )
+unlock = 2
+
+[node name="doorsx4" parent="." instance=ExtResource( 24 )]
+position = Vector2( -724.221, -2155.19 )
+unlock = 1
+
+[node name="doornosp" parent="." groups=[
+"doordx",
+] instance=ExtResource( 1 )]
+position = Vector2( 2651.06, -1064.79 )
+unlock = 4
+
+[node name="doornosp6" parent="." groups=[
+"doordx",
+] instance=ExtResource( 1 )]
+position = Vector2( 735.906, -2147.7 )
+unlock = 1
+
+[node name="doornosp2" parent="." groups=[
+"doordw",
+] instance=ExtResource( 1 )]
+position = Vector2( 1894.83, -643.295 )
+rotation = 1.5708
+unlock = 4
+
+[node name="doornosp4" parent="." groups=[
+"doordw",
+] instance=ExtResource( 1 )]
+position = Vector2( 1894.83, -1724.32 )
+rotation = 1.5708
+unlock = 2
+
+[node name="doornosp3" parent="." groups=[
+"doorup",
+] instance=ExtResource( 1 )]
+position = Vector2( 1900.56, -1515.15 )
+rotation = -1.5708
+unlock = 4
+
+[node name="doornosp5" parent="." groups=[
+"doorup",
+] instance=ExtResource( 1 )]
+position = Vector2( 1900.56, -2593.1 )
+rotation = -1.5708
+unlock = 2
+
 [node name="Porte" type="Node" parent="."]
 
 [node name="doordx5" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( 2652.95, -4313.25 )
 
-[node name="doordx4" parent="Porte" instance=ExtResource( 22 )]
-position = Vector2( 2652.95, -1072.07 )
-
-[node name="doordw2" parent="Porte" instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -1735.5 )
-
-[node name="doorup2" parent="Porte" instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -1519.87 )
-
 [node name="doordw3" parent="Porte" instance=ExtResource( 20 )]
 position = Vector2( 1886.56, -2809.8 )
-
-[node name="doorup3" parent="Porte" instance=ExtResource( 19 )]
-position = Vector2( 1897.7, -2594.17 )
 
 [node name="doordw4" parent="Porte" instance=ExtResource( 20 )]
 position = Vector2( 1886.56, -3886.14 )
@@ -477,23 +513,8 @@ position = Vector2( 741.173, -1075.93 )
 [node name="doordx6" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( -1165.98, -2171.37 )
 
-[node name="doorsx6" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( -722.906, -2177.38 )
-
-[node name="doordx3" parent="Porte" instance=ExtResource( 22 )]
-position = Vector2( 739.173, -2159.93 )
-
-[node name="doorsx3" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( 1186.24, -2148.94 )
-
 [node name="doorsx5" parent="Porte" instance=ExtResource( 24 )]
 position = Vector2( 3096.02, -4303.26 )
-
-[node name="doordw" parent="Porte" instance=ExtResource( 20 )]
-position = Vector2( 1886.56, -647.881 )
-
-[node name="doorsx2" parent="Porte" instance=ExtResource( 9 )]
-position = Vector2( 1184.75, -1077.79 )
 
 [node name="doorsx4" parent="Porte" instance=ExtResource( 9 )]
 position = Vector2( 3091.61, -1068.26 )
@@ -564,31 +585,27 @@ position = Vector2( 2240.54, -299.529 )
 position = Vector2( 1403, 46.4818 )
 
 [node name="piccolonemico" parent="." instance=ExtResource( 26 )]
-position = Vector2( 3440.19, -139.329 )
+position = Vector2( 3438.3, -139.329 )
+collision_mask = 3
+
+[node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
+position = Vector2( 1624.41, -1086.33 )
+collision_mask = 3
+
+[node name="piccolonemico4" parent="." instance=ExtResource( 26 )]
+position = Vector2( 1889.33, -1272.4 )
+collision_mask = 3
+
+[node name="piccolonemico5" parent="." instance=ExtResource( 26 )]
+position = Vector2( 2189.55, -1102.81 )
+collision_mask = 3
+
+[node name="piccolonemico6" parent="." instance=ExtResource( 26 )]
+position = Vector2( 1886.61, -918.515 )
 collision_mask = 3
 
 [node name="piccolonemico2" parent="." instance=ExtResource( 26 )]
 position = Vector2( 4104.87, 231.195 )
-collision_mask = 3
-
-[node name="piccolonemico3" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2143.92, -2139.61 )
-collision_mask = 3
-
-[node name="piccolonemico4" parent="." instance=ExtResource( 26 )]
-position = Vector2( 1903.51, -1944.44 )
-collision_mask = 3
-
-[node name="piccolonemico5" parent="." instance=ExtResource( 26 )]
-position = Vector2( 1895.02, -2346.08 )
-collision_mask = 3
-
-[node name="piccolonemico6" parent="." instance=ExtResource( 26 )]
-position = Vector2( 1592.38, -2165.06 )
-collision_mask = 3
-
-[node name="piccolonemico7" parent="." instance=ExtResource( 26 )]
-position = Vector2( 2418.28, -2343.25 )
 collision_mask = 3
 
 [node name="chiave" parent="." instance=ExtResource( 38 )]
@@ -637,14 +654,6 @@ shape = SubResource( 1 )
 position = Vector2( 1224.85, -836.068 )
 shape = SubResource( 1 )
 
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 2354.36, -1473.7 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2D16" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
-position = Vector2( 1439.49, -1473.7 )
-shape = SubResource( 2 )
-
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 2608.69, -1081.94 )
 shape = SubResource( 3 )
@@ -691,6 +700,10 @@ shape = SubResource( 4 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1924.63, -692.744 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 1924.63, -1474.78 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D25" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
@@ -1187,9 +1200,33 @@ position = Vector2( 4444.97, 250.454 )
 [node name="erbaccia5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4443.78, 344.401 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
+[connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
+[connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
+[connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
+[connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
+[connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
+[connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
+[connection signal="killed" from="slime4" to="doorsx4" method="_on_slime4_killed"]
+[connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico3" to="doornosp" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico3" to="doornosp2" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico4" to="doornosp" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico4" to="doornosp2" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico5" to="doornosp" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico5" to="doornosp2" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico6" to="doornosp" method="_on_piccolonemico6_killed"]
+[connection signal="killed" from="piccolonemico6" to="doornosp2" method="_on_piccolonemico6_killed"]
+[connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
+[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]

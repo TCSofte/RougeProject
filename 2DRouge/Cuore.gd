@@ -17,21 +17,20 @@ func _ready():
 #	pass
 
 
-func _on_coin_area_entered(area):
-	pass # Replace with function body.
-
-
-func _on_coin_body_entered(body):
-	if body.is_in_group("player"):  
-		emit_signal("picked")
-		$AnimatedSprite.play("Raccolta")
-		
-
-
-
-
-
-
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.get_animation()=="Raccolta":
 		queue_free()
+
+
+func _on_Cuore_picked():
+	pass # Replace with function body.
+
+
+func _on_Cuore_body_entered(body):
+	if body.is_in_group("player"):  
+		emit_signal("picked")
+		$AnimatedSprite.play("Raccolta")
+
+
+func _on_Cuore_area_entered(area):
+	pass # Replace with function body.

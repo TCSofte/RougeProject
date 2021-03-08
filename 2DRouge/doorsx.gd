@@ -1,6 +1,7 @@
 extends Area2D
 
 var open = 0
+export  var unlock = 3
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -14,7 +15,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if open>=5:
+	if open>=unlock:
 		$AnimatedSprite.play("default")
 		$CollisionShape2D.disabled = false
 		var c1 = coin.instance()
@@ -42,3 +43,37 @@ func _on_piccolonemico_killed():
 func _on_slime_killed():
 	open = open+1
 	print('open',open)
+
+
+
+
+func _on_piccolonemico3_killed():
+	open = open+1
+	print('open',open)
+
+
+func _on_piccolonemico4_killed():
+	open = open+1
+	print('open',open)
+
+
+func _on_piccolonemico5_killed():
+	open = open+1
+	print('open',open)
+
+
+func _on_piccolonemico6_killed():
+	open = open+1
+	print('open',open)
+
+
+func _on_slime3_killed():
+	open = open+1
+
+
+func _on_slime2_killed():
+	open = open+1 # Replace with function body.
+
+
+func _on_slime4_killed():
+	open = open+1

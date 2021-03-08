@@ -14,7 +14,7 @@ var direction : Vector2
 var last_direction = Vector2(0, 1)
 var bounce_countdown = 0
 var colpito = false
-
+var killed = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,7 +28,7 @@ func _ready():
 
 func _physics_process(delta):
 	
-	if colpito == false :
+	if colpito == false and killed == false:
 		var movement = direction * speed * delta
 		
 		var collision = move_and_collide(movement)
@@ -40,7 +40,7 @@ func _physics_process(delta):
 		
 func _on_Timer_timeout():
 	# Calculate the position of the player relative to the slime
-	if colpito == false :
+	if colpito == false and killed == false:
 		var player_relative_position = player.position - position
 		
 		if player_relative_position.length() <= 16:
@@ -79,14 +79,17 @@ func _on_Timerrocket_timeout():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("sword") or area.is_in_group("Bullet"):
+	if area.is_in_group("sword") or area.is_in_group("Bullet") and killed == false:
 		colpito = true
 		$AnimatedSprite.play("colpito",true)
 		ene-=1
 		print('ene',ene)
 		if ene<=0:
 			$AnimatedSprite.play("morte")
-			emit_signal("killed")
+			if killed == false:
+				emit_signal("killed")
+				killed = true
+			
 			
 
 
