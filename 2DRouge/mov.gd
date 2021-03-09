@@ -32,4 +32,3 @@ func _on_Area2D_area_entered(area):
 func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
 	if area.is_in_group("player"):
 		$AnimatedSprite.play("default")
-		print('_on_Area2D_area_shape_entered')

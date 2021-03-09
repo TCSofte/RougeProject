@@ -39,6 +39,9 @@ func get_input():
 	if die == false:
 		if Input.is_action_pressed('ui_right') and isAttacking==false:
 			velocity.x += 1
+			if isrolling==true:
+				velocity.x += 145
+		
 
 			$Exhaust2.emitting = false
 			$Exhaust.emitting = true
@@ -53,10 +56,15 @@ func get_input():
 			velocity.y -= 1
 		
 		if Input.is_action_pressed('roll') and isAttacking==false:
+			if Input.is_action_pressed('ui_right') and isAttacking==false:
+				velocity.x += 115
+			if Input.is_action_pressed('ui_left') and isAttacking==false:
+				velocity.x -= 115
+			
 			$Sprite.visible = false
 			$AnimatedSprite.play("roll")
 			isrolling=true
-			velocity.y -= 1
+			
 			
 			
 		
@@ -69,6 +77,11 @@ func get_input():
 			#isAttacking=true
 			#$AnimatedSprite.play("Attack")
 			shoot()	
+		
+		if Input.is_action_just_pressed('scudo'):
+			$Sprite/mani/Area2D/CollisionShape2D2.disabled = true
+			$Sprite/mani/Area2D3/CollisionShape2D.disabled = false
+			$Timer.start()
 			
 		velocity = velocity.normalized() * speed
 	
@@ -207,3 +220,8 @@ func _on_AnimatedSprite_frame_changed():
 func _on_drop_bomb_cooldown_timeout():
 	can_drop_bomb = true
 	print('_on_drop_bomb_cooldown_timeout')
+
+
+func _on_Timer_timeout():
+	$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
+	$Sprite/mani/Area2D/CollisionShape2D2.disabled = false

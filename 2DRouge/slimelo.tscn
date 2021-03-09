@@ -1,0 +1,319 @@
+[gd_scene load_steps=236 format=2]
+
+[ext_resource path="res://slimelo.gd" type="Script" id=1]
+[ext_resource path="res://Animazioni slime/idle/slime idle_0.png" type="Texture" id=3]
+[ext_resource path="res://Animazioni slime/idle/slime idle_1.png" type="Texture" id=4]
+[ext_resource path="res://Animazioni slime/idle/slime idle_2.png" type="Texture" id=5]
+[ext_resource path="res://Animazioni slime/idle/slime idle_3.png" type="Texture" id=6]
+[ext_resource path="res://Animazioni slime/idle/slime idle_4.png" type="Texture" id=7]
+[ext_resource path="res://Animazioni slime/idle/slime idle_5.png" type="Texture" id=8]
+[ext_resource path="res://Animazioni slime/idle/slime idle_6.png" type="Texture" id=9]
+[ext_resource path="res://Animazioni slime/idle/slime idle_7.png" type="Texture" id=10]
+[ext_resource path="res://Animazioni slime/idle/slime idle_8.png" type="Texture" id=11]
+[ext_resource path="res://Animazioni slime/idle/slime idle_9.png" type="Texture" id=12]
+[ext_resource path="res://Animazioni slime/idle/slime idle_10.png" type="Texture" id=13]
+[ext_resource path="res://Animazioni slime/idle/slime idle_11.png" type="Texture" id=14]
+[ext_resource path="res://Animazioni slime/idle/slime idle_12.png" type="Texture" id=15]
+[ext_resource path="res://Animazioni slime/idle/slime idle_13.png" type="Texture" id=16]
+[ext_resource path="res://Animazioni slime/idle/slime idle_14.png" type="Texture" id=17]
+[ext_resource path="res://Animazioni slime/idle/slime idle_15.png" type="Texture" id=18]
+[ext_resource path="res://Animazioni slime/idle/slime idle_16.png" type="Texture" id=19]
+[ext_resource path="res://Animazioni slime/idle/slime idle_17.png" type="Texture" id=20]
+[ext_resource path="res://Animazioni slime/idle/slime idle_18.png" type="Texture" id=21]
+[ext_resource path="res://Animazioni slime/idle/slime idle_19.png" type="Texture" id=22]
+[ext_resource path="res://Animazioni slime/idle/slime idle_20.png" type="Texture" id=23]
+[ext_resource path="res://Animazioni slime/idle/slime idle_21.png" type="Texture" id=24]
+[ext_resource path="res://Animazioni slime/idle/slime idle_22.png" type="Texture" id=25]
+[ext_resource path="res://Animazioni slime/idle/slime idle_23.png" type="Texture" id=26]
+[ext_resource path="res://Animazioni slime/idle/slime idle_24.png" type="Texture" id=27]
+[ext_resource path="res://Animazioni slime/idle/slime idle_25.png" type="Texture" id=28]
+[ext_resource path="res://Animazioni slime/idle/slime idle_26.png" type="Texture" id=29]
+[ext_resource path="res://Animazioni slime/idle/slime idle_27.png" type="Texture" id=30]
+[ext_resource path="res://Animazioni slime/idle/slime idle_28.png" type="Texture" id=31]
+[ext_resource path="res://Animazioni slime/idle/slime idle_29.png" type="Texture" id=32]
+[ext_resource path="res://Animazioni slime/idle/slime idle_30.png" type="Texture" id=33]
+[ext_resource path="res://Animazioni slime/idle/slime idle_31.png" type="Texture" id=34]
+[ext_resource path="res://Animazioni slime/idle/slime idle_32.png" type="Texture" id=35]
+[ext_resource path="res://Animazioni slime/idle/slime idle_33.png" type="Texture" id=36]
+[ext_resource path="res://Animazioni slime/idle/slime idle_34.png" type="Texture" id=37]
+[ext_resource path="res://Animazioni slime/idle/slime idle_35.png" type="Texture" id=38]
+[ext_resource path="res://Animazioni slime/idle/slime idle_36.png" type="Texture" id=39]
+[ext_resource path="res://Animazioni slime/idle/slime idle_37.png" type="Texture" id=40]
+[ext_resource path="res://Animazioni slime/idle/slime idle_38.png" type="Texture" id=41]
+[ext_resource path="res://Animazioni slime/idle/slime idle_39.png" type="Texture" id=42]
+[ext_resource path="res://Animazioni slime/idle/slime idle_40.png" type="Texture" id=43]
+[ext_resource path="res://Animazioni slime/idle/slime idle_41.png" type="Texture" id=44]
+[ext_resource path="res://Animazioni slime/idle/slime idle_42.png" type="Texture" id=45]
+[ext_resource path="res://Animazioni slime/idle/slime idle_43.png" type="Texture" id=46]
+[ext_resource path="res://Animazioni slime/idle/slime idle_44.png" type="Texture" id=47]
+[ext_resource path="res://Animazioni slime/idle/slime idle_45.png" type="Texture" id=48]
+[ext_resource path="res://Animazioni slime/idle/slime idle_46.png" type="Texture" id=49]
+[ext_resource path="res://Animazioni slime/idle/slime idle_47.png" type="Texture" id=50]
+[ext_resource path="res://Animazioni slime/idle/slime idle_48.png" type="Texture" id=51]
+[ext_resource path="res://Animazioni slime/idle/slime idle_49.png" type="Texture" id=52]
+[ext_resource path="res://Animazioni slime/idle/slime idle_50.png" type="Texture" id=53]
+[ext_resource path="res://Animazioni slime/idle/slime idle_51.png" type="Texture" id=54]
+[ext_resource path="res://Animazioni slime/idle/slime idle_52.png" type="Texture" id=55]
+[ext_resource path="res://Animazioni slime/idle/slime idle_53.png" type="Texture" id=56]
+[ext_resource path="res://Animazioni slime/idle/slime idle_54.png" type="Texture" id=57]
+[ext_resource path="res://Animazioni slime/idle/slime idle_55.png" type="Texture" id=58]
+[ext_resource path="res://Animazioni slime/idle/slime idle_56.png" type="Texture" id=59]
+[ext_resource path="res://Animazioni slime/idle/slime idle_57.png" type="Texture" id=60]
+[ext_resource path="res://Animazioni slime/idle/slime idle_58.png" type="Texture" id=61]
+[ext_resource path="res://Animazioni slime/idle/slime idle_59.png" type="Texture" id=62]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_0.png" type="Texture" id=63]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_1.png" type="Texture" id=64]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_2.png" type="Texture" id=65]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_3.png" type="Texture" id=66]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_4.png" type="Texture" id=67]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_5.png" type="Texture" id=68]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_6.png" type="Texture" id=69]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_7.png" type="Texture" id=70]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_8.png" type="Texture" id=71]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_9.png" type="Texture" id=72]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_10.png" type="Texture" id=73]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_11.png" type="Texture" id=74]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_12.png" type="Texture" id=75]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_13.png" type="Texture" id=76]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_14.png" type="Texture" id=77]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_15.png" type="Texture" id=78]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_16.png" type="Texture" id=79]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_17.png" type="Texture" id=80]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_18.png" type="Texture" id=81]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_19.png" type="Texture" id=82]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_20.png" type="Texture" id=83]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_21.png" type="Texture" id=84]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_22.png" type="Texture" id=85]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_23.png" type="Texture" id=86]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_24.png" type="Texture" id=87]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_25.png" type="Texture" id=88]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_26.png" type="Texture" id=89]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_27.png" type="Texture" id=90]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_28.png" type="Texture" id=91]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_29.png" type="Texture" id=92]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_30.png" type="Texture" id=93]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_31.png" type="Texture" id=94]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_32.png" type="Texture" id=95]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_33.png" type="Texture" id=96]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_34.png" type="Texture" id=97]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_35.png" type="Texture" id=98]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_36.png" type="Texture" id=99]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_37.png" type="Texture" id=100]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_38.png" type="Texture" id=101]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_39.png" type="Texture" id=102]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_40.png" type="Texture" id=103]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_41.png" type="Texture" id=104]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_42.png" type="Texture" id=105]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_43.png" type="Texture" id=106]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_44.png" type="Texture" id=107]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_45.png" type="Texture" id=108]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_46.png" type="Texture" id=109]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_47.png" type="Texture" id=110]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_48.png" type="Texture" id=111]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_49.png" type="Texture" id=112]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_50.png" type="Texture" id=113]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_51.png" type="Texture" id=114]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_52.png" type="Texture" id=115]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_53.png" type="Texture" id=116]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_54.png" type="Texture" id=117]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_55.png" type="Texture" id=118]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_56.png" type="Texture" id=119]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_57.png" type="Texture" id=120]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_58.png" type="Texture" id=121]
+[ext_resource path="res://Animazioni slime/movimento/slime movimento_59.png" type="Texture" id=122]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_36.png" type="Texture" id=159]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_37.png" type="Texture" id=160]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_38.png" type="Texture" id=161]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_39.png" type="Texture" id=162]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_40.png" type="Texture" id=163]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_41.png" type="Texture" id=164]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_42.png" type="Texture" id=165]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_43.png" type="Texture" id=166]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_44.png" type="Texture" id=167]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_45.png" type="Texture" id=168]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_46.png" type="Texture" id=169]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_47.png" type="Texture" id=170]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_48.png" type="Texture" id=171]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_49.png" type="Texture" id=172]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_50.png" type="Texture" id=173]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_51.png" type="Texture" id=174]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_52.png" type="Texture" id=175]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_53.png" type="Texture" id=176]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_54.png" type="Texture" id=177]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_55.png" type="Texture" id=178]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_56.png" type="Texture" id=179]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_57.png" type="Texture" id=180]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_58.png" type="Texture" id=181]
+[ext_resource path="res://Animazioni slime/colpito/slime colpito_59.png" type="Texture" id=182]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_0.png" type="Texture" id=183]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_1.png" type="Texture" id=184]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_2.png" type="Texture" id=185]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_3.png" type="Texture" id=186]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_4.png" type="Texture" id=187]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_5.png" type="Texture" id=188]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_6.png" type="Texture" id=189]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_7.png" type="Texture" id=190]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_8.png" type="Texture" id=191]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_9.png" type="Texture" id=192]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_10.png" type="Texture" id=193]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_11.png" type="Texture" id=194]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_12.png" type="Texture" id=195]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_13.png" type="Texture" id=196]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_14.png" type="Texture" id=197]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_15.png" type="Texture" id=198]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_16.png" type="Texture" id=199]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_17.png" type="Texture" id=200]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_18.png" type="Texture" id=201]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_19.png" type="Texture" id=202]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_20.png" type="Texture" id=203]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_21.png" type="Texture" id=204]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_22.png" type="Texture" id=205]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_23.png" type="Texture" id=206]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_24.png" type="Texture" id=207]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_25.png" type="Texture" id=208]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_26.png" type="Texture" id=209]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_27.png" type="Texture" id=210]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_28.png" type="Texture" id=211]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_29.png" type="Texture" id=212]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_30.png" type="Texture" id=213]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_31.png" type="Texture" id=214]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_32.png" type="Texture" id=215]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_33.png" type="Texture" id=216]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_34.png" type="Texture" id=217]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_35.png" type="Texture" id=218]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_36.png" type="Texture" id=219]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_37.png" type="Texture" id=220]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_38.png" type="Texture" id=221]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_39.png" type="Texture" id=222]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_40.png" type="Texture" id=223]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_41.png" type="Texture" id=224]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_42.png" type="Texture" id=225]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_43.png" type="Texture" id=226]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_44.png" type="Texture" id=227]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_45.png" type="Texture" id=228]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_46.png" type="Texture" id=229]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_47.png" type="Texture" id=230]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_48.png" type="Texture" id=231]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_49.png" type="Texture" id=232]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_50.png" type="Texture" id=233]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_51.png" type="Texture" id=234]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_52.png" type="Texture" id=235]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_53.png" type="Texture" id=236]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_54.png" type="Texture" id=237]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_55.png" type="Texture" id=238]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_56.png" type="Texture" id=239]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_57.png" type="Texture" id=240]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_58.png" type="Texture" id=241]
+[ext_resource path="res://Animazioni slime/attacco/slime attacco_59.png" type="Texture" id=242]
+[ext_resource path="res://Animazioni slime/morte/slime morte_33.png" type="Texture" id=276]
+[ext_resource path="res://Animazioni slime/morte/slime morte_34.png" type="Texture" id=277]
+[ext_resource path="res://Animazioni slime/morte/slime morte_35.png" type="Texture" id=278]
+[ext_resource path="res://Animazioni slime/morte/slime morte_36.png" type="Texture" id=279]
+[ext_resource path="res://Animazioni slime/morte/slime morte_37.png" type="Texture" id=280]
+[ext_resource path="res://Animazioni slime/morte/slime morte_38.png" type="Texture" id=281]
+[ext_resource path="res://Animazioni slime/morte/slime morte_39.png" type="Texture" id=282]
+[ext_resource path="res://Animazioni slime/morte/slime morte_40.png" type="Texture" id=283]
+[ext_resource path="res://Animazioni slime/morte/slime morte_41.png" type="Texture" id=284]
+[ext_resource path="res://Animazioni slime/morte/slime morte_42.png" type="Texture" id=285]
+[ext_resource path="res://Animazioni slime/morte/slime morte_43.png" type="Texture" id=286]
+[ext_resource path="res://Animazioni slime/morte/slime morte_44.png" type="Texture" id=287]
+[ext_resource path="res://Animazioni slime/morte/slime morte_45.png" type="Texture" id=288]
+[ext_resource path="res://Animazioni slime/morte/slime morte_46.png" type="Texture" id=289]
+[ext_resource path="res://Animazioni slime/morte/slime morte_47.png" type="Texture" id=290]
+[ext_resource path="res://Animazioni slime/morte/slime morte_48.png" type="Texture" id=291]
+[ext_resource path="res://Animazioni slime/morte/slime morte_49.png" type="Texture" id=292]
+[ext_resource path="res://Animazioni slime/morte/slime morte_50.png" type="Texture" id=293]
+[ext_resource path="res://Animazioni slime/morte/slime morte_51.png" type="Texture" id=294]
+[ext_resource path="res://Animazioni slime/morte/slime morte_52.png" type="Texture" id=295]
+[ext_resource path="res://Animazioni slime/morte/slime morte_53.png" type="Texture" id=296]
+[ext_resource path="res://Animazioni slime/morte/slime morte_54.png" type="Texture" id=297]
+[ext_resource path="res://Animazioni slime/morte/slime morte_55.png" type="Texture" id=298]
+[ext_resource path="res://Animazioni slime/morte/slime morte_56.png" type="Texture" id=299]
+[ext_resource path="res://Animazioni slime/morte/slime morte_57.png" type="Texture" id=300]
+[ext_resource path="res://Animazioni slime/morte/slime morte_58.png" type="Texture" id=301]
+[ext_resource path="res://Animazioni slime/morte/slime morte_59.png" type="Texture" id=302]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 28.2872, 55.4905 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 39.7098, 55.9258 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ) ],
+"loop": false,
+"name": "colpito",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ) ],
+"loop": true,
+"name": "movimento",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ) ],
+"loop": true,
+"name": "attacco",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ) ],
+"loop": false,
+"name": "morte",
+"speed": 5.0
+} ]
+
+[node name="slimelo" type="KinematicBody2D"]
+position = Vector2( 1, 0 )
+collision_layer = 0
+collision_mask = 0
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="Timerrocket" type="Timer" parent="."]
+autostart = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -60.5811, 54.3448 )
+rotation = 2.49242
+
+[node name="Position2D2" type="Position2D" parent="."]
+position = Vector2( 44.5449, -57.9084 )
+rotation = 5.63913
+
+[node name="Position2D3" type="Position2D" parent="."]
+position = Vector2( 56.1266, 54.3448 )
+rotation = 0.671509
+
+[node name="Position2D4" type="Position2D" parent="."]
+position = Vector2( -54.4539, -55.1266 )
+rotation = -2.35482
+
+[node name="Area2D" type="Area2D" parent="." groups=[
+"enemy",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -3.5636, -2.6727 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+animation = "idle"
+frame = 45
+speed_scale = 8.0
+playing = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timerrocket" to="." method="_on_Timerrocket_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

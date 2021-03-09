@@ -1,4 +1,4 @@
-[gd_scene load_steps=389 format=2]
+[gd_scene load_steps=390 format=2]
 
 [ext_resource path="res://pp11.gd" type="Script" id=1]
 [ext_resource path="res://Personaggio nuovo animato/idle/idle_001.png" type="Texture" id=2]
@@ -415,6 +415,9 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=4]
 radius = 41.6798
 
+[sub_resource type="CircleShape2D" id=12]
+radius = 57.956
+
 [sub_resource type="Gradient" id=5]
 offsets = PoolRealArray( 0, 0.511111 )
 colors = PoolColorArray( 0.379074, 0.423287, 0.574219, 1, 0.870588, 0.87451, 0.894118, 0.776471 )
@@ -494,7 +497,7 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 47
+frame = 19
 speed_scale = 15.0
 playing = true
 
@@ -512,7 +515,9 @@ position = Vector2( -191.865, 0.446049 )
 rotation = 6.27026
 scale = Vector2( 1.18828, 0.856507 )
 
-[node name="Area2D" type="Area2D" parent="Sprite/mani"]
+[node name="Area2D" type="Area2D" parent="Sprite/mani" groups=[
+"bordo",
+]]
 position = Vector2( 191.717, -13.9114 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/mani/Area2D"]
@@ -527,6 +532,18 @@ rotation = 3.55736
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/mani/Area2D2"]
 polygon = PoolVector2Array( 74.8907, -5.05011, 92.5637, -19.0297, 132.238, -20.0848, 104.105, 2.86287, 78.1368, 1.54404, 80.6615, 6.5556, 73.8087, 11.3034, 64.7919, -7.42401, 70.5626, -10.5892 )
+
+[node name="Area2D3" type="Area2D" parent="Sprite/mani" groups=[
+"parata",
+]]
+position = Vector2( -92.2778, 0.000189781 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/mani/Area2D3" groups=[
+"parata",
+]]
+position = Vector2( 218.67, -0.000460625 )
+shape = SubResource( 12 )
+disabled = true
 
 [node name="DropBombCooldown" type="Timer" parent="."]
 one_shot = true
@@ -557,7 +574,7 @@ position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 2
+frame = 9
 speed_scale = 8.0
 playing = true
 
@@ -567,7 +584,7 @@ position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 11
+frame = 18
 speed_scale = 8.0
 playing = true
 
@@ -582,7 +599,11 @@ smoothing_enabled = true
 
 [node name="PositionBomba" type="Position2D" parent="."]
 position = Vector2( 52.5631, 49.8904 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
 [connection signal="timeout" from="DropBombCooldown" to="." method="_on_drop_bomb_cooldown_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

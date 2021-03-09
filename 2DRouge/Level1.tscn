@@ -1,6 +1,7 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cuore.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animazioni/Cuore 1/Idle/cuore 1 idle_0.png" type="Texture" id=5]
@@ -126,16 +127,6 @@ collision_mask = 2
 "bordo",
 ] instance=ExtResource( 3 )]
 position = Vector2( 2375.19, 145.045 )
-collision_layer = 0
-collision_mask = 2
-
-[node name="mov8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3549.29, 225.862 )
-collision_layer = 0
-collision_mask = 2
-
-[node name="mov9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 4049.9, -135.57 )
 collision_layer = 0
 collision_mask = 2
 
@@ -1207,34 +1198,37 @@ position = Vector2( 4444.97, 250.454 )
 
 [node name="erbaccia5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4443.78, 344.401 )
+
+[node name="slime7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1883.52, -73.8239 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
-[connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
-[connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
+[connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
 [connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
+[connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
 [connection signal="killed" from="slime4" to="doorsx4" method="_on_slime4_killed"]
 [connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
-[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
-[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
-[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
-[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
+[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
+[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]

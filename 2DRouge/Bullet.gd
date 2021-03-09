@@ -13,6 +13,9 @@ func shoot(pos, dir):
 func shoot22(pos):
 	position = pos
 	velocity = Vector2(speed, 0)
+func shootrev(pos, vel):
+	position = pos
+	velocity = vel	
 
 func _physics_process(delta):
 	de=delta
@@ -36,7 +39,6 @@ func handle_collision(collision : KinematicCollision2D):
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("bordo") :
-		print('bordobordobordobordobordobordo')
 		var b = particellescettro.instance()
 		b.position = global_position
 		get_parent().call_deferred("add_child", b)
@@ -46,7 +48,6 @@ func _on_Area2D_area_entered(area):
 
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("bordo") :
-		print('bordobordobordobordobordobordo')
 		var b = particellescettro.instance()
 		b.position = global_position
 		get_parent().call_deferred("add_child", b)
@@ -54,7 +55,6 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
 		if area.is_in_group("bordo") :
-			print('bordobordobordobordobordobordo')
 			var b = particellescettro.instance()
 			b.position = global_position
 			get_parent().call_deferred("add_child", b)
@@ -62,7 +62,6 @@ func _on_Area2D_area_shape_entered(area_id, area, area_shape, self_shape):
 
 func _on_Area2D_body_shape_entered(body_id, body, body_shape, area_shape):
 	if body.is_in_group("bordo") :
-		print('bordobordobordobordobordobordo')
 		var b = particellescettro.instance()
 		b.position = global_position
 		get_parent().call_deferred("add_child", b)
