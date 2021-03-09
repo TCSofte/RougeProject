@@ -4,7 +4,7 @@ var collision
 var de
 var speed = 750
 var velocity = Vector2()
-
+onready var particelleslime = preload("res://particelleslime.tscn")
 func shoot(pos, dir):
 	rotation = dir
 	position = pos
@@ -18,6 +18,9 @@ func _physics_process(delta):
 	de=delta
 	collision = move_and_collide(velocity * delta)
 	if collision:
+		var b = particelleslime.instance()
+		b.position = global_position
+		get_parent().call_deferred("add_child", b)
 		queue_free()
 #		velocity = velocity.bounce(collision.normal)
 #		if collision.collider.has_method("hit"):
@@ -33,4 +36,4 @@ func handle_collision(collision : KinematicCollision2D):
 
 func _on_Area2D_area_entered(area):
 	
-	velocity.x= velocity.x*-1
+	queue_free()

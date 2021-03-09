@@ -122,7 +122,9 @@ position = Vector2( 2075.32, -204.582 )
 collision_layer = 0
 collision_mask = 2
 
-[node name="mov7" parent="." instance=ExtResource( 3 )]
+[node name="mov7" parent="." groups=[
+"bordo",
+] instance=ExtResource( 3 )]
 position = Vector2( 2375.19, 145.045 )
 collision_layer = 0
 collision_mask = 2
@@ -614,9 +616,13 @@ position = Vector2( 2075.81, -69.6821 )
 [node name="chiave2" parent="." instance=ExtResource( 38 )]
 position = Vector2( 2541.73, -1843.32 )
 
-[node name="Bordi" type="Node" parent="."]
+[node name="Bordi" type="Node" parent="." groups=[
+"bordo",
+]]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Bordi"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Bordi" groups=[
+"bordo",
+]]
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
 position = Vector2( 1225.34, -2385.4 )
@@ -722,7 +728,9 @@ shape = SubResource( 5 )
 position = Vector2( 3134.59, 19.3247 )
 shape = SubResource( 5 )
 
-[node name="CollisionShape2D70" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+[node name="CollisionShape2D70" type="CollisionShape2D" parent="Bordi/StaticBody2D" groups=[
+"bordo",
+]]
 position = Vector2( 2607.09, 19.3247 )
 shape = SubResource( 5 )
 
@@ -1200,33 +1208,33 @@ position = Vector2( 4444.97, 250.454 )
 [node name="erbaccia5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4443.78, 344.401 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
-[connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
-[connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
-[connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
-[connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
+[connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
+[connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
 [connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
+[connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
+[connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
 [connection signal="killed" from="slime4" to="doorsx4" method="_on_slime4_killed"]
 [connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
-[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
-[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
-[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
-[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]

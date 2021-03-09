@@ -1,0 +1,54 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_2.png" type="Texture" id=1]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_3.png" type="Texture" id=2]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_4.png" type="Texture" id=3]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_5.png" type="Texture" id=4]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_6.png" type="Texture" id=5]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_7.png" type="Texture" id=6]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_8.png" type="Texture" id=7]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_9.png" type="Texture" id=8]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_10.png" type="Texture" id=9]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_11.png" type="Texture" id=10]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_12.png" type="Texture" id=11]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_13.png" type="Texture" id=12]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_14.png" type="Texture" id=13]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_15.png" type="Texture" id=14]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_16.png" type="Texture" id=15]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_17.png" type="Texture" id=16]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_18.png" type="Texture" id=17]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_19.png" type="Texture" id=18]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_20.png" type="Texture" id=19]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_21.png" type="Texture" id=20]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_22.png" type="Texture" id=21]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_23.png" type="Texture" id=22]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_24.png" type="Texture" id=23]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_25.png" type="Texture" id=24]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_26.png" type="Texture" id=25]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_27.png" type="Texture" id=26]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_28.png" type="Texture" id=27]
+[ext_resource path="res://particelleslime.gd" type="Script" id=28]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_0.png" type="Texture" id=29]
+[ext_resource path="res://Pallottole/particelle slime/particelle slime_1.png" type="Texture" id=30]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="particelleslime" type="StaticBody2D"]
+script = ExtResource( 28 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 36.5377 )
+frames = SubResource( 1 )
+speed_scale = 8.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
