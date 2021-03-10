@@ -43,6 +43,7 @@ func handle_collision(collision : KinematicCollision2D):
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("parata") :
+		queue_free()
 		$CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D.disabled = true
 		var b = Bullet.instance()
@@ -57,15 +58,11 @@ func _on_Area2D_area_entered(area):
 		
 		#velocity = velocity.bounce(collision.normal)
 		
-	if area.is_in_group("bordo") :
+	if area.is_in_group("bordo") or area.is_in_group("scudo") :
 		var b = particelleslime.instance()
 		b.position = global_position
 		get_parent().call_deferred("add_child", b)
 		queue_free()
 
 
-func _on_Timer_timeout():
-	queue_free()
-	var b = Bullet.instance()
-	b.shootrev(global_position, Vector2(velocity.x*-1, velocity.y*-1))
-	get_parent().call_deferred("add_child", b)
+
