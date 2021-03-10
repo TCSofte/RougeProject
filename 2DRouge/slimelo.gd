@@ -86,21 +86,23 @@ func _on_Timerrocket_timeout():
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("sword") or area.is_in_group("Bullet") or area.is_in_group("Bulletrev") and killed == false:
 		colpito = true
-		$AnimatedSprite.play("colpito",true)
-		ene-=1
-		print('ene',ene)
-		if ene<=0:
-			$AnimatedSprite.play("morte")
-			if killed == false:
-				emit_signal("killed")
-				killed = true
+		$AnimatedSprite.play("colpito")
+	if area.is_in_group("Bulletrev") and killed == false:
+		colpito = true
+		$AnimatedSprite.play("Stordito")
+#		ene-=1
+#		if ene<=0:
+#			$AnimatedSprite.play("morte")
+#			if killed == false:
+#				emit_signal("killed")
+#				killed = true
 			
 			
 
 
 func _on_AnimatedSprite_animation_finished():
-	if $AnimatedSprite.animation=="colpito":
-		$AnimatedSprite.play("movimento")
+	if $AnimatedSprite.animation=="colpito" or $AnimatedSprite.animation=="Stordito":
+		$AnimatedSprite.play("idle")
 		colpito = false
 	if $AnimatedSprite.animation=="morte":
 			queue_free()

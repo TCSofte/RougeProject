@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
@@ -10,9 +10,10 @@
 [ext_resource path="res://erbaccia.tscn" type="PackedScene" id=8]
 [ext_resource path="res://doorsxop.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Oggetti/scettro.png" type="Texture" id=10]
+[ext_resource path="res://stanza tutorial.png" type="Texture" id=11]
+[ext_resource path="res://Luce/luce forte.png" type="Texture" id=12]
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
-[ext_resource path="res://light.png" type="Texture" id=16]
 [ext_resource path="res://stanza 1.0.png" type="Texture" id=17]
 [ext_resource path="res://caster.png" type="Texture" id=18]
 [ext_resource path="res://doorup.tscn" type="PackedScene" id=19]
@@ -107,6 +108,11 @@ position = Vector2( 5.35052, -2161.57 )
 scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 17 )
 
+[node name="Sprite13" type="Sprite" parent="."]
+position = Vector2( 5.35077, 15.4469 )
+scale = Vector2( 0.995692, 1.01007 )
+texture = ExtResource( 17 )
+
 [node name="Sprite6" type="Sprite" parent="."]
 position = Vector2( 1917.78, -3242.61 )
 scale = Vector2( 0.995692, 1.01007 )
@@ -115,7 +121,7 @@ texture = ExtResource( 17 )
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 1917.39, 14.875 )
 scale = Vector2( 0.995692, 0.996438 )
-texture = ExtResource( 17 )
+texture = ExtResource( 11 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 position = Vector2( 3826.18, 21.1429 )
@@ -128,14 +134,14 @@ visible = false
 color = Color( 0, 0, 0, 0.756863 )
 
 [node name="mov2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2075.32, -204.582 )
+position = Vector2( 416.321, 309.506 )
 collision_layer = 0
 collision_mask = 2
 
 [node name="mov7" parent="." groups=[
 "bordo",
 ] instance=ExtResource( 3 )]
-position = Vector2( 2375.19, 145.045 )
+position = Vector2( 413.126, -297.205 )
 collision_layer = 0
 collision_mask = 2
 
@@ -333,7 +339,7 @@ position = Vector2( 4351.75, 349.133 )
 position = Vector2( 4351.75, 251.589 )
 
 [node name="roccia3" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1433.57, 241.441 )
+position = Vector2( 444.39, 122.513 )
 
 [node name="roccia63" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1897.97, -4320.09 )
@@ -460,20 +466,26 @@ position = Vector2( 3091.61, -1068.26 )
 [node name="doorsx6" parent="Porte" instance=ExtResource( 9 )]
 position = Vector2( 3087.61, -4307.89 )
 
+[node name="doorsx7" parent="Porte" instance=ExtResource( 9 )]
+position = Vector2( 1178.37, 14.1069 )
+
 [node name="doorup" parent="Porte" instance=ExtResource( 19 )]
 position = Vector2( 1897.7, -417.255 )
+
+[node name="doordx3" parent="Porte" instance=ExtResource( 22 )]
+position = Vector2( 745.173, 17.0868 )
 
 [node name="vaso" parent="." instance=ExtResource( 23 )]
 position = Vector2( 1909.49, -2136.83 )
 
 [node name="vaso2" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1400.51, -272.149 )
+position = Vector2( 394.02, -191.63 )
 
 [node name="vaso3" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1652.62, -274.528 )
+position = Vector2( 215.988, 257.322 )
 
 [node name="vaso4" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1400.51, -105.66 )
+position = Vector2( 408.254, -42.8021 )
 
 [node name="cuore 1 idle_0" type="Sprite" parent="."]
 position = Vector2( 265.934, -1054.04 )
@@ -503,7 +515,7 @@ collision_layer = 3
 visible = false
 position = Vector2( 0.589844, -7.59509 )
 scale = Vector2( 0.07, 0.07 )
-texture = ExtResource( 16 )
+texture = ExtResource( 12 )
 texture_scale = 8.55
 color = Color( 1, 1, 1, 0.470588 )
 shadow_enabled = true
@@ -520,10 +532,10 @@ next_scene_path = "res://sc11.tscn"
 [node name="coin4" type="Node" parent="."]
 
 [node name="coin" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 2240.54, -299.529 )
+position = Vector2( 584.54, -3.52899 )
 
 [node name="coin5" parent="coin4" instance=ExtResource( 37 )]
-position = Vector2( 1403, 46.4818 )
+position = Vector2( 317.218, -110.671 )
 
 [node name="piccolonemico" parent="." instance=ExtResource( 26 )]
 position = Vector2( 3438.3, -139.329 )
@@ -550,7 +562,7 @@ position = Vector2( 4104.87, 231.195 )
 collision_mask = 3
 
 [node name="chiave" parent="." instance=ExtResource( 38 )]
-position = Vector2( 2075.81, -69.6821 )
+position = Vector2( 541.07, -122.539 )
 
 [node name="chiave2" parent="." instance=ExtResource( 38 )]
 position = Vector2( 2541.73, -1843.32 )
@@ -887,6 +899,30 @@ light_mask = 2
 position = Vector2( 1893.34, -3932.77 )
 shape = SubResource( 7 )
 
+[node name="CollisionShape2D79" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 696.534, -208.823 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D80" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 696.044, 274.381 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D81" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( 351.18, -378.633 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D88" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( -383.688, -378.633 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D89" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( -14.7458, 399.183 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D90" type="CollisionShape2D" parent="Bordi/StaticBody2D"]
+position = Vector2( -685.394, 9.9469 )
+shape = SubResource( 5 )
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
@@ -1094,10 +1130,10 @@ __meta__ = {
 }
 
 [node name="Cuore" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1706.54, 308.471 )
+position = Vector2( -123.46, 254.471 )
 
 [node name="erbaccia" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2547.78, -314.305 )
+position = Vector2( 601.431, -267.162 )
 
 [node name="erbaccia6" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2547.78, -753.253 )
@@ -1340,7 +1376,7 @@ position = Vector2( -6.67627, 10.5587 )
 shape = SubResource( 13 )
 
 [node name="slimelo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2090.79, -20.204 )
+position = Vector2( 11.9907, -5.51107 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
