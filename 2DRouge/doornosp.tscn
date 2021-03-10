@@ -4,10 +4,7 @@
 [ext_resource path="res://Porta di legno/porta chiusa destra.png" type="Texture" id=2]
 [ext_resource path="res://doornosp.gd" type="Script" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 57.1432, 85.8899 )
-
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": false,
@@ -15,13 +12,16 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 57.1432, 43.3293 )
+
 [node name="doornosp" type="Area2D"]
 script = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -4.28223, 7.87198 )
-shape = SubResource( 1 )
-disabled = true
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.02234, 0.312471 )
+shape = SubResource( 2 )
+disabled = true

@@ -1,19 +1,19 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="StreamTexture" id=3]
+[sub_resource type="StreamTexture" id=1]
 flags = 4
 load_path = "res://.import/porta aperta destra.png-985caa08662c42bb4e2f6a2cb3b0f893.stex"
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 57.1432, 85.8899 )
+extents = Vector2( 56.7518, 37.8973 )
 
 [node name="doordx" type="Sprite"]
-texture = SubResource( 3 )
+texture = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="." groups=[
 "doordx",
 ]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -4.28223, 7.87198 )
+position = Vector2( -3.33838, -2.51062 )
 shape = SubResource( 2 )

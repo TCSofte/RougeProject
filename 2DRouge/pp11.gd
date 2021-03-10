@@ -172,13 +172,13 @@ func _on_Area2D_area_entered(area):
 #	var size = collision_shape.shape.extents*2
 	if area.is_in_group("doordx"):
 	#	_transition_rect.transition_to()
-		position.x+= 610
+		position.x+= 620
 	if area.is_in_group("doorsx"):
-		position.x-= 610
+		position.x-= 620
 	if area.is_in_group("doorup"):
-		position.y-= 450
+		position.y-= 460
 	if area.is_in_group("doordw"):
-		position.y+= 450
+		position.y+= 460
 	if area.is_in_group("enemy"):
 		ene-=1
 		print('ene',ene)
