@@ -43,7 +43,6 @@ func handle_collision(collision : KinematicCollision2D):
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("parata") :
-		print('parataparataparataparata')
 		$CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D.disabled = true
 		var b = Bullet.instance()

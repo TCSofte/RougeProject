@@ -30,6 +30,7 @@ func _physics_process(delta):
 		
 		var collision = move_and_collide(movement)
 		
+		
 		if collision != null and collision.collider.name != "Player":
 			$AnimatedSprite.play("volo")
 			# See the note below about boolean assignment
@@ -66,7 +67,7 @@ func _on_Timer_timeout():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("sword") or area.is_in_group("Bullet") and killed == false:
+	if area.is_in_group("sword") or area.is_in_group("Bullet") or area.is_in_group("parata") and killed == false:
 		colpito = true
 		$AnimatedSprite.play("colpita")
 		ene-=1
@@ -75,7 +76,10 @@ func _on_Area2D_area_entered(area):
 			if killed == false:
 				emit_signal("killed")
 				killed= true
-			
+	if area.is_in_group("scudo") and killed == false:		
+		direction = direction.rotated(rng.randf_range(PI/4, PI/2))
+		$AnimatedSprite.flip_h = direction.x > 0
+		bounce_countdown = rng.randi_range(2, 5)
 
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation=="colpita":

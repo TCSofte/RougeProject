@@ -22,9 +22,13 @@ shape = SubResource( 1 )
 position = Vector2( 3.7339, 0.75253 )
 texture = ExtResource( 2 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=[
+"enemy",
+]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=[
+"enemy",
+]]
 position = Vector2( 2, 0 )
 shape = SubResource( 2 )
 

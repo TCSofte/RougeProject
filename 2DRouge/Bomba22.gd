@@ -20,15 +20,15 @@ func _on_Area2D_body_entered(body):
 	#if body.is_in_group("player"):  
 		#$AnimatedSprite.play("Raccolta")
 	if body.is_in_group("Bullet"):  
-		$AnimatedSprite.play("Esplosione")
+		$AnimatedSprite.play("New")
 
 
 func _on_AnimatedSprite_animation_finished():
-	if $AnimatedSprite.get_animation()=="Esplosione":
+	if $AnimatedSprite.get_animation()=="New":
 		queue_free()
 	if $AnimatedSprite.get_animation()=="Caricamento":
 		$Areadamage/Collisiondamage.disabled = false
-		$AnimatedSprite.play("Esplosione")
+		$AnimatedSprite.play("New")
 	
 
 

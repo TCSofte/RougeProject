@@ -1,7 +1,6 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
-[ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Cuore.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animazioni/Cuore 1/Idle/cuore 1 idle_0.png" type="Texture" id=5]
@@ -12,7 +11,6 @@
 [ext_resource path="res://Oggetti/scettro.png" type="Texture" id=10]
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Oggetti proxy/erbaccia.png" type="Texture" id=15]
 [ext_resource path="res://light.png" type="Texture" id=16]
 [ext_resource path="res://stanza 1.0.png" type="Texture" id=17]
 [ext_resource path="res://caster.png" type="Texture" id=18]
@@ -68,6 +66,16 @@ font_data = ExtResource( 13 )
 size = 100
 font_data = ExtResource( 13 )
 
+[sub_resource type="DynamicFont" id=13]
+size = 60
+font_data = ExtResource( 13 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 93.1782, 38.0981 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 87.1842, 33.512 )
+
 [node name="Level1" type="Node2D"]
 position = Vector2( 0, -3 )
 script = ExtResource( 36 )
@@ -116,7 +124,7 @@ flip_h = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 visible = false
-color = Color( 0.12549, 0.164706, 0.384314, 0.756863 )
+color = Color( 0, 0, 0, 0.756863 )
 
 [node name="mov2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2075.32, -204.582 )
@@ -134,70 +142,6 @@ collision_mask = 2
 position = Vector2( 1298.07, -2481.8 )
 
 [node name="Erba" type="Node" parent="."]
-
-[node name="erbaccia23" type="Sprite" parent="Erba"]
-position = Vector2( 2541.61, -4008.87 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia24" type="Sprite" parent="Erba"]
-position = Vector2( 2493.51, -4005.31 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia25" type="Sprite" parent="Erba"]
-position = Vector2( 2541.61, -4077.79 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia26" type="Sprite" parent="Erba"]
-position = Vector2( 2493.51, -4074.23 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia27" type="Sprite" parent="Erba"]
-position = Vector2( 2445.34, -4008.87 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia28" type="Sprite" parent="Erba"]
-position = Vector2( 2397.24, -4005.31 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia29" type="Sprite" parent="Erba"]
-position = Vector2( 2445.34, -4077.79 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia30" type="Sprite" parent="Erba"]
-position = Vector2( 2397.24, -4074.23 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia31" type="Sprite" parent="Erba"]
-position = Vector2( 1422.18, -4586.52 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia32" type="Sprite" parent="Erba"]
-position = Vector2( 1374.08, -4582.96 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia33" type="Sprite" parent="Erba"]
-position = Vector2( 1422.18, -4655.44 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia34" type="Sprite" parent="Erba"]
-position = Vector2( 1374.08, -4651.88 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia35" type="Sprite" parent="Erba"]
-position = Vector2( 1325.9, -4586.52 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia36" type="Sprite" parent="Erba"]
-position = Vector2( 1277.8, -4582.96 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia37" type="Sprite" parent="Erba"]
-position = Vector2( 1325.9, -4655.44 )
-texture = ExtResource( 15 )
-
-[node name="erbaccia38" type="Sprite" parent="Erba"]
-position = Vector2( 1277.8, -4651.88 )
-texture = ExtResource( 15 )
 
 [node name="rocce" type="Node" parent="."]
 
@@ -226,25 +170,25 @@ position = Vector2( 1285.33, -2911.95 )
 position = Vector2( 1285.33, -3345.85 )
 
 [node name="roccia11" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1877.32, -3113.76 )
+position = Vector2( 1918.33, -3113.76 )
 
 [node name="roccia16" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3113.76 )
+position = Vector2( 2024.55, -3113.76 )
 
 [node name="roccia17" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3113.76 )
+position = Vector2( 2123.51, -3113.76 )
 
 [node name="roccia18" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3016.22 )
+position = Vector2( 2130.58, -3016.22 )
 
 [node name="roccia19" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -2911.95 )
+position = Vector2( 2130.58, -2911.95 )
 
 [node name="roccia46" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3016.22 )
+position = Vector2( 2033.03, -3016.22 )
 
 [node name="roccia47" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -2911.95 )
+position = Vector2( 2033.03, -2911.95 )
 
 [node name="roccia51" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 2524.23, -1943.98 )
@@ -259,34 +203,34 @@ position = Vector2( 1880, -1092.17 )
 position = Vector2( 2426.69, -1839.71 )
 
 [node name="roccia29" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3342.49 )
+position = Vector2( 2336.49, -3349.56 )
 
 [node name="roccia30" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3244.94 )
+position = Vector2( 2336.49, -3252.01 )
 
 [node name="roccia31" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2301.13, -3140.67 )
+position = Vector2( 2336.49, -3147.74 )
 
 [node name="roccia32" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3342.49 )
+position = Vector2( 2440.76, -3349.56 )
 
 [node name="roccia33" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3244.94 )
+position = Vector2( 2440.76, -3252.01 )
 
 [node name="roccia34" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2405.4, -3140.67 )
+position = Vector2( 2440.76, -3147.74 )
 
 [node name="roccia12" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1776.41, -3113.76 )
+position = Vector2( 1817.42, -3113.76 )
 
 [node name="roccia13" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3113.76 )
+position = Vector2( 1716.51, -3113.76 )
 
 [node name="roccia14" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3113.76 )
+position = Vector2( 1622.33, -3113.76 )
 
 [node name="roccia15" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3113.76 )
+position = Vector2( 1521.42, -3113.76 )
 
 [node name="roccia20" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1877.32, -3349.21 )
@@ -298,7 +242,10 @@ position = Vector2( 1984.95, -3349.21 )
 position = Vector2( 2082.5, -3349.21 )
 
 [node name="roccia28" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2190.13, -3349.21 )
+position = Vector2( 2173.16, -3349.21 )
+
+[node name="roccia64" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2250.94, -3349.21 )
 
 [node name="roccia35" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1386.23, -3349.21 )
@@ -506,11 +453,11 @@ position = Vector2( 741.173, -1075.93 )
 [node name="doordx6" parent="Porte" instance=ExtResource( 22 )]
 position = Vector2( -1165.98, -2171.37 )
 
-[node name="doorsx5" parent="Porte" instance=ExtResource( 24 )]
-position = Vector2( 3096.02, -4303.26 )
-
 [node name="doorsx4" parent="Porte" instance=ExtResource( 9 )]
 position = Vector2( 3091.61, -1068.26 )
+
+[node name="doorsx6" parent="Porte" instance=ExtResource( 9 )]
+position = Vector2( 3091.61, -4307.89 )
 
 [node name="doorup" parent="Porte" instance=ExtResource( 19 )]
 position = Vector2( 1897.7, -413.255 )
@@ -1091,6 +1038,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button" type="Button" parent="CanvasLayer"]
+visible = false
+margin_left = 785.426
+margin_top = 591.946
+margin_right = 1025.43
+margin_bottom = 699.946
+custom_fonts/font = SubResource( 13 )
+text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="coins2" type="Label" parent="."]
 margin_left = -304.441
 margin_top = -1021.0
@@ -1172,6 +1131,126 @@ position = Vector2( 1373.89, -1348.61 )
 [node name="erbaccia18" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2477.14, -1351.97 )
 
+[node name="erbaccia22" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2015.35, -3988.56 )
+
+[node name="erbaccia23" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2109.3, -3988.56 )
+
+[node name="erbaccia24" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2196.11, -3988.56 )
+
+[node name="erbaccia25" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2280.55, -3987.38 )
+
+[node name="erbaccia26" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2364.98, -3987.38 )
+
+[node name="erbaccia27" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2452.98, -3987.38 )
+
+[node name="erbaccia28" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.98, -3985 )
+
+[node name="erbaccia35" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2015.35, -4659.8 )
+
+[node name="erbaccia36" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2109.3, -4659.8 )
+
+[node name="erbaccia37" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2196.11, -4659.8 )
+
+[node name="erbaccia38" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2280.55, -4658.62 )
+
+[node name="erbaccia39" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2364.98, -4658.62 )
+
+[node name="erbaccia40" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2452.98, -4658.62 )
+
+[node name="erbaccia41" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.98, -4656.24 )
+
+[node name="erbaccia42" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1381.57, -4662.8 )
+
+[node name="erbaccia49" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4664.3 )
+
+[node name="erbaccia50" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4583.34 )
+
+[node name="erbaccia51" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4499.21 )
+
+[node name="erbaccia52" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4413.49 )
+
+[node name="erbaccia53" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4327.77 )
+
+[node name="erbaccia54" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4245.22 )
+
+[node name="erbaccia55" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4159.5 )
+
+[node name="erbaccia56" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1293.17, -4076.96 )
+
+[node name="erbaccia57" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.87, -4583.34 )
+
+[node name="erbaccia58" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.87, -4499.21 )
+
+[node name="erbaccia59" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.87, -4413.49 )
+
+[node name="erbaccia62" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.87, -4159.5 )
+
+[node name="erbaccia63" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2540.87, -4076.96 )
+
+[node name="erbaccia43" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1475.52, -4662.8 )
+
+[node name="erbaccia44" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1563.83, -4662.8 )
+
+[node name="erbaccia45" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1646.76, -4661.61 )
+
+[node name="erbaccia46" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1738.69, -4661.61 )
+
+[node name="erbaccia47" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1828.19, -4661.61 )
+
+[node name="erbaccia48" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1920.68, -4659.23 )
+
+[node name="erbaccia29" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1294.67, -3988.56 )
+
+[node name="erbaccia30" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1388.61, -3988.56 )
+
+[node name="erbaccia31" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1475.43, -3988.56 )
+
+[node name="erbaccia32" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1559.86, -3987.38 )
+
+[node name="erbaccia33" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1644.29, -3987.38 )
+
+[node name="erbaccia34" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1732.3, -3987.38 )
+
 [node name="erbaccia19" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2561.23, -1350.29 )
 
@@ -1199,37 +1278,103 @@ position = Vector2( 4444.97, 250.454 )
 [node name="erbaccia5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4443.78, 344.401 )
 
-[node name="slime7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1883.52, -73.8239 )
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 1795.1, -2967.08 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 91.7701, 57.7847 )
+shape = SubResource( 11 )
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2( 3250.72, -1109.8 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2( 55.0006, 60.613 )
+shape = SubResource( 11 )
+
+[node name="Area2D7" type="Area2D" parent="."]
+position = Vector2( -1207.35, -2212.28 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
+position = Vector2( 55.0006, 60.613 )
+shape = SubResource( 11 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( 1844.49, -3626.11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 55.0006, 60.613 )
+shape = SubResource( 11 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( 1907.03, -2491.86 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( -6.67627, 10.5587 )
+shape = SubResource( 12 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( 1898.56, -3991.3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( -6.67627, 10.5587 )
+shape = SubResource( 12 )
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( 2560, -1050.84 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( -6.67627, 10.5587 )
+shape = SubResource( 12 )
+
+[node name="Area2D8" type="Area2D" parent="."]
+position = Vector2( -623.961, -2141 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+position = Vector2( -6.67627, 10.5587 )
+shape = SubResource( 12 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
+[connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
-[connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
+[connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
 [connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
 [connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
-[connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
 [connection signal="killed" from="slime4" to="doorsx4" method="_on_slime4_killed"]
 [connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="picked" from="coin4/coin" to="." method="_on_coin_picked"]
 [connection signal="picked" from="coin4/coin5" to="." method="_on_coin_picked"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
-[connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
-[connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
-[connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
-[connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave" to="." method="_on_chiave_keyPicked"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_Button_pressed"]
 [connection signal="picked" from="Cuore" to="." method="_on_Cuore_picked"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D5" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D7" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D2" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D3" to="." method="_on_Area2D3_area_entered"]
+[connection signal="area_entered" from="Area2D4" to="." method="_on_Area2D3_area_entered"]
+[connection signal="area_entered" from="Area2D6" to="." method="_on_Area2D3_area_entered"]
+[connection signal="area_entered" from="Area2D8" to="." method="_on_Area2D3_area_entered"]

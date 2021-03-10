@@ -162,7 +162,9 @@ shape = SubResource( 1 )
 wait_time = 0.2
 autostart = true
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=[
+"enemy",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -4.06404, 0.409456 )

@@ -38,3 +38,23 @@ func _on_chiave_keyPicked():
 
 func _on_Cuore_picked():
 	pass # Replace with function body.
+
+
+
+	
+
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("player"):
+		$CanvasModulate.visible = true
+		$pp11/Light2D2.visible = true
+
+
+func _on_Area2D3_area_entered(area):
+	if area.is_in_group("player"):
+		$CanvasModulate.visible = false
+		$pp11/Light2D2.visible = false
+
+
+func _on_Button_pressed():
+	get_tree().reload_current_scene()

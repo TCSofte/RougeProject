@@ -7,6 +7,8 @@ onready var Bullet = preload("res://Bullet.tscn")
 var isAttacking = false
 var isrolling = false
 var can_drop_bomb = true
+var left = false
+var right = false
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
 onready var _transition_rect := get_node("../SceneTransitionRect")
 onready var bomb = preload("res://Bomba22.tscn")
@@ -41,14 +43,18 @@ func get_input():
 			velocity.x += 1
 			if isrolling==true:
 				velocity.x += 145
-		
-
+			right = true
+			left = false
 			$Exhaust2.emitting = false
 			$Exhaust.emitting = true
+			
 		if Input.is_action_pressed('ui_left') and isAttacking==false:
 			$Exhaust.emitting = false
 			$Exhaust2.emitting = true
 			velocity.x -= 1
+			left = true
+			right = false
+
 		if Input.is_action_pressed('ui_down') and isAttacking==false:
 			velocity.y += 1
 			
@@ -147,7 +153,11 @@ func placebomb():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
 	var b = bomb.instance()
 	#b.shoot22($Sprite/mani/Muzzle.global_position)
-	b.position  = $PositionBomba.global_position
+	
+	if right == true:
+		b.position  = $PositionBomba.global_position
+	if left == true:
+		b.position  = $Position2D2.global_position
 	get_parent().add_child(b)	
 	
 	
@@ -207,6 +217,7 @@ func _on_AnimatedSprite_animation_finished():
 		$Sprite.visible = true
 	if $AnimatedSprite.animation=="die":
 		get_node("../CanvasLayer/Label").visible = true
+		get_node("../CanvasLayer/Button").visible = true
 		
 
 
@@ -219,9 +230,14 @@ func _on_AnimatedSprite_frame_changed():
 
 func _on_drop_bomb_cooldown_timeout():
 	can_drop_bomb = true
-	print('_on_drop_bomb_cooldown_timeout')
 
 
 func _on_Timer_timeout():
 	$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
 	$Sprite/mani/Area2D/CollisionShape2D2.disabled = false
+
+
+
+
+
+
