@@ -70,6 +70,9 @@ func _on_Area2D_area_entered(area):
 	if area.is_in_group("sword") or area.is_in_group("Bullet") or area.is_in_group("parata") and killed == false:
 		colpito = true
 		$AnimatedSprite.play("colpita")
+		direction = direction.rotated(rng.randf_range(PI/4, PI/2))
+		$AnimatedSprite.flip_h = direction.x > 0
+		bounce_countdown = rng.randi_range(2, 5)
 		ene-=1
 		if ene<=0:
 			$AnimatedSprite.play("morte")

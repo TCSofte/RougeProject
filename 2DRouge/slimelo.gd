@@ -84,7 +84,7 @@ func _on_Timerrocket_timeout():
 
 
 func _on_Area2D_area_entered(area):
-	if area.is_in_group("sword") or area.is_in_group("Bullet") and killed == false:
+	if area.is_in_group("sword") or area.is_in_group("Bullet") or area.is_in_group("Bulletrev") and killed == false:
 		colpito = true
 		$AnimatedSprite.play("colpito",true)
 		ene-=1

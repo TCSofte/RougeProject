@@ -10,8 +10,8 @@ radius = 15.7175
 radius = 15.4838
 
 [node name="BulletSlime" type="KinematicBody2D"]
-collision_layer = 2147483648
-collision_mask = 2147483651
+collision_layer = 2147483649
+collision_mask = 2147483649
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -25,6 +25,8 @@ texture = ExtResource( 2 )
 [node name="Area2D" type="Area2D" parent="." groups=[
 "enemy",
 ]]
+collision_layer = 2147483649
+collision_mask = 2147483649
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=[
 "enemy",

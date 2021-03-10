@@ -1340,7 +1340,7 @@ position = Vector2( -6.67627, 10.5587 )
 shape = SubResource( 13 )
 
 [node name="slimelo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1906, -95.754 )
+position = Vector2( 2090.79, -20.204 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]

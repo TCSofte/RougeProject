@@ -5,7 +5,7 @@ var de
 var speed = 750
 var velocity = Vector2()
 onready var particelleslime = preload("res://particelleslime.tscn")
-onready var Bullet = preload("res://Bullet.tscn")
+onready var Bullet = preload("res://Bulletrev.tscn")
 func shoot(pos, dir):
 	rotation = dir
 	position = pos
@@ -23,6 +23,8 @@ func _physics_process(delta):
 	de=delta
 	collision = move_and_collide(velocity * delta)
 	if collision:
+		print('collision.collider',collision.collider)
+		
 		$CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D.disabled = true
 		#var b = particelleslime.instance()
@@ -43,9 +45,11 @@ func handle_collision(collision : KinematicCollision2D):
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("parata") :
+		$CollisionShape2D.call_deferred("set", "disabled", true)
+
+		$Area2D/CollisionShape2D.call_deferred("set", "disabled", true)
 		queue_free()
-		$CollisionShape2D.disabled = true
-		$Area2D/CollisionShape2D.disabled = true
+		
 		var b = Bullet.instance()
 		b.shootrev(global_position, Vector2(velocity.x*-1, velocity.y*-1))
 		get_parent().call_deferred("add_child", b)
@@ -63,6 +67,8 @@ func _on_Area2D_area_entered(area):
 		b.position = global_position
 		get_parent().call_deferred("add_child", b)
 		queue_free()
+
+
 
 
 
