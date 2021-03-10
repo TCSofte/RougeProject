@@ -47,7 +47,7 @@ func _on_Area2D_area_entered(area):
 		$Area2D/CollisionShape2D.disabled = true
 		var b = Bullet.instance()
 		b.shootrev(global_position, Vector2(velocity.x*-1, velocity.y*-1))
-		get_parent().add_child(b)
+		get_parent().call_deferred("add_child", b)
 		
 		
 
@@ -68,4 +68,4 @@ func _on_Timer_timeout():
 	queue_free()
 	var b = Bullet.instance()
 	b.shootrev(global_position, Vector2(velocity.x*-1, velocity.y*-1))
-	get_parent().add_child(b)
+	get_parent().call_deferred("add_child", b)

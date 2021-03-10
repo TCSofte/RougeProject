@@ -182,6 +182,7 @@ func _on_Area2D_area_entered(area):
 	if area.is_in_group("enemy"):
 		ene-=1
 		print('ene',ene)
+		
 		if ene==2:get_node("../CanvasLayer/TextureRect4").visible = false
 		if ene==1:get_node("../CanvasLayer/TextureRect2").visible = false
 		if ene==0:get_node("../CanvasLayer/TextureRect3").visible = false
@@ -189,8 +190,14 @@ func _on_Area2D_area_entered(area):
 			die = true
 			$Sprite.visible = false
 			$AnimatedSprite.play("die")
-			
-			
+	if area.is_in_group("ene"):		
+			ene+=1
+			get_node("../CanvasLayer/TextureRect4").visible = true
+			get_node("../CanvasLayer/TextureRect2").visible = true
+			get_node("../CanvasLayer/TextureRect3").visible = true
+			if ene==2:get_node("../CanvasLayer/TextureRect4").visible = false
+			if ene==1:get_node("../CanvasLayer/TextureRect2").visible = false
+			if ene==0:get_node("../CanvasLayer/TextureRect3").visible = false
 	
 #	var view_size = get_viewport_rect().size
 #	if size.y < view_size.y:
