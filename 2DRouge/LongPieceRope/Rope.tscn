@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://LongPieceRope/Rope.gd" type="Script" id=1]
+[ext_resource path="res://Animazioni/Puntina/Idle/puntina idle_0.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15, 5 )
+
+[node name="Rope" type="KinematicBody2D"]
+script = ExtResource( 1 )
+pieces = 22
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 0, 1 )
+light_mask = 0
+position = Vector2( 42, 3.5 )
+texture = ExtResource( 2 )
+
+[node name="Anchor" type="StaticBody2D" parent="."]
+rotation = 1.5708
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor"]
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Joint" type="PinJoint2D" parent="Anchor/CollisionShape2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 59, -2 )
+shape = SubResource( 2 )

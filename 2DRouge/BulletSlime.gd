@@ -23,8 +23,6 @@ func _physics_process(delta):
 	de=delta
 	collision = move_and_collide(velocity * delta)
 	if collision:
-		print('collision.collider',collision.collider)
-		
 		$CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D.disabled = true
 		#var b = particelleslime.instance()

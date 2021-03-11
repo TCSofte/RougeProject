@@ -4,6 +4,8 @@ export (int) var speed = 200
 
 var velocity = Vector2()
 onready var Bullet = preload("res://Bullet.tscn")
+onready var Puntina = preload("res://Puntina.tscn")
+onready var Rope = preload("res://LongPieceRope/Rope.tscn")
 var isAttacking = false
 var isrolling = false
 var can_drop_bomb = true
@@ -87,6 +89,7 @@ func get_input():
 		if Input.is_action_just_pressed('scudo'):
 			$Sprite/mani/Area2D/CollisionShape2D2.disabled = true
 			$Sprite/mani/Area2D3/CollisionShape2D.disabled = false
+			$Sprite/mani/Area2D3/AnimatedSprite2.visible = true
 			$Timer.start()
 			
 		velocity = velocity.normalized() * speed
@@ -144,7 +147,7 @@ func _physics_process(delta):
 		velocity = move_and_slide(velocity)
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
-	var b = Bullet.instance()
+	var b = Rope.instance()
 	#b.shoot22($Sprite/mani/Muzzle.global_position)
 	b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
 	get_parent().add_child(b)
@@ -226,6 +229,7 @@ func _on_AnimatedSprite_animation_finished():
 		get_node("../CanvasLayer/Label").visible = true
 		get_node("../CanvasLayer/Button").visible = true
 		
+		
 
 
 func _on_AnimatedSprite_frame_changed():
@@ -242,6 +246,7 @@ func _on_drop_bomb_cooldown_timeout():
 func _on_Timer_timeout():
 	$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
 	$Sprite/mani/Area2D/CollisionShape2D2.disabled = false
+	$Sprite/mani/Area2D3/AnimatedSprite2.visible = false
 
 
 
