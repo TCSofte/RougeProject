@@ -82,6 +82,8 @@ func get_input():
 			
 		if Input.is_action_just_pressed('mouse_click'):
 			
+			$Sprite/mani.play("Attaccoscettro")
+			$Sprite/mani.set_frame(0)
 			#isAttacking=true
 			#$AnimatedSprite.play("Attack")
 			shoot()	
@@ -147,7 +149,7 @@ func _physics_process(delta):
 		velocity = move_and_slide(velocity)
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
-	var b = Rope.instance()
+	var b = Bullet.instance()
 	#b.shoot22($Sprite/mani/Muzzle.global_position)
 	b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
 	get_parent().add_child(b)
@@ -253,3 +255,11 @@ func _on_Timer_timeout():
 
 
 
+
+
+func _on_Area2D3_area_entered(area):
+	
+	if area.is_in_group("enemy") :
+		print('_on_Area2D3_area_entered_on_Area2D3_area_entered')
+		$Sprite/mani.play("default")
+		$Sprite/mani.set_frame(0)

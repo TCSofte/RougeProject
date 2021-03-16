@@ -1,8 +1,9 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://mov.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Backgroundanimato.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Animazioni/Cuore 1/Idle/cuore 1 idle_0.png" type="Texture" id=5]
 [ext_resource path="res://Animazioni/Bomba/Idle/bomba idle_0.png" type="Texture" id=6]
 [ext_resource path="res://Animazioni/Puntina/Idle/puntina idle_0.png" type="Texture" id=7]
@@ -13,6 +14,7 @@
 [ext_resource path="res://Luce/luce forte.png" type="Texture" id=12]
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Stanza roccia.png" type="Texture" id=15]
 [ext_resource path="res://stanza 1.0.png" type="Texture" id=17]
 [ext_resource path="res://caster.png" type="Texture" id=18]
 [ext_resource path="res://doorup.tscn" type="PackedScene" id=19]
@@ -86,6 +88,66 @@ position = Vector2( 979.653, -2179.01 )
 scale = Vector2( 245.174, 184.84 )
 texture = ExtResource( 18 )
 
+[node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1934.47, 18.1373 )
+frame = 15
+playing = true
+
+[node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 10.0121, 18.1373 )
+frame = 14
+playing = true
+
+[node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3842.52, 18.1373 )
+frame = 15
+playing = true
+
+[node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1934.47, -1060.41 )
+frame = 14
+playing = true
+
+[node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 10.0121, -1060.41 )
+frame = 14
+playing = true
+
+[node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3842.52, -1060.41 )
+frame = 14
+playing = true
+
+[node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 10.1251, -2179.38 )
+frame = 13
+playing = true
+
+[node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1914.33, -2179.38 )
+frame = 13
+playing = true
+
+[node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1918.18, -2179.38 )
+frame = 13
+playing = true
+
+[node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1918.18, -3255.59 )
+frame = 13
+playing = true
+
+[node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1918.18, -4324.67 )
+frame = 12
+playing = true
+
+[node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3835.4, -4324.67 )
+frame = 12
+playing = true
+
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 1917.78, -1081.35 )
 scale = Vector2( 0.995692, 1.01007 )
@@ -104,7 +166,7 @@ texture = ExtResource( 17 )
 [node name="Sprite8" type="Sprite" parent="."]
 position = Vector2( 5.35052, -2161.57 )
 scale = Vector2( 0.995692, 1.01007 )
-texture = ExtResource( 17 )
+texture = ExtResource( 15 )
 
 [node name="Sprite13" type="Sprite" parent="."]
 position = Vector2( 5.35077, 15.4469 )
@@ -134,7 +196,7 @@ color = Color( 0, 0, 0, 0.756863 )
 [node name="mov7" parent="." groups=[
 "bordo",
 ] instance=ExtResource( 3 )]
-position = Vector2( 553.888, -195.643 )
+position = Vector2( -604.915, -98.8116 )
 collision_layer = 0
 collision_mask = 2
 
@@ -144,6 +206,18 @@ position = Vector2( 1298.07, -2481.8 )
 [node name="Erba" type="Node" parent="."]
 
 [node name="rocce" type="Node" parent="."]
+
+[node name="roccia3" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -525.992, 226.179 )
+
+[node name="roccia67" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -616.372, 226.179 )
+
+[node name="roccia65" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( -524.21, 302.805 )
+
+[node name="roccia66" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 177.671, 328.882 )
 
 [node name="roccia" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 3300.48, 359.824 )
@@ -331,12 +405,6 @@ position = Vector2( 4351.75, 349.133 )
 [node name="roccia5" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 4351.75, 251.589 )
 
-[node name="roccia3" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -617.561, -59.2304 )
-
-[node name="roccia65" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -615.779, 10.2597 )
-
 [node name="roccia63" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1897.97, -4320.09 )
 
@@ -475,13 +543,13 @@ position = Vector2( 745.173, 17.0868 )
 position = Vector2( 1909.49, -2136.83 )
 
 [node name="vaso2" parent="." instance=ExtResource( 23 )]
-position = Vector2( -610.914, 305.491 )
+position = Vector2( -100.149, 329.247 )
 
 [node name="vaso3" parent="." instance=ExtResource( 23 )]
-position = Vector2( -607.202, -300.38 )
+position = Vector2( -615.716, 83.0408 )
 
 [node name="vaso4" parent="." instance=ExtResource( 23 )]
-position = Vector2( -614.498, 83.7055 )
+position = Vector2( -619.46, 2.33154 )
 
 [node name="cuore 1 idle_0" type="Sprite" parent="."]
 position = Vector2( 265.934, -1054.04 )
@@ -1357,35 +1425,38 @@ position = Vector2( -6.67627, 10.5587 )
 shape = SubResource( 13 )
 
 [node name="slimelo" parent="." instance=ExtResource( 2 )]
-position = Vector2( 11.9907, -5.51107 )
+position = Vector2( 10.103, -5.51107 )
 collision_layer = 1
 collision_mask = 2147483649
+
+[node name="chiave" parent="." instance=ExtResource( 38 )]
+position = Vector2( -611.94, 306.049 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
+[connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
-[connection signal="killed" from="slime2" to="doornosp5" method="_on_slime2_killed"]
+[connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
 [connection signal="killed" from="slime3" to="doorsx3" method="_on_slime3_killed"]
 [connection signal="killed" from="slime3" to="doornosp4" method="_on_slime3_killed"]
-[connection signal="killed" from="slime3" to="doornosp5" method="_on_slime3_killed"]
-[connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="killed" from="slime4" to="doorsx4" method="_on_slime4_killed"]
+[connection signal="killed" from="slime4" to="doornosp6" method="_on_slime4_killed"]
 [connection signal="killed" from="piccolonemico" to="doorsx" method="_on_piccolonemico_killed"]
+[connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doorsx2" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp" method="_on_piccolonemico3_killed"]
 [connection signal="killed" from="piccolonemico3" to="doornosp2" method="_on_piccolonemico3_killed"]
-[connection signal="killed" from="piccolonemico3" to="doornosp3" method="_on_piccolonemico3_killed"]
+[connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doorsx2" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp" method="_on_piccolonemico4_killed"]
 [connection signal="killed" from="piccolonemico4" to="doornosp2" method="_on_piccolonemico4_killed"]
-[connection signal="killed" from="piccolonemico4" to="doornosp3" method="_on_piccolonemico4_killed"]
+[connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doorsx2" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp" method="_on_piccolonemico5_killed"]
 [connection signal="killed" from="piccolonemico5" to="doornosp2" method="_on_piccolonemico5_killed"]
-[connection signal="killed" from="piccolonemico5" to="doornosp3" method="_on_piccolonemico5_killed"]
+[connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doorsx2" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico6" to="doornosp2" method="_on_piccolonemico6_killed"]
-[connection signal="killed" from="piccolonemico6" to="doornosp3" method="_on_piccolonemico6_killed"]
 [connection signal="killed" from="piccolonemico2" to="doorsx" method="_on_piccolonemico_killed"]
 [connection signal="keyPicked" from="chiave2" to="." method="_on_chiave_keyPicked"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_Button_pressed"]

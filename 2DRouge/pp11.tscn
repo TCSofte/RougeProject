@@ -1,4 +1,4 @@
-[gd_scene load_steps=431 format=2]
+[gd_scene load_steps=565 format=2]
 
 [ext_resource path="res://pp11.gd" type="Script" id=1]
 [ext_resource path="res://Personaggio nuovo animato/idle/idle_001.png" type="Texture" id=2]
@@ -417,6 +417,137 @@
 [ext_resource path="res://Scudo parry/Animazioni/normale/parry normale_57.png" type="Texture" id=415]
 [ext_resource path="res://Scudo parry/Animazioni/normale/parry normale_58.png" type="Texture" id=416]
 [ext_resource path="res://Scudo parry/Animazioni/normale/parry normale_59.png" type="Texture" id=417]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_1.png" type="Texture" id=418]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_1.png" type="Texture" id=419]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_0.png" type="Texture" id=420]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_2.png" type="Texture" id=421]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_3.png" type="Texture" id=422]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_4.png" type="Texture" id=423]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_5.png" type="Texture" id=424]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_6.png" type="Texture" id=425]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_7.png" type="Texture" id=426]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_8.png" type="Texture" id=427]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_9.png" type="Texture" id=428]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_10.png" type="Texture" id=429]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_11.png" type="Texture" id=430]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_12.png" type="Texture" id=431]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_13.png" type="Texture" id=432]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_14.png" type="Texture" id=433]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_15.png" type="Texture" id=434]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_16.png" type="Texture" id=435]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_17.png" type="Texture" id=436]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_18.png" type="Texture" id=437]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_19.png" type="Texture" id=438]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_20.png" type="Texture" id=439]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_21.png" type="Texture" id=440]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_22.png" type="Texture" id=441]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_23.png" type="Texture" id=442]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_24.png" type="Texture" id=443]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_25.png" type="Texture" id=444]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_26.png" type="Texture" id=445]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_27.png" type="Texture" id=446]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_28.png" type="Texture" id=447]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_29.png" type="Texture" id=448]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_30.png" type="Texture" id=449]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_31.png" type="Texture" id=450]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_32.png" type="Texture" id=451]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_33.png" type="Texture" id=452]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_34.png" type="Texture" id=453]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_35.png" type="Texture" id=454]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_36.png" type="Texture" id=455]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_37.png" type="Texture" id=456]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_38.png" type="Texture" id=457]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_39.png" type="Texture" id=458]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_40.png" type="Texture" id=459]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_41.png" type="Texture" id=460]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_42.png" type="Texture" id=461]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_43.png" type="Texture" id=462]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_44.png" type="Texture" id=463]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_45.png" type="Texture" id=464]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_46.png" type="Texture" id=465]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_47.png" type="Texture" id=466]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_48.png" type="Texture" id=467]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_49.png" type="Texture" id=468]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_50.png" type="Texture" id=469]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_51.png" type="Texture" id=470]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_52.png" type="Texture" id=471]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_53.png" type="Texture" id=472]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_54.png" type="Texture" id=473]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_55.png" type="Texture" id=474]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_56.png" type="Texture" id=475]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_57.png" type="Texture" id=476]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_58.png" type="Texture" id=477]
+[ext_resource path="res://Animazioni mani/Attacco scettro/attacco scettro_59.png" type="Texture" id=478]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_0.png" type="Texture" id=479]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_0.png" type="Texture" id=480]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_2.png" type="Texture" id=481]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_3.png" type="Texture" id=482]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_4.png" type="Texture" id=483]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_5.png" type="Texture" id=484]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_6.png" type="Texture" id=485]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_7.png" type="Texture" id=486]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_8.png" type="Texture" id=487]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_9.png" type="Texture" id=488]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_10.png" type="Texture" id=489]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_11.png" type="Texture" id=490]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_12.png" type="Texture" id=491]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_13.png" type="Texture" id=492]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_14.png" type="Texture" id=493]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_15.png" type="Texture" id=494]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_16.png" type="Texture" id=495]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_17.png" type="Texture" id=496]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_18.png" type="Texture" id=497]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_19.png" type="Texture" id=498]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_20.png" type="Texture" id=499]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_21.png" type="Texture" id=500]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_22.png" type="Texture" id=501]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_23.png" type="Texture" id=502]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_24.png" type="Texture" id=503]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_25.png" type="Texture" id=504]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_26.png" type="Texture" id=505]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_27.png" type="Texture" id=506]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_28.png" type="Texture" id=507]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_29.png" type="Texture" id=508]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_30.png" type="Texture" id=509]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_31.png" type="Texture" id=510]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_32.png" type="Texture" id=511]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_33.png" type="Texture" id=512]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_34.png" type="Texture" id=513]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_35.png" type="Texture" id=514]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_36.png" type="Texture" id=515]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_37.png" type="Texture" id=516]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_38.png" type="Texture" id=517]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_39.png" type="Texture" id=518]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_40.png" type="Texture" id=519]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_41.png" type="Texture" id=520]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_42.png" type="Texture" id=521]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_43.png" type="Texture" id=522]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_44.png" type="Texture" id=523]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_45.png" type="Texture" id=524]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_46.png" type="Texture" id=525]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_47.png" type="Texture" id=526]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_48.png" type="Texture" id=527]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_49.png" type="Texture" id=528]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_50.png" type="Texture" id=529]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_51.png" type="Texture" id=530]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_52.png" type="Texture" id=531]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_53.png" type="Texture" id=532]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_54.png" type="Texture" id=533]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_55.png" type="Texture" id=534]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_56.png" type="Texture" id=535]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_57.png" type="Texture" id=536]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_58.png" type="Texture" id=537]
+[ext_resource path="res://Animazioni mani/Attacco spada/attacco spada_59.png" type="Texture" id=538]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_1.png" type="Texture" id=539]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_2.png" type="Texture" id=540]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_3.png" type="Texture" id=541]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_4.png" type="Texture" id=542]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_5.png" type="Texture" id=543]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_6.png" type="Texture" id=544]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_7.png" type="Texture" id=545]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_8.png" type="Texture" id=546]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_9.png" type="Texture" id=547]
+[ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_10.png" type="Texture" id=548]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25.6351, 51.4034 )
@@ -426,11 +557,6 @@ extents = Vector2( 33.7908, 54.9655 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 306 ), ExtResource( 307 ), ExtResource( 308 ), ExtResource( 309 ), ExtResource( 310 ), ExtResource( 311 ), ExtResource( 312 ), ExtResource( 313 ), ExtResource( 314 ), ExtResource( 315 ), ExtResource( 316 ), ExtResource( 317 ) ],
-"loop": true,
-"name": "hit",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ) ],
 "loop": true,
 "name": "Idle",
@@ -439,6 +565,11 @@ animations = [ {
 "frames": [ ExtResource( 370 ), ExtResource( 369 ), ExtResource( 368 ), ExtResource( 371 ), ExtResource( 372 ), ExtResource( 373 ), ExtResource( 374 ), ExtResource( 375 ), ExtResource( 376 ), ExtResource( 377 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ), ExtResource( 303 ), ExtResource( 304 ), ExtResource( 305 ) ],
 "loop": false,
 "name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 306 ), ExtResource( 307 ), ExtResource( 308 ), ExtResource( 309 ), ExtResource( 310 ), ExtResource( 311 ), ExtResource( 312 ), ExtResource( 313 ), ExtResource( 314 ), ExtResource( 315 ), ExtResource( 316 ), ExtResource( 317 ) ],
+"loop": true,
+"name": "hit",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 77 ), ExtResource( 76 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ) ],
@@ -452,10 +583,23 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 548 ), ExtResource( 547 ), ExtResource( 546 ), ExtResource( 545 ), ExtResource( 544 ), ExtResource( 543 ), ExtResource( 542 ), ExtResource( 541 ), ExtResource( 540 ), ExtResource( 539 ), ExtResource( 480 ), ExtResource( 539 ), ExtResource( 540 ), ExtResource( 541 ), ExtResource( 543 ), ExtResource( 544 ), ExtResource( 545 ), ExtResource( 546 ), ExtResource( 547 ), ExtResource( 548 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 420 ), ExtResource( 419 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ), ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
+"loop": false,
+"name": "Attaccoscettro",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=5]
 radius = 41.6798
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
 "frames": [ ExtResource( 378 ), ExtResource( 379 ), ExtResource( 380 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 386 ), ExtResource( 387 ), ExtResource( 388 ), ExtResource( 389 ), ExtResource( 390 ), ExtResource( 391 ), ExtResource( 392 ), ExtResource( 393 ), ExtResource( 394 ), ExtResource( 395 ), ExtResource( 396 ), ExtResource( 397 ), ExtResource( 398 ), ExtResource( 399 ), ExtResource( 400 ), ExtResource( 401 ), ExtResource( 402 ), ExtResource( 403 ), ExtResource( 404 ), ExtResource( 405 ), ExtResource( 406 ), ExtResource( 407 ), ExtResource( 408 ), ExtResource( 409 ), ExtResource( 410 ), ExtResource( 411 ), ExtResource( 412 ), ExtResource( 413 ), ExtResource( 414 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 417 ) ],
 "loop": true,
@@ -463,23 +607,23 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=7]
 radius = 57.956
 
-[sub_resource type="Gradient" id=7]
+[sub_resource type="Gradient" id=8]
 offsets = PoolRealArray( 0, 0.511111 )
 colors = PoolColorArray( 0.379074, 0.423287, 0.574219, 1, 0.870588, 0.87451, 0.894118, 0.776471 )
 
-[sub_resource type="GradientTexture" id=8]
-gradient = SubResource( 7 )
+[sub_resource type="GradientTexture" id=9]
+gradient = SubResource( 8 )
 
-[sub_resource type="Curve" id=9]
+[sub_resource type="Curve" id=10]
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.949367, 0 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=10]
-curve = SubResource( 9 )
+[sub_resource type="CurveTexture" id=11]
+curve = SubResource( 10 )
 
-[sub_resource type="ParticlesMaterial" id=11]
+[sub_resource type="ParticlesMaterial" id=12]
 emission_shape = 2
 emission_box_extents = Vector3( 1, 11, 1 )
 flag_disable_z = true
@@ -489,10 +633,10 @@ initial_velocity = 367.82
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 8.0
-scale_curve = SubResource( 10 )
-color_ramp = SubResource( 8 )
+scale_curve = SubResource( 11 )
+color_ramp = SubResource( 9 )
 
-[sub_resource type="SpriteFrames" id=12]
+[sub_resource type="SpriteFrames" id=13]
 animations = [ {
 "frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ) ],
 "loop": true,
@@ -505,7 +649,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=13]
+[sub_resource type="SpriteFrames" id=14]
 animations = [ {
 "frames": [ ExtResource( 25 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ) ],
 "loop": true,
@@ -515,6 +659,22 @@ animations = [ {
 "frames": [ ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 200 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 420 ), ExtResource( 419 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ), ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 479 ), ExtResource( 418 ), ExtResource( 481 ), ExtResource( 482 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ), ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ), ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ), ExtResource( 529 ), ExtResource( 530 ), ExtResource( 531 ), ExtResource( 532 ), ExtResource( 533 ), ExtResource( 534 ), ExtResource( 535 ), ExtResource( 536 ), ExtResource( 537 ), ExtResource( 538 ) ],
+"loop": true,
+"name": "default",
 "speed": 5.0
 } ]
 
@@ -545,40 +705,43 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 14
+frame = 7
 speed_scale = 15.0
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
 
-[node name="mani" type="Sprite" parent="Sprite"]
-position = Vector2( 3.84187, 10.5982 )
+[node name="mani" type="AnimatedSprite" parent="Sprite"]
+position = Vector2( 1, 13 )
 rotation = 3.14159
-scale = Vector2( 0.669773, -0.823361 )
-texture = ExtResource( 3 )
-offset = Vector2( 5.25891, 3.65961 )
+scale = Vector2( 0.67, -0.823 )
+frames = SubResource( 4 )
+speed_scale = 8.0
 
 [node name="Muzzle" type="Position2D" parent="Sprite/mani"]
-position = Vector2( -152.034, 2.5523 )
-rotation = 6.27026
-scale = Vector2( 1.18828, 0.856507 )
+position = Vector2( -156.224, -0.365255 )
+rotation = -0.0129334
+scale = Vector2( 1.18788, 0.856883 )
 
 [node name="Area2D" type="Area2D" parent="Sprite/mani" groups=[
 "scudo",
 ]]
-position = Vector2( 191.717, -13.9114 )
+position = Vector2( 187.41, -16.8354 )
+rotation = 2.13505e-06
+scale = Vector2( 0.999661, 1.00044 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/mani/Area2D" groups=[
 "scudo",
 ]]
 position = Vector2( -64.1276, 13.1442 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="Area2D2" type="Area2D" parent="Sprite/mani" groups=[
 "sword",
 ]]
-position = Vector2( 1.65402, 24.6566 )
-rotation = 3.55736
+position = Vector2( -2.58822, 21.7491 )
+rotation = -2.72554
+scale = Vector2( 0.999788, 1.00031 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/mani/Area2D2"]
 polygon = PoolVector2Array( 74.8907, -5.05011, 92.5637, -19.0297, 132.238, -20.0848, 104.105, 2.86287, 78.1368, 1.54404, 80.6615, 6.5556, 73.8087, 11.3034, 64.7919, -7.42401, 70.5626, -10.5892 )
@@ -586,13 +749,16 @@ polygon = PoolVector2Array( 74.8907, -5.05011, 92.5637, -19.0297, 132.238, -20.0
 [node name="Area2D3" type="Area2D" parent="Sprite/mani" groups=[
 "parata",
 ]]
-position = Vector2( -92.2778, 0.000189781 )
+position = Vector2( -96.4881, -2.91836 )
+rotation = 2.13505e-06
+scale = Vector2( 0.999661, 1.00044 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Sprite/mani/Area2D3"]
+visible = false
 position = Vector2( 245.452, -3.76338 )
 rotation = 3.14159
 scale = Vector2( 1.48721, -1.08169 )
-frames = SubResource( 5 )
+frames = SubResource( 6 )
 frame = 30
 speed_scale = 8.0
 flip_h = true
@@ -601,11 +767,19 @@ flip_h = true
 "parata",
 ]]
 position = Vector2( 218.67, -0.000460625 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 disabled = true
 
 [node name="Position2D" type="Position2D" parent="Sprite/mani/Area2D3"]
 position = Vector2( 288.483, -10.5385 )
+
+[node name="mani22" type="Sprite" parent="Sprite"]
+visible = false
+position = Vector2( 3.84187, 10.5982 )
+rotation = 3.14159
+scale = Vector2( 0.669773, -0.823361 )
+texture = ExtResource( 3 )
+offset = Vector2( 5.25891, 3.65961 )
 
 [node name="DropBombCooldown" type="Timer" parent="."]
 one_shot = true
@@ -618,7 +792,7 @@ amount = 30
 lifetime = 0.4
 one_shot = true
 speed_scale = 0.43
-process_material = SubResource( 11 )
+process_material = SubResource( 12 )
 
 [node name="Exhaust2" type="Particles2D" parent="."]
 position = Vector2( 28.2923, 32.2882 )
@@ -628,15 +802,15 @@ amount = 30
 lifetime = 0.4
 one_shot = true
 speed_scale = 0.43
-process_material = SubResource( 11 )
+process_material = SubResource( 12 )
 
 [node name="Corpo" type="AnimatedSprite" parent="."]
 visible = false
 position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
-frames = SubResource( 12 )
+frames = SubResource( 13 )
 animation = "Idle"
-frame = 5
+frame = 13
 speed_scale = 8.0
 playing = true
 
@@ -644,9 +818,9 @@ playing = true
 visible = false
 position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
-frames = SubResource( 13 )
+frames = SubResource( 14 )
 animation = "Idle"
-frame = 14
+frame = 22
 speed_scale = 8.0
 playing = true
 
@@ -667,8 +841,21 @@ position = Vector2( -46.6163, 51.9137 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Attaccoscettro" type="AnimatedSprite" parent="."]
+visible = false
+frames = SubResource( 15 )
+frame = 8
+speed_scale = 8.0
+
+[node name="Attaccospada" type="AnimatedSprite" parent="."]
+visible = false
+frames = SubResource( 16 )
+frame = 26
+speed_scale = 8.0
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
+[connection signal="area_entered" from="Sprite/mani/Area2D3" to="." method="_on_Area2D3_area_entered"]
 [connection signal="timeout" from="DropBombCooldown" to="." method="_on_drop_bomb_cooldown_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
