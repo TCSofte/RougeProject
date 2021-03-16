@@ -1,4 +1,4 @@
-[gd_scene load_steps=565 format=2]
+[gd_scene load_steps=766 format=2]
 
 [ext_resource path="res://pp11.gd" type="Script" id=1]
 [ext_resource path="res://Personaggio nuovo animato/idle/idle_001.png" type="Texture" id=2]
@@ -548,6 +548,205 @@
 [ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_8.png" type="Texture" id=546]
 [ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_9.png" type="Texture" id=547]
 [ext_resource path="res://Animazioni mani/Parry scudo scettro/parry scudo e scettro_10.png" type="Texture" id=548]
+[ext_resource path="res://Polvere/polvere_19.png" type="Texture" id=549]
+[ext_resource path="res://Polvere/polvere_20.png" type="Texture" id=550]
+[ext_resource path="res://Polvere/polvere_21.png" type="Texture" id=551]
+[ext_resource path="res://Polvere/polvere_22.png" type="Texture" id=552]
+[ext_resource path="res://Polvere/polvere_23.png" type="Texture" id=553]
+[ext_resource path="res://Polvere/polvere_24.png" type="Texture" id=554]
+[ext_resource path="res://Polvere/polvere_25.png" type="Texture" id=555]
+[ext_resource path="res://Polvere/polvere_26.png" type="Texture" id=556]
+[ext_resource path="res://Polvere/polvere_27.png" type="Texture" id=557]
+[ext_resource path="res://Polvere/polvere_28.png" type="Texture" id=558]
+[ext_resource path="res://Polvere/polvere_29.png" type="Texture" id=559]
+[ext_resource path="res://Polvere/polvere_30.png" type="Texture" id=560]
+[ext_resource path="res://Polvere/polvere_31.png" type="Texture" id=561]
+[ext_resource path="res://Polvere/polvere_32.png" type="Texture" id=562]
+[ext_resource path="res://Polvere/polvere_33.png" type="Texture" id=563]
+[ext_resource path="res://Polvere/polvere_34.png" type="Texture" id=564]
+[ext_resource path="res://Polvere/polvere_35.png" type="Texture" id=565]
+[ext_resource path="res://Polvere/polvere_36.png" type="Texture" id=566]
+[ext_resource path="res://Polvere/polvere_37.png" type="Texture" id=567]
+[ext_resource path="res://Polvere/polvere_38.png" type="Texture" id=568]
+[ext_resource path="res://Polvere/polvere_39.png" type="Texture" id=569]
+[ext_resource path="res://Polvere/polvere_40.png" type="Texture" id=570]
+[ext_resource path="res://Polvere/polvere_41.png" type="Texture" id=571]
+[ext_resource path="res://Polvere/polvere_42.png" type="Texture" id=572]
+[ext_resource path="res://Polvere/polvere_43.png" type="Texture" id=573]
+[ext_resource path="res://Polvere/polvere_44.png" type="Texture" id=574]
+[ext_resource path="res://Polvere/polvere_45.png" type="Texture" id=575]
+[ext_resource path="res://Polvere/polvere_46.png" type="Texture" id=576]
+[ext_resource path="res://Polvere/polvere_47.png" type="Texture" id=577]
+[ext_resource path="res://Polvere/polvere_48.png" type="Texture" id=578]
+[ext_resource path="res://Polvere/polvere_49.png" type="Texture" id=579]
+[ext_resource path="res://Polvere/polvere_50.png" type="Texture" id=580]
+[ext_resource path="res://Polvere/polvere_51.png" type="Texture" id=581]
+[ext_resource path="res://Polvere/polvere_52.png" type="Texture" id=582]
+[ext_resource path="res://Polvere/polvere_53.png" type="Texture" id=583]
+[ext_resource path="res://Polvere/polvere_54.png" type="Texture" id=584]
+[ext_resource path="res://Polvere/polvere_55.png" type="Texture" id=585]
+[ext_resource path="res://Polvere/polvere_56.png" type="Texture" id=586]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_0.png" type="Texture" id=587]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_1.png" type="Texture" id=588]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_2.png" type="Texture" id=589]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_3.png" type="Texture" id=590]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_4.png" type="Texture" id=591]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_5.png" type="Texture" id=592]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_6.png" type="Texture" id=593]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_7.png" type="Texture" id=594]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_8.png" type="Texture" id=595]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_9.png" type="Texture" id=596]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_10.png" type="Texture" id=597]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_11.png" type="Texture" id=598]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_12.png" type="Texture" id=599]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_13.png" type="Texture" id=600]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_14.png" type="Texture" id=601]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_15.png" type="Texture" id=602]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_16.png" type="Texture" id=603]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_17.png" type="Texture" id=604]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_18.png" type="Texture" id=605]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_19.png" type="Texture" id=606]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_20.png" type="Texture" id=607]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_21.png" type="Texture" id=608]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_22.png" type="Texture" id=609]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_23.png" type="Texture" id=610]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_24.png" type="Texture" id=611]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_25.png" type="Texture" id=612]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_26.png" type="Texture" id=613]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_27.png" type="Texture" id=614]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_28.png" type="Texture" id=615]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_29.png" type="Texture" id=616]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_30.png" type="Texture" id=617]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_31.png" type="Texture" id=618]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_32.png" type="Texture" id=619]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_33.png" type="Texture" id=620]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_34.png" type="Texture" id=621]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_35.png" type="Texture" id=622]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_36.png" type="Texture" id=623]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_37.png" type="Texture" id=624]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_38.png" type="Texture" id=625]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_39.png" type="Texture" id=626]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_40.png" type="Texture" id=627]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_41.png" type="Texture" id=628]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_42.png" type="Texture" id=629]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_43.png" type="Texture" id=630]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_44.png" type="Texture" id=631]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_45.png" type="Texture" id=632]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_46.png" type="Texture" id=633]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_47.png" type="Texture" id=634]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_48.png" type="Texture" id=635]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_49.png" type="Texture" id=636]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_50.png" type="Texture" id=637]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_51.png" type="Texture" id=638]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_52.png" type="Texture" id=639]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_53.png" type="Texture" id=640]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_54.png" type="Texture" id=641]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_55.png" type="Texture" id=642]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_56.png" type="Texture" id=643]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_57.png" type="Texture" id=644]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_58.png" type="Texture" id=645]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_59.png" type="Texture" id=646]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_60.png" type="Texture" id=647]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_61.png" type="Texture" id=648]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_62.png" type="Texture" id=649]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_63.png" type="Texture" id=650]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_64.png" type="Texture" id=651]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_65.png" type="Texture" id=652]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_66.png" type="Texture" id=653]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_67.png" type="Texture" id=654]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_68.png" type="Texture" id=655]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_69.png" type="Texture" id=656]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_70.png" type="Texture" id=657]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_71.png" type="Texture" id=658]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_72.png" type="Texture" id=659]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_73.png" type="Texture" id=660]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_74.png" type="Texture" id=661]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_75.png" type="Texture" id=662]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_76.png" type="Texture" id=663]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_77.png" type="Texture" id=664]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_78.png" type="Texture" id=665]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_79.png" type="Texture" id=666]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_80.png" type="Texture" id=667]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_81.png" type="Texture" id=668]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_82.png" type="Texture" id=669]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_83.png" type="Texture" id=670]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_84.png" type="Texture" id=671]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_85.png" type="Texture" id=672]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_86.png" type="Texture" id=673]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_87.png" type="Texture" id=674]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_88.png" type="Texture" id=675]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_89.png" type="Texture" id=676]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_90.png" type="Texture" id=677]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_91.png" type="Texture" id=678]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_92.png" type="Texture" id=679]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_93.png" type="Texture" id=680]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_94.png" type="Texture" id=681]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_95.png" type="Texture" id=682]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_96.png" type="Texture" id=683]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_97.png" type="Texture" id=684]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_98.png" type="Texture" id=685]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_99.png" type="Texture" id=686]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_100.png" type="Texture" id=687]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_101.png" type="Texture" id=688]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_102.png" type="Texture" id=689]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_103.png" type="Texture" id=690]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_104.png" type="Texture" id=691]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_105.png" type="Texture" id=692]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_106.png" type="Texture" id=693]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_107.png" type="Texture" id=694]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_108.png" type="Texture" id=695]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_109.png" type="Texture" id=696]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_110.png" type="Texture" id=697]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_111.png" type="Texture" id=698]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_112.png" type="Texture" id=699]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_113.png" type="Texture" id=700]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_114.png" type="Texture" id=701]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_115.png" type="Texture" id=702]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_116.png" type="Texture" id=703]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_117.png" type="Texture" id=704]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_118.png" type="Texture" id=705]
+[ext_resource path="res://Animazioni mani/Rampino con mani/rampino con mani_119.png" type="Texture" id=706]
+[ext_resource path="res://Polvere/polvere_57.png" type="Texture" id=707]
+[ext_resource path="res://Polvere/polvere_58.png" type="Texture" id=708]
+[ext_resource path="res://Polvere/polvere_59.png" type="Texture" id=709]
+[ext_resource path="res://Polvere/polvere_60.png" type="Texture" id=710]
+[ext_resource path="res://Polvere/polvere_61.png" type="Texture" id=711]
+[ext_resource path="res://Polvere/polvere_62.png" type="Texture" id=712]
+[ext_resource path="res://Polvere/polvere_63.png" type="Texture" id=713]
+[ext_resource path="res://Polvere/polvere_64.png" type="Texture" id=714]
+[ext_resource path="res://Polvere/polvere_65.png" type="Texture" id=715]
+[ext_resource path="res://Polvere/polvere_66.png" type="Texture" id=716]
+[ext_resource path="res://Polvere/polvere_67.png" type="Texture" id=717]
+[ext_resource path="res://Polvere/polvere_68.png" type="Texture" id=718]
+[ext_resource path="res://Polvere/polvere_69.png" type="Texture" id=719]
+[ext_resource path="res://Polvere/polvere_70.png" type="Texture" id=720]
+[ext_resource path="res://Polvere/polvere_71.png" type="Texture" id=721]
+[ext_resource path="res://Polvere/polvere_72.png" type="Texture" id=722]
+[ext_resource path="res://Polvere/polvere_73.png" type="Texture" id=723]
+[ext_resource path="res://Polvere/polvere_74.png" type="Texture" id=724]
+[ext_resource path="res://Polvere/polvere_75.png" type="Texture" id=725]
+[ext_resource path="res://Polvere/polvere_76.png" type="Texture" id=726]
+[ext_resource path="res://Polvere/polvere_77.png" type="Texture" id=727]
+[ext_resource path="res://Polvere/polvere_78.png" type="Texture" id=728]
+[ext_resource path="res://Polvere/polvere_0.png" type="Texture" id=729]
+[ext_resource path="res://Polvere/polvere_1.png" type="Texture" id=730]
+[ext_resource path="res://Polvere/polvere_2.png" type="Texture" id=731]
+[ext_resource path="res://Polvere/polvere_4.png" type="Texture" id=732]
+[ext_resource path="res://Polvere/polvere_3.png" type="Texture" id=733]
+[ext_resource path="res://Polvere/polvere_5.png" type="Texture" id=734]
+[ext_resource path="res://Polvere/polvere_6.png" type="Texture" id=735]
+[ext_resource path="res://Polvere/polvere_7.png" type="Texture" id=736]
+[ext_resource path="res://Polvere/polvere_8.png" type="Texture" id=737]
+[ext_resource path="res://Polvere/polvere_9.png" type="Texture" id=738]
+[ext_resource path="res://Polvere/polvere_10.png" type="Texture" id=739]
+[ext_resource path="res://Polvere/polvere_11.png" type="Texture" id=740]
+[ext_resource path="res://Polvere/polvere_12.png" type="Texture" id=741]
+[ext_resource path="res://Polvere/polvere_13.png" type="Texture" id=742]
+[ext_resource path="res://Polvere/polvere_14.png" type="Texture" id=743]
+[ext_resource path="res://Polvere/polvere_15.png" type="Texture" id=744]
+[ext_resource path="res://Polvere/polvere_16.png" type="Texture" id=745]
+[ext_resource path="res://Polvere/polvere_17.png" type="Texture" id=746]
+[ext_resource path="res://Polvere/polvere_18.png" type="Texture" id=747]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25.6351, 51.4034 )
@@ -593,6 +792,16 @@ animations = [ {
 "frames": [ ExtResource( 420 ), ExtResource( 419 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ), ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
 "loop": false,
 "name": "Attaccoscettro",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 479 ), ExtResource( 418 ), ExtResource( 481 ), ExtResource( 482 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ), ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ), ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ), ExtResource( 529 ), ExtResource( 530 ), ExtResource( 531 ), ExtResource( 532 ), ExtResource( 533 ), ExtResource( 534 ), ExtResource( 535 ), ExtResource( 536 ), ExtResource( 537 ), ExtResource( 538 ) ],
+"loop": false,
+"name": "Attaccospada",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 587 ), ExtResource( 588 ), ExtResource( 589 ), ExtResource( 590 ), ExtResource( 591 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 594 ), ExtResource( 595 ), ExtResource( 596 ), ExtResource( 597 ), ExtResource( 598 ), ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 602 ), ExtResource( 603 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 606 ), ExtResource( 607 ), ExtResource( 608 ), ExtResource( 609 ), ExtResource( 610 ), ExtResource( 611 ), ExtResource( 612 ), ExtResource( 613 ), ExtResource( 614 ), ExtResource( 615 ), ExtResource( 616 ), ExtResource( 617 ), ExtResource( 618 ), ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ), ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ), ExtResource( 639 ), ExtResource( 640 ), ExtResource( 641 ), ExtResource( 642 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 645 ), ExtResource( 646 ), ExtResource( 647 ), ExtResource( 648 ), ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 652 ), ExtResource( 653 ), ExtResource( 654 ), ExtResource( 655 ), ExtResource( 656 ), ExtResource( 657 ), ExtResource( 658 ), ExtResource( 659 ), ExtResource( 660 ), ExtResource( 661 ), ExtResource( 662 ), ExtResource( 663 ), ExtResource( 664 ), ExtResource( 665 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 668 ), ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 672 ), ExtResource( 673 ), ExtResource( 674 ), ExtResource( 675 ), ExtResource( 676 ), ExtResource( 677 ), ExtResource( 678 ), ExtResource( 679 ), ExtResource( 680 ), ExtResource( 681 ), ExtResource( 682 ), ExtResource( 683 ), ExtResource( 684 ), ExtResource( 685 ), ExtResource( 686 ), ExtResource( 687 ), ExtResource( 688 ), ExtResource( 689 ), ExtResource( 690 ), ExtResource( 691 ), ExtResource( 692 ), ExtResource( 693 ), ExtResource( 694 ), ExtResource( 695 ), ExtResource( 696 ), ExtResource( 697 ), ExtResource( 698 ), ExtResource( 699 ), ExtResource( 700 ), ExtResource( 701 ), ExtResource( 702 ), ExtResource( 703 ), ExtResource( 704 ), ExtResource( 705 ), ExtResource( 706 ) ],
+"loop": false,
+"name": "Rampino",
 "speed": 5.0
 } ]
 
@@ -678,6 +887,22 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 729 ), ExtResource( 730 ), ExtResource( 731 ), ExtResource( 733 ), ExtResource( 732 ), ExtResource( 734 ), ExtResource( 735 ), ExtResource( 736 ), ExtResource( 737 ), ExtResource( 738 ), ExtResource( 739 ), ExtResource( 740 ), ExtResource( 741 ), ExtResource( 742 ), ExtResource( 743 ), ExtResource( 744 ), ExtResource( 745 ), ExtResource( 746 ), ExtResource( 747 ), ExtResource( 549 ), ExtResource( 550 ), ExtResource( 551 ), ExtResource( 552 ), ExtResource( 553 ), ExtResource( 554 ), ExtResource( 555 ), ExtResource( 556 ), ExtResource( 557 ), ExtResource( 558 ), ExtResource( 559 ), ExtResource( 560 ), ExtResource( 561 ), ExtResource( 562 ), ExtResource( 563 ), ExtResource( 564 ), ExtResource( 565 ), ExtResource( 566 ), ExtResource( 567 ), ExtResource( 568 ), ExtResource( 569 ), ExtResource( 570 ), ExtResource( 571 ), ExtResource( 572 ), ExtResource( 573 ), ExtResource( 574 ), ExtResource( 575 ), ExtResource( 576 ), ExtResource( 577 ), ExtResource( 578 ), ExtResource( 579 ), ExtResource( 580 ), ExtResource( 581 ), ExtResource( 582 ), ExtResource( 583 ), ExtResource( 584 ), ExtResource( 585 ), ExtResource( 586 ), ExtResource( 707 ), ExtResource( 708 ), ExtResource( 709 ), ExtResource( 710 ), ExtResource( 711 ), ExtResource( 712 ), ExtResource( 713 ), ExtResource( 714 ), ExtResource( 715 ), ExtResource( 716 ), ExtResource( 717 ), ExtResource( 718 ), ExtResource( 719 ), ExtResource( 720 ), ExtResource( 721 ), ExtResource( 722 ), ExtResource( 723 ), ExtResource( 724 ), ExtResource( 725 ), ExtResource( 726 ), ExtResource( 727 ), ExtResource( 728 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 729 ), ExtResource( 730 ), ExtResource( 731 ), ExtResource( 733 ), ExtResource( 732 ), ExtResource( 734 ), ExtResource( 735 ), ExtResource( 736 ), ExtResource( 737 ), ExtResource( 738 ), ExtResource( 739 ), ExtResource( 740 ), ExtResource( 741 ), ExtResource( 742 ), ExtResource( 743 ), ExtResource( 744 ), ExtResource( 745 ), ExtResource( 746 ), ExtResource( 747 ), ExtResource( 549 ), ExtResource( 550 ), ExtResource( 551 ), ExtResource( 552 ), ExtResource( 553 ), ExtResource( 554 ), ExtResource( 555 ), ExtResource( 556 ), ExtResource( 557 ), ExtResource( 558 ), ExtResource( 559 ), ExtResource( 560 ), ExtResource( 561 ), ExtResource( 562 ), ExtResource( 563 ), ExtResource( 564 ), ExtResource( 565 ), ExtResource( 566 ), ExtResource( 567 ), ExtResource( 568 ), ExtResource( 569 ), ExtResource( 570 ), ExtResource( 571 ), ExtResource( 572 ), ExtResource( 573 ), ExtResource( 574 ), ExtResource( 575 ), ExtResource( 576 ), ExtResource( 577 ), ExtResource( 578 ), ExtResource( 579 ), ExtResource( 580 ), ExtResource( 581 ), ExtResource( 582 ), ExtResource( 583 ), ExtResource( 584 ), ExtResource( 585 ), ExtResource( 586 ), ExtResource( 707 ), ExtResource( 708 ), ExtResource( 709 ), ExtResource( 710 ), ExtResource( 711 ), ExtResource( 712 ), ExtResource( 713 ), ExtResource( 714 ), ExtResource( 715 ), ExtResource( 716 ), ExtResource( 717 ), ExtResource( 718 ), ExtResource( 719 ), ExtResource( 720 ), ExtResource( 721 ), ExtResource( 722 ), ExtResource( 723 ), ExtResource( 724 ), ExtResource( 725 ), ExtResource( 726 ), ExtResource( 727 ), ExtResource( 728 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="pp11" type="KinematicBody2D" groups=[
 "player",
 ]]
@@ -705,7 +930,7 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 7
+frame = 4
 speed_scale = 15.0
 playing = true
 
@@ -716,6 +941,7 @@ position = Vector2( 1, 13 )
 rotation = 3.14159
 scale = Vector2( 0.67, -0.823 )
 frames = SubResource( 4 )
+animation = "Attaccoscettro"
 speed_scale = 8.0
 
 [node name="Muzzle" type="Position2D" parent="Sprite/mani"]
@@ -743,8 +969,11 @@ position = Vector2( -2.58822, 21.7491 )
 rotation = -2.72554
 scale = Vector2( 0.999788, 1.00031 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/mani/Area2D2"]
-polygon = PoolVector2Array( 74.8907, -5.05011, 92.5637, -19.0297, 132.238, -20.0848, 104.105, 2.86287, 78.1368, 1.54404, 80.6615, 6.5556, 73.8087, 11.3034, 64.7919, -7.42401, 70.5626, -10.5892 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/mani/Area2D2" groups=[
+"sword",
+]]
+position = Vector2( 23.4081, -18.4848 )
+polygon = PoolVector2Array( 78.0083, -8.24036, 121.936, -39.5474, 149.331, -31.5905, 130.355, -10.0492, 80.0667, 3.38503, 86.3533, 10.6363, 71.9951, 18.2306, 54.9944, -14.9985, 75.8989, -21.7234 )
 
 [node name="Area2D3" type="Area2D" parent="Sprite/mani" groups=[
 "parata",
@@ -810,7 +1039,7 @@ position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 13
+frame = 4
 speed_scale = 8.0
 playing = true
 
@@ -820,7 +1049,7 @@ position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 22
+frame = 13
 speed_scale = 8.0
 playing = true
 
@@ -853,6 +1082,21 @@ visible = false
 frames = SubResource( 16 )
 frame = 26
 speed_scale = 8.0
+
+[node name="Polveresx" type="AnimatedSprite" parent="."]
+position = Vector2( -103.461, -89.7851 )
+frames = SubResource( 17 )
+frame = 33
+speed_scale = 8.0
+playing = true
+
+[node name="Polveredx" type="AnimatedSprite" parent="."]
+position = Vector2( 102.272, -89.7851 )
+frames = SubResource( 18 )
+frame = 10
+speed_scale = 8.0
+playing = true
+flip_h = true
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]

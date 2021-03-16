@@ -79,7 +79,7 @@ func _on_Area2D_area_entered(area):
 			if killed == false:
 				emit_signal("killed")
 				killed= true
-	if area.is_in_group("scudo") and killed == false:		
+	if area.is_in_group("scudo") or area.is_in_group("sword") and killed == false:		
 		direction = direction.rotated(rng.randf_range(PI/4, PI/2))
 		$AnimatedSprite.flip_h = direction.x > 0
 		bounce_countdown = rng.randi_range(2, 5)

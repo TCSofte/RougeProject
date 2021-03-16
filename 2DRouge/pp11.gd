@@ -11,6 +11,8 @@ var isrolling = false
 var can_drop_bomb = true
 var left = false
 var right = false
+enum States {spada, scettro, rampino}
+var _state : int = States.scettro
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
 onready var _transition_rect := get_node("../SceneTransitionRect")
 onready var bomb = preload("res://Bomba22.tscn")
@@ -42,17 +44,22 @@ func get_input():
    
 	if die == false:
 		if Input.is_action_pressed('ui_right') and isAttacking==false:
+			$Polveresx.visible = true
+			$Polveredx.visible = false
+#			$Exhaust2.emitting = false
+#			$Exhaust.emitting = true
 			velocity.x += 1
 			if isrolling==true:
 				velocity.x += 145
 			right = true
 			left = false
-			$Exhaust2.emitting = false
-			$Exhaust.emitting = true
+	
 			
 		if Input.is_action_pressed('ui_left') and isAttacking==false:
-			$Exhaust.emitting = false
-			$Exhaust2.emitting = true
+			$Polveresx.visible = false
+			$Polveredx.visible = true
+#			$Exhaust.emitting = false
+#			$Exhaust2.emitting = true
 			velocity.x -= 1
 			left = true
 			right = false
@@ -74,24 +81,44 @@ func get_input():
 			isrolling=true
 			
 			
-			
 		
+		if Input.is_action_just_pressed('weapon') and can_drop_bomb==true:
+			if _state == States.scettro:
+				_state = States.spada
+				$Sprite/mani.play("Attaccospada")
+				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = false
+				$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
+				return
+			if _state == States.spada:
+				_state = States.rampino
+				$Sprite/mani.play("Rampino")
+				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = false
+				$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
+				return
+			if _state == States.rampino:
+				_state = States.scettro
+				$Sprite/mani.play("Attaccoscettro")
+				$Sprite/mani/Area2D/CollisionShape2D2.disabled = true
+				$Sprite/mani/Area2D3/CollisionShape2D.disabled = false
+				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = true
+				return
 			
-		if Input.is_action_just_pressed('bomb') and can_drop_bomb==true:
-			placebomb()	
 			
-		if Input.is_action_just_pressed('mouse_click'):
 			
-			$Sprite/mani.play("Attaccoscettro")
-			$Sprite/mani.set_frame(0)
+		if Input.is_action_just_pressed('mouse_click') :
+			if _state == States.scettro:
+				$Sprite/mani.play("Attaccoscettro")
+				$Sprite/mani.set_frame(0)
 			#isAttacking=true
 			#$AnimatedSprite.play("Attack")
 			shoot()	
+			
 		
-		if Input.is_action_just_pressed('scudo'):
+		if Input.is_action_just_pressed('scudo') and _state == States.scettro:
+			
 			$Sprite/mani/Area2D/CollisionShape2D2.disabled = true
 			$Sprite/mani/Area2D3/CollisionShape2D.disabled = false
-			$Sprite/mani/Area2D3/AnimatedSprite2.visible = true
+#				$Sprite/mani/Area2D3/AnimatedSprite2.visible = true
 			$Timer.start()
 			
 		velocity = velocity.normalized() * speed
@@ -123,6 +150,8 @@ func _physics_process(delta):
 
 		
 		elif  (velocity.x == 0  and velocity.y == 0) and isAttacking==false and isrolling==false:
+				$Polveresx.visible = false
+				$Polveredx.visible = false
 				$AnimatedSprite.play("Idle")
 				
 	#	elif velocity.y != 0:
@@ -149,10 +178,17 @@ func _physics_process(delta):
 		velocity = move_and_slide(velocity)
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
-	var b = Bullet.instance()
-	#b.shoot22($Sprite/mani/Muzzle.global_position)
-	b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
-	get_parent().add_child(b)
+	if _state == States.scettro:
+		var b = Bullet.instance()
+		#b.shoot22($Sprite/mani/Muzzle.global_position)
+		b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
+		get_parent().add_child(b)
+	if _state == States.rampino:
+		var b = Rope.instance()
+		
+		#b.shoot22($Sprite/mani/Muzzle.global_position)
+		b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
+		get_parent().add_child(b)
 	
 func placebomb():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
