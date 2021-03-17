@@ -88,19 +88,27 @@ func get_input():
 				$Sprite/mani.play("Attaccospada")
 				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = false
 				$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
+				get_node("../CanvasLayer/TextureRect11").visible = true
+				get_node("../CanvasLayer/TextureRect10").visible = false
+				get_node("../CanvasLayer/TextureRect8").visible = false
 				return
 			if _state == States.spada:
 				_state = States.rampino
 				$Sprite/mani.play("Rampino")
-				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = false
+				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = true
 				$Sprite/mani/Area2D3/CollisionShape2D.disabled = true
+				get_node("../CanvasLayer/TextureRect10").visible = false
+				get_node("../CanvasLayer/TextureRect11").visible = false
+				get_node("../CanvasLayer/TextureRect8").visible = true
 				return
 			if _state == States.rampino:
 				_state = States.scettro
 				$Sprite/mani.play("Attaccoscettro")
-				$Sprite/mani/Area2D/CollisionShape2D2.disabled = true
 				$Sprite/mani/Area2D3/CollisionShape2D.disabled = false
 				$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = true
+				get_node("../CanvasLayer/TextureRect10").visible = true
+				get_node("../CanvasLayer/TextureRect11").visible = false
+				get_node("../CanvasLayer/TextureRect8").visible = false
 				return
 			
 			

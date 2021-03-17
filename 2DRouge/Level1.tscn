@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://FH-GoodDogPlain WTT/GOODDP__.TTF" type="DynamicFontData" id=13]
 [ext_resource path="res://roccia.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Stanza roccia.png" type="Texture" id=15]
+[ext_resource path="res://Oggetti/puntina.png" type="Texture" id=16]
 [ext_resource path="res://stanza 1.0.png" type="Texture" id=17]
 [ext_resource path="res://caster.png" type="Texture" id=18]
 [ext_resource path="res://doorup.tscn" type="PackedScene" id=19]
@@ -27,6 +28,7 @@
 [ext_resource path="res://piccolonemico.tscn" type="PackedScene" id=26]
 [ext_resource path="res://room11.tscn" type="PackedScene" id=27]
 [ext_resource path="res://HUD/hud.png" type="Texture" id=28]
+[ext_resource path="res://Oggetti/spada.png" type="Texture" id=29]
 [ext_resource path="res://HUD/cuore.png" type="Texture" id=30]
 [ext_resource path="res://Oggetti/bomba.png" type="Texture" id=31]
 [ext_resource path="res://Oggetti/coin 5.png" type="Texture" id=32]
@@ -90,62 +92,62 @@ texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, 18.1373 )
-frame = 15
+frame = 3
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.0121, 18.1373 )
-frame = 14
+frame = 2
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, 18.1373 )
-frame = 15
+frame = 3
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 14
+frame = 2
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.0121, -1060.41 )
-frame = 14
+frame = 2
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, -1060.41 )
-frame = 14
+frame = 2
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
-frame = 13
+frame = 1
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
-frame = 13
+frame = 1
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -2179.38 )
-frame = 13
+frame = 1
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -3255.59 )
-frame = 13
+frame = 1
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -4324.67 )
-frame = 12
+frame = 0
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 12
+frame = 0
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -1071,6 +1073,32 @@ margin_bottom = 699.212
 rect_rotation = 48.3772
 rect_scale = Vector2( 0.730976, 0.857158 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="CanvasLayer"]
+visible = false
+margin_left = 1828.47
+margin_top = 613.847
+margin_right = 1889.47
+margin_bottom = 638.847
+rect_rotation = -90.1502
+rect_scale = Vector2( 1.128, 1.252 )
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect11" type="TextureRect" parent="CanvasLayer"]
+visible = false
+margin_left = 1895.59
+margin_top = 433.551
+margin_right = 2151.59
+margin_bottom = 689.551
+rect_rotation = 57.3206
+rect_scale = Vector2( 0.805, 1 )
+texture = ExtResource( 29 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
