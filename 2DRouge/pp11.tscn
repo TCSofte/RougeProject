@@ -789,9 +789,9 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 587 ), ExtResource( 588 ), ExtResource( 589 ), ExtResource( 590 ), ExtResource( 591 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 594 ), ExtResource( 595 ), ExtResource( 596 ), ExtResource( 597 ), ExtResource( 598 ), ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 602 ), ExtResource( 603 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 606 ), ExtResource( 607 ), ExtResource( 608 ), ExtResource( 609 ), ExtResource( 610 ), ExtResource( 611 ), ExtResource( 612 ), ExtResource( 613 ), ExtResource( 614 ), ExtResource( 615 ), ExtResource( 616 ), ExtResource( 617 ), ExtResource( 618 ), ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ), ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ), ExtResource( 639 ), ExtResource( 640 ), ExtResource( 641 ), ExtResource( 642 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 645 ), ExtResource( 646 ), ExtResource( 647 ), ExtResource( 648 ), ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 652 ), ExtResource( 653 ), ExtResource( 654 ), ExtResource( 655 ), ExtResource( 656 ), ExtResource( 657 ), ExtResource( 658 ), ExtResource( 659 ), ExtResource( 660 ), ExtResource( 661 ), ExtResource( 662 ), ExtResource( 663 ), ExtResource( 664 ), ExtResource( 665 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 668 ), ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 672 ), ExtResource( 673 ), ExtResource( 674 ), ExtResource( 675 ), ExtResource( 676 ), ExtResource( 677 ), ExtResource( 678 ), ExtResource( 679 ), ExtResource( 680 ), ExtResource( 681 ), ExtResource( 682 ), ExtResource( 683 ), ExtResource( 684 ), ExtResource( 685 ), ExtResource( 686 ), ExtResource( 687 ), ExtResource( 688 ), ExtResource( 689 ), ExtResource( 690 ), ExtResource( 691 ), ExtResource( 692 ), ExtResource( 693 ), ExtResource( 694 ), ExtResource( 695 ), ExtResource( 696 ), ExtResource( 697 ), ExtResource( 698 ), ExtResource( 699 ), ExtResource( 700 ), ExtResource( 701 ), ExtResource( 702 ), ExtResource( 703 ), ExtResource( 704 ), ExtResource( 705 ), ExtResource( 706 ) ],
-"loop": true,
-"name": "Rampino",
+"frames": [ ExtResource( 420 ), ExtResource( 419 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ), ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
+"loop": false,
+"name": "Attaccoscettro",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 479 ), ExtResource( 418 ), ExtResource( 481 ), ExtResource( 482 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ), ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ), ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ), ExtResource( 529 ), ExtResource( 530 ), ExtResource( 531 ), ExtResource( 532 ), ExtResource( 533 ), ExtResource( 534 ), ExtResource( 535 ), ExtResource( 536 ), ExtResource( 537 ), ExtResource( 538 ) ],
@@ -799,9 +799,9 @@ animations = [ {
 "name": "Attaccospada",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 420 ), ExtResource( 419 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ), ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
-"loop": false,
-"name": "Attaccoscettro",
+"frames": [ ExtResource( 587 ), ExtResource( 588 ), ExtResource( 589 ), ExtResource( 590 ), ExtResource( 591 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 594 ), ExtResource( 595 ), ExtResource( 596 ), ExtResource( 597 ), ExtResource( 598 ), ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 602 ), ExtResource( 603 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 606 ), ExtResource( 607 ), ExtResource( 608 ), ExtResource( 609 ), ExtResource( 610 ), ExtResource( 611 ), ExtResource( 612 ), ExtResource( 613 ), ExtResource( 614 ), ExtResource( 615 ), ExtResource( 616 ), ExtResource( 617 ), ExtResource( 618 ), ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ), ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ), ExtResource( 639 ), ExtResource( 640 ), ExtResource( 641 ), ExtResource( 642 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 645 ), ExtResource( 646 ), ExtResource( 647 ), ExtResource( 648 ), ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 652 ), ExtResource( 653 ), ExtResource( 654 ), ExtResource( 655 ), ExtResource( 656 ), ExtResource( 657 ), ExtResource( 658 ), ExtResource( 659 ), ExtResource( 660 ), ExtResource( 661 ), ExtResource( 662 ), ExtResource( 663 ), ExtResource( 664 ), ExtResource( 665 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 668 ), ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 672 ), ExtResource( 673 ), ExtResource( 674 ), ExtResource( 675 ), ExtResource( 676 ), ExtResource( 677 ), ExtResource( 678 ), ExtResource( 679 ), ExtResource( 680 ), ExtResource( 681 ), ExtResource( 682 ), ExtResource( 683 ), ExtResource( 684 ), ExtResource( 685 ), ExtResource( 686 ), ExtResource( 687 ), ExtResource( 688 ), ExtResource( 689 ), ExtResource( 690 ), ExtResource( 691 ), ExtResource( 692 ), ExtResource( 693 ), ExtResource( 694 ), ExtResource( 695 ), ExtResource( 696 ), ExtResource( 697 ), ExtResource( 698 ), ExtResource( 699 ), ExtResource( 700 ), ExtResource( 701 ), ExtResource( 702 ), ExtResource( 703 ), ExtResource( 704 ), ExtResource( 705 ), ExtResource( 706 ) ],
+"loop": true,
+"name": "Rampino",
 "speed": 5.0
 } ]
 
@@ -930,7 +930,7 @@ material = ExtResource( 201 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 57
+frame = 13
 speed_scale = 15.0
 playing = true
 
@@ -1039,7 +1039,7 @@ position = Vector2( 5.41623, 15.8919 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 6
+frame = 19
 speed_scale = 8.0
 playing = true
 
@@ -1049,7 +1049,7 @@ position = Vector2( 0, -16.8325 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 15
+frame = 28
 speed_scale = 8.0
 playing = true
 
@@ -1087,7 +1087,7 @@ speed_scale = 8.0
 visible = false
 position = Vector2( -103.461, -89.7851 )
 frames = SubResource( 17 )
-frame = 46
+frame = 38
 speed_scale = 8.0
 playing = true
 
@@ -1095,7 +1095,7 @@ playing = true
 visible = false
 position = Vector2( 102.272, -89.7851 )
 frames = SubResource( 18 )
-frame = 23
+frame = 15
 speed_scale = 8.0
 playing = true
 flip_h = true

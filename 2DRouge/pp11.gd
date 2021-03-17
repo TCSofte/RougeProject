@@ -80,7 +80,9 @@ func get_input():
 			$AnimatedSprite.play("roll")
 			isrolling=true
 			
-			
+		if Input.is_action_just_pressed('bomb') and can_drop_bomb==true:
+			placebomb()	
+				
 		
 		if Input.is_action_just_pressed('weapon') and can_drop_bomb==true:
 			if _state == States.scettro:

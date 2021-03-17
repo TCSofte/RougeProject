@@ -92,62 +92,62 @@ texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, 18.1373 )
-frame = 3
+frame = 16
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.0121, 18.1373 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, 18.1373 )
-frame = 3
+frame = 16
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.0121, -1060.41 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, -1060.41 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -2179.38 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -3255.59 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -4324.67 )
-frame = 0
+frame = 13
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 0
+frame = 13
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
