@@ -27,4 +27,9 @@ func shoot(pos, dir):
 func _physics_process(delta):
 	
 	collision = move_and_collide(velocity * delta)
-	
+
+
+
+func _on_Area2D_body_entered(body):
+	if body.is_in_group("bordo") :
+		$AnimatedSprite.play("default")

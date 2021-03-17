@@ -119,6 +119,10 @@ func get_input():
 			if _state == States.scettro:
 				$Sprite/mani.play("Attaccoscettro")
 				$Sprite/mani.set_frame(0)
+			if _state == States.spada:
+				$Sprite/mani.play("Attaccospada")
+				$Sprite/mani.set_frame(0)
+				$Sprite/mani/Area2D4/CollisionShape2D.disabled = false
 			#isAttacking=true
 			#$AnimatedSprite.play("Attack")
 			shoot()	
@@ -216,6 +220,8 @@ func placebomb():
 func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$Sprite/mani/Area2D2/CollisionPolygon2D.disabled = true
+	$Sprite/mani/Area2D4/CollisionShape2D.disabled = true
+	
 	
 
 func _on_Area2D_area_entered(area):
@@ -276,6 +282,7 @@ func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation=="die":
 		get_node("../CanvasLayer/Label").visible = true
 		get_node("../CanvasLayer/Button").visible = true
+	
 		
 		
 
@@ -309,3 +316,8 @@ func _on_Area2D3_area_entered(area):
 		print('_on_Area2D3_area_entered_on_Area2D3_area_entered')
 		$Sprite/mani.play("default")
 		$Sprite/mani.set_frame(0)
+
+
+func _on_mani_animation_finished():
+	if $Sprite/mani.animation=="Attaccospada":
+		$Sprite/mani/Area2D4/CollisionShape2D.disabled = true
