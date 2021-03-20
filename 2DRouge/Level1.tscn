@@ -86,68 +86,68 @@ script = ExtResource( 36 )
 
 [node name="nero" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.937255 )
-position = Vector2( 979.653, -2179.01 )
+position = Vector2( 977.133, -2184.05 )
 scale = Vector2( 245.174, 184.84 )
 texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1934.47, 18.1373 )
-frame = 16
+position = Vector2( 1934.47, 19.5515 )
+frame = 13
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 10.0121, 18.1373 )
-frame = 15
+position = Vector2( 16.0121, 18.1373 )
+frame = 12
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3842.52, 18.1373 )
-frame = 16
+position = Vector2( 3845.62, 15.4808 )
+frame = 13
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 15
+frame = 12
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 10.0121, -1060.41 )
-frame = 15
+position = Vector2( 18.2303, -1061.98 )
+frame = 12
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3842.52, -1060.41 )
-frame = 15
+position = Vector2( 3842.52, -1064.41 )
+frame = 12
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
-frame = 14
+frame = 11
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
-frame = 14
+frame = 11
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1918.18, -2179.38 )
-frame = 14
+position = Vector2( 1918.18, -2138.38 )
+frame = 11
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1918.18, -3255.59 )
-frame = 14
+position = Vector2( 1918.18, -3243.59 )
+frame = 11
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1918.18, -4324.67 )
-frame = 13
+position = Vector2( 1918.18, -4320.67 )
+frame = 10
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 13
+frame = 10
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -198,7 +198,7 @@ color = Color( 0, 0, 0, 0.756863 )
 [node name="mov7" parent="." groups=[
 "bordo",
 ] instance=ExtResource( 3 )]
-position = Vector2( -604.915, -98.8116 )
+position = Vector2( 560.237, -168.657 )
 collision_layer = 0
 collision_mask = 2
 
@@ -576,6 +576,9 @@ position = Vector2( 1286.43, -825.571 )
 
 [node name="erbaccia15" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1370.52, -823.889 )
+
+[node name="erbaccia60" parent="." instance=ExtResource( 8 )]
+position = Vector2( 605.393, 315.865 )
 
 [node name="erbaccia16" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1289.8, -1350.29 )
