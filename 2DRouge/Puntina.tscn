@@ -4,11 +4,11 @@
 [ext_resource path="res://Animazioni/Puntina/Idle/puntina idle_0.png" type="Texture" id=2]
 [ext_resource path="res://Pallottole/pallottole scettro viola.png" type="Texture" id=3]
 
-[sub_resource type="Curve" id=10]
+[sub_resource type="Curve" id=1]
 _data = [ Vector2( 0, 0.540425 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0131525 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=11]
-curve = SubResource( 10 )
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
 
 [sub_resource type="ParticlesMaterial" id=3]
 flag_disable_z = true
@@ -16,13 +16,13 @@ gravity = Vector3( 0, 0, 0 )
 angular_velocity = 0.87
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale_curve = SubResource( 11 )
+scale_curve = SubResource( 2 )
 color = Color( 0.694118, 0.32549, 0.341176, 1 )
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=4]
 radius = 15.6589
 
-[sub_resource type="CircleShape2D" id=7]
+[sub_resource type="CircleShape2D" id=5]
 radius = 14.6816
 
 [node name="Puntina" type="KinematicBody2D" groups=[
@@ -53,7 +53,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.85405, -0.529732 )
-shape = SubResource( 6 )
+shape = SubResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="." groups=[
 "Bullet",
@@ -62,7 +62,7 @@ position = Vector2( 0.297302, 0.297302 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0.891907, -0.594604 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="area_shape_entered" from="Area2D" to="." method="_on_Area2D_area_shape_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

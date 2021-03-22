@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://doornosp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slimelo.tscn" type="PackedScene" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Oggetti/bomba.png" type="Texture" id=31]
 [ext_resource path="res://Oggetti/coin 5.png" type="Texture" id=32]
 [ext_resource path="res://Oggetti/chiave.png" type="Texture" id=33]
+[ext_resource path="res://ms.png" type="Texture" id=34]
 [ext_resource path="res://Oggetti/scudo.png" type="Texture" id=35]
 [ext_resource path="res://Level1.gd" type="Script" id=36]
 [ext_resource path="res://chiave.tscn" type="PackedScene" id=38]
@@ -74,6 +75,10 @@ font_data = ExtResource( 13 )
 size = 60
 font_data = ExtResource( 13 )
 
+[sub_resource type="DynamicFont" id=14]
+size = 30
+font_data = ExtResource( 13 )
+
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 93.1782, 38.0981 )
 
@@ -92,62 +97,62 @@ texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, 19.5515 )
-frame = 13
+frame = 15
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 16.0121, 18.1373 )
-frame = 12
+frame = 14
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3845.62, 15.4808 )
-frame = 13
+frame = 15
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 12
+frame = 14
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 18.2303, -1061.98 )
-frame = 12
+frame = 14
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, -1064.41 )
-frame = 12
+frame = 14
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
-frame = 11
+frame = 13
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
-frame = 11
+frame = 13
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -2138.38 )
-frame = 11
+frame = 13
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -3243.59 )
-frame = 11
+frame = 13
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -4320.67 )
-frame = 10
+frame = 12
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 10
+frame = 12
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -1349,6 +1354,30 @@ margin_right = 1025.43
 margin_bottom = 699.946
 custom_fonts/font = SubResource( 11 )
 text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect12" type="TextureRect" parent="CanvasLayer"]
+visible = false
+margin_left = 1826.72
+margin_top = 459.819
+margin_right = 2030.72
+margin_bottom = 767.818
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+visible = false
+margin_left = 1822.23
+margin_top = 426.075
+margin_right = 1870.23
+margin_bottom = 456.075
+custom_fonts/font = SubResource( 14 )
+text = "HOLD"
 __meta__ = {
 "_edit_use_anchors_": false
 }

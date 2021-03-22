@@ -1,6 +1,6 @@
 extends Node2D
 
-
+onready var Pin = preload("res://PinJoint2D.tscn")
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -58,3 +58,12 @@ func _on_Area2D3_area_entered(area):
 
 func _on_Button_pressed():
 	get_tree().reload_current_scene()
+
+
+func _on_Rope_lastpiece():
+	print('_on_Rope_lastpiece_on_Rope_lastpiece')
+	
+#		b.shoot($pp11/Sprite/mani/Muzzle.global_position, $pp11/Sprite.rotation)
+	$pp11/Sprite/mani/PinJoint2D.node_b = $Rope.get_path()
+	
+	

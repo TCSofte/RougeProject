@@ -6,11 +6,19 @@ var velocity = Vector2()
 onready var Bullet = preload("res://Bullet.tscn")
 onready var Puntina = preload("res://Puntina.tscn")
 onready var Rope = preload("res://LongPieceRope/Rope.tscn")
+var RopeRope
 var isAttacking = false
 var isrolling = false
 var can_drop_bomb = true
 var left = false
 var right = false
+var lollo = false
+var grap = false
+var tograp = false
+var pieces = 0
+signal grapend
+var distance
+var target = Vector2()
 enum States {spada, scettro, rampino}
 var _state : int = States.scettro
 onready var drop_bomb_cooldown = get_node("DropBombCooldown")
@@ -127,6 +135,30 @@ func get_input():
 			#$AnimatedSprite.play("Attack")
 			shoot()	
 			
+		if grap == true and lollo==true:	
+			if Input.is_action_just_released('mouse_click') and isAttacking==false and _state == States.rampino:
+				lollo = false
+				grap = false
+				tograp = false
+				print('grapendgrapendgrapendgrapend')
+				get_node("../CanvasLayer/TextureRect12").visible = false
+				get_node("../CanvasLayer/Label2").visible = false
+#				emit_signal("grapend")
+				get_node("../Rope").queue_free()
+			
+		if grap == true:
+			if Input.is_action_pressed('mouse_click') and isAttacking==false and _state == States.rampino:
+				target =  RopeRope.global_position
+				velocity = position.direction_to(target) * 1000
+				velocity = move_and_slide(velocity)
+#				lollo = true
+				
+#		if tograp == true:
+#			target =  RopeRope.global_position
+#			velocity = position.direction_to(target) * 1000
+#			velocity = move_and_slide(velocity)
+#			lollo = true
+		
 		
 		if Input.is_action_just_pressed('scudo') and _state == States.scettro:
 			
@@ -135,7 +167,11 @@ func get_input():
 #				$Sprite/mani/Area2D3/AnimatedSprite2.visible = true
 			$Timer.start()
 			
+			
+		
 		velocity = velocity.normalized() * speed
+			
+		
 	
 	
 
@@ -144,8 +180,10 @@ func _physics_process(delta):
 	
 	if die == false:
 		get_input()
-
-		
+		if $Sprite/mani/RayCast2D.is_colliding():
+			var origin = $Sprite/mani/RayCast2D.global_transform.origin
+			var collision_point = $Sprite/mani/RayCast2D.get_collision_point()
+			distance = origin.distance_to(collision_point)
 		#var dir = get_global_mouse_position() - global_position
 		# $Sprite5.rotation = (get_global_mouse_position() - sprite.position).angle() # Might need to add + PI / 2 here
 		
@@ -190,6 +228,11 @@ func _physics_process(delta):
 	#		print('bmbmnmbmmnm')
 	#		$Sprite6.visible  = false
 		velocity = move_and_slide(velocity)
+		
+	
+		
+		
+		
 func shoot():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
 	if _state == States.scettro:
@@ -197,12 +240,27 @@ func shoot():
 		#b.shoot22($Sprite/mani/Muzzle.global_position)
 		b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
 		get_parent().add_child(b)
-	if _state == States.rampino:
-		var b = Rope.instance()
+	if _state == States.rampino and lollo == false and grap == false:
+#		var b = Rope.instance()
+#		b.pieces=int(round(distance))/15
+#		#b.shoot22($Sprite/mani/Muzzle.global_position)
+#		b.connect('lastpiece', 	get_parent(), '_on_Rope_lastpiece')
+#		b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
+#		get_parent().add_child(b)
+		pieces=int(round(distance))/15
+		if pieces >=3:
+			lollo = true
+			RopeRope = Rope.instance()
+			RopeRope.pieces=pieces
+			
+			#b.shoot22($Sprite/mani/Muzzle.global_position)
+			RopeRope.connect('lastpiece', 	self, '_on_Rope_lastpiece')
+			RopeRope.connect('grap', 	self, '_on_Rope_grap')
+			
+	#		RopeRope.position=$Sprite/mani/Muzzle.global_position
 		
-		#b.shoot22($Sprite/mani/Muzzle.global_position)
-		b.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
-		get_parent().add_child(b)
+			RopeRope.shoot($Sprite/mani/Muzzle.global_position, $Sprite.rotation)
+			get_parent().add_child(RopeRope)
 	
 func placebomb():
 	# "Muzzle" is a Position2D placed at the barrel of the gun.
@@ -304,14 +362,9 @@ func _on_Timer_timeout():
 	$Sprite/mani/Area2D3/AnimatedSprite2.visible = false
 
 
-
-
-
-
-
-
-func _on_Area2D3_area_entered(area):
 	
+func _on_Area2D3_area_entered(area):
+
 	if area.is_in_group("enemy") :
 		print('_on_Area2D3_area_entered_on_Area2D3_area_entered')
 		$Sprite/mani.play("default")
@@ -321,3 +374,25 @@ func _on_Area2D3_area_entered(area):
 func _on_mani_animation_finished():
 	if $Sprite/mani.animation=="Attaccospada":
 		$Sprite/mani/Area2D4/CollisionShape2D.disabled = true
+
+func _on_Rope_lastpiece():
+	print('RopeRope.lastpiecepath',	RopeRope.lastpiecepath)
+	if pieces >=3:
+		$Sprite/mani/PinJoint2D.node_b = RopeRope.get_path()
+#		$Sprite/mani/PinJoint2D.node_b = RopeRope.lastpiecepath
+#		
+	
+
+#func _on_Area2D_body_entered(body):
+#	if body.is_in_group("bordo") :
+#		lollo = false
+#		grap = false
+#		tograp = false
+
+
+func _on_Rope_grap():
+		grap = true
+		lollo = true
+		tograp = true
+		get_node("../CanvasLayer/TextureRect12").visible = true
+		get_node("../CanvasLayer/Label2").visible = true

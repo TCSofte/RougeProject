@@ -32,5 +32,5 @@ func _on_Cuore_body_entered(body):
 		$AnimatedSprite.play("Raccolta")
 
 
-func _on_Cuore_area_entered(area):
-	pass # Replace with function body.
+#func _on_Cuore_area_entered(area):
+#	pass # Replace with function body.

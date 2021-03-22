@@ -4,7 +4,7 @@
 [ext_resource path="res://Oggetti/puntina.png" type="Texture" id=2]
 [ext_resource path="res://Oggetti/puntina agganciata.png" type="Texture" id=3]
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": false,
@@ -12,9 +12,9 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=2]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 12, 3.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
@@ -26,7 +26,7 @@ pieces = 22
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 20.5, 0.5 )
-frames = SubResource( 3 )
+frames = SubResource( 1 )
 speed_scale = 6.0
 
 [node name="Anchor" type="StaticBody2D" parent="."]
@@ -35,14 +35,15 @@ collision_layer = 0
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anchor"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 disabled = true
 
 [node name="Joint" type="PinJoint2D" parent="Anchor/CollisionShape2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 23.6474, 0.5 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="."]
 
