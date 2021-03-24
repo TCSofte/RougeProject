@@ -6,7 +6,11 @@ var velocity = Vector2()
 onready var Bullet = preload("res://Bullet.tscn")
 onready var Puntina = preload("res://Puntina.tscn")
 onready var Rope = preload("res://LongPieceRope/Rope.tscn")
+onready var jojo = preload("res://jojo.tscn")
+
 var RopeRope
+var jojojojo
+var jojojojotrue = false
 var isAttacking = false
 var isrolling = false
 var can_drop_bomb = true
@@ -145,6 +149,8 @@ func get_input():
 				get_node("../CanvasLayer/Label2").visible = false
 #				emit_signal("grapend")
 				get_node("../Rope").queue_free()
+				
+				
 			
 		if grap == true:
 			if Input.is_action_pressed('mouse_click') and isAttacking==false and _state == States.rampino:
@@ -250,6 +256,11 @@ func shoot():
 		pieces=int(round(distance))/15
 		if pieces >=3:
 			lollo = true
+			if jojojojotrue == false:
+				jojojojo = jojo.instance()
+				jojojojo.position= global_position
+				get_parent().add_child(jojojojo)
+				jojojojotrue = true
 			RopeRope = Rope.instance()
 			RopeRope.pieces=pieces
 			
@@ -377,10 +388,13 @@ func _on_mani_animation_finished():
 
 func _on_Rope_lastpiece():
 	print('RopeRope.lastpiecepath',	RopeRope.lastpiecepath)
-	if pieces >=3:
-		$Sprite/mani/PinJoint2D.node_b = RopeRope.get_path()
-#		$Sprite/mani/PinJoint2D.node_b = RopeRope.lastpiecepath
-#		
+#	if pieces >=3 and RopeRope.lastpiecepath !=null:
+#
+#		jojojojo.node_a = $StaticBody2D.get_path()
+##		$PinJoint2D.node_b = RopeRope.get_path()
+##		$PinJoint2D.node_b = RopeRope.lastpiecepath
+#		jojojojo.node_b = RopeRope.lastpiecepath
+
 	
 
 #func _on_Area2D_body_entered(body):
@@ -396,3 +410,6 @@ func _on_Rope_grap():
 		tograp = true
 		get_node("../CanvasLayer/TextureRect12").visible = true
 		get_node("../CanvasLayer/Label2").visible = true
+		$PinJoint2D.node_b = $StaticBody2D.get_path()
+		$PinJoint2D.node_b = RopeRope.lastpiecepath
+		

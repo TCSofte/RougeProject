@@ -75,14 +75,14 @@ font_data = ExtResource( 13 )
 size = 60
 font_data = ExtResource( 13 )
 
-[sub_resource type="DynamicFont" id=14]
+[sub_resource type="DynamicFont" id=12]
 size = 30
 font_data = ExtResource( 13 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 93.1782, 38.0981 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 87.1842, 33.512 )
 
 [node name="Level1" type="Node2D"]
@@ -97,62 +97,58 @@ texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, 19.5515 )
-frame = 15
+frame = 9
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 16.0121, 18.1373 )
-frame = 14
+frame = 8
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3845.62, 15.4808 )
-frame = 15
+frame = 9
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 14
+frame = 8
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 18.2303, -1061.98 )
-frame = 14
+frame = 8
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, -1064.41 )
-frame = 14
+frame = 8
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
-frame = 13
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
-frame = 13
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -2138.38 )
-frame = 13
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -3243.59 )
-frame = 13
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -4320.67 )
-frame = 12
+frame = 6
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 12
+frame = 6
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -1376,7 +1372,7 @@ margin_left = 1822.23
 margin_top = 426.075
 margin_right = 1870.23
 margin_bottom = 456.075
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "HOLD"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1429,7 +1425,7 @@ position = Vector2( 1795.1, -2967.08 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 91.7701, 57.7847 )
-shape = SubResource( 12 )
+shape = SubResource( 13 )
 
 [node name="Area2D5" type="Area2D" parent="."]
 position = Vector2( 3250.72, -1109.8 )
@@ -1437,7 +1433,7 @@ rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
 position = Vector2( 55.0006, 60.613 )
-shape = SubResource( 12 )
+shape = SubResource( 13 )
 
 [node name="Area2D7" type="Area2D" parent="."]
 position = Vector2( -1207.35, -2212.28 )
@@ -1445,28 +1441,28 @@ rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
 position = Vector2( 55.0006, 60.613 )
-shape = SubResource( 12 )
+shape = SubResource( 13 )
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2( 1844.49, -3626.11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 55.0006, 60.613 )
-shape = SubResource( 12 )
+shape = SubResource( 13 )
 
 [node name="Area2D3" type="Area2D" parent="."]
 position = Vector2( 1907.03, -2491.86 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2( -6.67627, 10.5587 )
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( 1898.56, -3991.3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( -6.67627, 10.5587 )
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 
 [node name="Area2D6" type="Area2D" parent="."]
 position = Vector2( 2560, -1050.84 )
@@ -1474,7 +1470,7 @@ rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
 position = Vector2( -6.67627, 10.5587 )
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 
 [node name="Area2D8" type="Area2D" parent="."]
 position = Vector2( -623.961, -2141 )
@@ -1482,7 +1478,7 @@ rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
 position = Vector2( -6.67627, 10.5587 )
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 
 [node name="slimelo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 10.103, -5.51107 )
