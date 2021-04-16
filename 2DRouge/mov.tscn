@@ -35,7 +35,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 41.5408, 30.8291 )
+extents = Vector2( 59.5592, 47.9526 )
 
 [node name="mov" type="RigidBody2D"]
 mode = 2
@@ -48,7 +48,6 @@ script = ExtResource( 3 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2 )
 speed_scale = 8.0
 

@@ -97,58 +97,62 @@ texture = ExtResource( 18 )
 
 [node name="Backgroundanimato" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, 19.5515 )
-frame = 9
+frame = 0
 playing = true
 
 [node name="Backgroundanimato3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 16.0121, 18.1373 )
-frame = 8
+frame = 18
 playing = true
 
 [node name="Backgroundanimato2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3845.62, 15.4808 )
-frame = 9
+frame = 0
 playing = true
 
 [node name="Backgroundanimato4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1934.47, -1060.41 )
-frame = 8
+frame = 18
 playing = true
 
 [node name="Backgroundanimato5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 18.2303, -1061.98 )
-frame = 8
+frame = 18
 playing = true
 
 [node name="Backgroundanimato6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3842.52, -1064.41 )
-frame = 8
+frame = 18
 playing = true
 
 [node name="Backgroundanimato7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 10.1251, -2179.38 )
+frame = 17
 playing = true
 
 [node name="Backgroundanimato8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1914.33, -2179.38 )
+frame = 17
 playing = true
 
 [node name="Backgroundanimato9" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -2138.38 )
+frame = 17
 playing = true
 
 [node name="Backgroundanimato10" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -3243.59 )
+frame = 17
 playing = true
 
 [node name="Backgroundanimato11" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1918.18, -4320.67 )
-frame = 6
+frame = 16
 playing = true
 
 [node name="Backgroundanimato12" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3835.4, -4324.67 )
-frame = 6
+frame = 16
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -172,7 +176,7 @@ scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 15 )
 
 [node name="Sprite13" type="Sprite" parent="."]
-position = Vector2( 5.35077, 15.4469 )
+position = Vector2( 5.35077, 13.6651 )
 scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 17 )
 
@@ -204,152 +208,104 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="mov5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1298.07, -2481.8 )
+position = Vector2( 1313.05, -2471.31 )
 
 [node name="Erba" type="Node" parent="."]
 
 [node name="rocce" type="Node" parent="."]
 
 [node name="roccia3" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -525.992, 226.179 )
+position = Vector2( -486.792, 206.579 )
 
 [node name="roccia67" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -616.372, 226.179 )
+position = Vector2( -611.027, 208.361 )
 
 [node name="roccia65" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -524.21, 302.805 )
+position = Vector2( -485.01, 329.532 )
 
 [node name="roccia66" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 177.671, 328.882 )
 
 [node name="roccia" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 3300.48, 359.824 )
+position = Vector2( 3353.93, 331.315 )
 
 [node name="roccia2" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 3300.48, 262.28 )
+position = Vector2( 3353.93, 206.444 )
 
-[node name="roccia6" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1682.23, -2911.95 )
+[node name="roccia4" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 4309.19, 209.808 )
 
-[node name="roccia7" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -2911.95 )
-
-[node name="roccia8" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -2911.95 )
-
-[node name="roccia9" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -2911.95 )
+[node name="roccia5" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 4307.51, 325.852 )
 
 [node name="roccia10" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -2911.95 )
-
-[node name="roccia27" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3345.85 )
-
-[node name="roccia11" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1918.33, -3113.76 )
-
-[node name="roccia16" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2024.55, -3113.76 )
-
-[node name="roccia17" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2123.51, -3113.76 )
-
-[node name="roccia18" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2130.58, -3016.22 )
+position = Vector2( 1301.71, -2928.33 )
 
 [node name="roccia19" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2130.58, -2911.95 )
+position = Vector2( 2043.65, -3046.76 )
 
-[node name="roccia46" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2033.03, -3016.22 )
+[node name="roccia24" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1913.87, -3046.76 )
+
+[node name="roccia25" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1785.36, -3046.76 )
+
+[node name="roccia27" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1654.33, -3046.76 )
+
+[node name="roccia30" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1525.82, -3046.76 )
 
 [node name="roccia47" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2033.03, -2911.95 )
+position = Vector2( 2045.63, -2929.59 )
 
 [node name="roccia51" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2524.23, -1943.98 )
+position = Vector2( 2537.72, -1978.44 )
 
 [node name="roccia52" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2426.69, -1943.98 )
+position = Vector2( 2411.71, -1979.44 )
 
 [node name="roccia57" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1880, -1092.17 )
 
 [node name="roccia53" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2426.69, -1839.71 )
-
-[node name="roccia29" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2336.49, -3349.56 )
-
-[node name="roccia30" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2336.49, -3252.01 )
+position = Vector2( 2414.7, -1856.19 )
 
 [node name="roccia31" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2336.49, -3147.74 )
-
-[node name="roccia32" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2440.76, -3349.56 )
+position = Vector2( 2332.71, -3084.74 )
 
 [node name="roccia33" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2440.76, -3252.01 )
+position = Vector2( 2329.89, -3315.01 )
 
 [node name="roccia34" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2440.76, -3147.74 )
-
-[node name="roccia12" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1817.42, -3113.76 )
-
-[node name="roccia13" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1716.51, -3113.76 )
-
-[node name="roccia14" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1622.33, -3113.76 )
-
-[node name="roccia15" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1521.42, -3113.76 )
+position = Vector2( 2332.41, -3199.4 )
 
 [node name="roccia20" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1877.32, -3349.21 )
+position = Vector2( 1824.4, -3312.67 )
 
 [node name="roccia21" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1984.95, -3349.21 )
+position = Vector2( 1696.43, -3311.41 )
 
 [node name="roccia22" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2082.5, -3349.21 )
+position = Vector2( 1562.15, -3310.15 )
 
 [node name="roccia28" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2173.16, -3349.21 )
+position = Vector2( 2074.89, -3316.45 )
+
+[node name="roccia29" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 2204.66, -3316.45 )
 
 [node name="roccia64" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 2250.94, -3349.21 )
-
-[node name="roccia35" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3349.21 )
+position = Vector2( 1948.56, -3313.93 )
 
 [node name="roccia23" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1776.41, -3349.21 )
-
-[node name="roccia24" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3349.21 )
-
-[node name="roccia25" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3349.21 )
+position = Vector2( 1434.97, -3310.15 )
 
 [node name="roccia26" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3349.21 )
-
-[node name="roccia36" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3452.03 )
-
-[node name="roccia37" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3455.39 )
-
-[node name="roccia38" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3455.39 )
+position = Vector2( 1304.02, -3310.15 )
 
 [node name="roccia54" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1396.12, -2382.69 )
+position = Vector2( 1444.07, -2346.73 )
 
 [node name="roccia58" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( -0.306152, -2166.93 )
@@ -358,55 +314,49 @@ position = Vector2( -0.306152, -2166.93 )
 position = Vector2( 614, -2487.57 )
 
 [node name="roccia60" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 614, -1840.3 )
+position = Vector2( 612.502, -1847.79 )
 
 [node name="roccia61" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -623.602, -2487.57 )
+position = Vector2( -613.114, -2487.57 )
 
 [node name="roccia62" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( -623.602, -1840.3 )
+position = Vector2( -613.114, -1843.3 )
 
 [node name="roccia55" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1301.94, -2382.69 )
+position = Vector2( 1310.92, -2344.53 )
 
 [node name="roccia56" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1396.12, -2488.87 )
-
-[node name="roccia39" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3455.39 )
-
-[node name="roccia40" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3455.39 )
+position = Vector2( 1440.29, -2475.39 )
 
 [node name="roccia41" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3557.76 )
-
-[node name="roccia48" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3019.58 )
+position = Vector2( 1301.71, -3567.84 )
 
 [node name="roccia49" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3125.76 )
+position = Vector2( 1299.19, -3061.5 )
 
 [node name="roccia50" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1285.33, -3231.49 )
-
-[node name="roccia42" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1386.23, -3561.12 )
+position = Vector2( 1299.19, -3183.61 )
 
 [node name="roccia43" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1675.5, -3561.12 )
+position = Vector2( 1687.84, -3566.46 )
 
 [node name="roccia44" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1581.32, -3561.12 )
+position = Vector2( 1558.95, -3568.79 )
 
 [node name="roccia45" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 1480.41, -3561.12 )
+position = Vector2( 1432.68, -3569.13 )
 
-[node name="roccia4" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 4351.75, 349.133 )
+[node name="roccia42" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1304.23, -3440.59 )
 
-[node name="roccia5" parent="rocce" instance=ExtResource( 14 )]
-position = Vector2( 4351.75, 251.589 )
+[node name="roccia68" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1690.36, -3439.21 )
+
+[node name="roccia69" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1561.47, -3441.54 )
+
+[node name="roccia70" parent="rocce" instance=ExtResource( 14 )]
+position = Vector2( 1435.2, -3441.88 )
 
 [node name="roccia63" parent="rocce" instance=ExtResource( 14 )]
 position = Vector2( 1897.97, -4320.09 )
@@ -428,7 +378,7 @@ position = Vector2( -308.854, -2170.14 )
 collision_mask = 3
 
 [node name="Sprite11" type="Sprite" parent="."]
-position = Vector2( 1917.78, -4318.96 )
+position = Vector2( 1921.14, -4318.96 )
 scale = Vector2( 0.995692, 1.01007 )
 texture = ExtResource( 17 )
 
@@ -549,193 +499,145 @@ position = Vector2( 1909.49, -2136.83 )
 position = Vector2( -100.149, 329.247 )
 
 [node name="vaso3" parent="." instance=ExtResource( 23 )]
-position = Vector2( -615.716, 83.0408 )
+position = Vector2( -606.807, -55.9394 )
 
 [node name="vaso4" parent="." instance=ExtResource( 23 )]
-position = Vector2( -619.46, 2.33154 )
-
-[node name="erbaccia6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2547.78, -753.253 )
+position = Vector2( -603.424, -181.194 )
 
 [node name="erbaccia7" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2556.19, -1422.61 )
-
-[node name="erbaccia8" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1288.12, -1425.97 )
-
-[node name="erbaccia9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1367.16, -1424.29 )
-
-[node name="erbaccia12" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1288.12, -749.89 )
-
-[node name="erbaccia13" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1372.2, -748.208 )
-
-[node name="erbaccia14" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1286.43, -825.571 )
-
-[node name="erbaccia15" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1370.52, -823.889 )
+position = Vector2( 2525.99, -1394.29 )
 
 [node name="erbaccia60" parent="." instance=ExtResource( 8 )]
 position = Vector2( 605.393, 315.865 )
 
-[node name="erbaccia16" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1289.8, -1350.29 )
-
-[node name="erbaccia17" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1373.89, -1348.61 )
-
 [node name="erbaccia18" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2477.14, -1351.97 )
-
-[node name="erbaccia22" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2015.35, -3988.56 )
-
-[node name="erbaccia23" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2109.3, -3988.56 )
-
-[node name="erbaccia24" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2196.11, -3988.56 )
-
-[node name="erbaccia25" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2280.55, -3987.38 )
+position = Vector2( 2388.42, -1261.36 )
 
 [node name="erbaccia26" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2364.98, -3987.38 )
+position = Vector2( 2526.43, -4010.92 )
 
 [node name="erbaccia27" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2452.98, -3987.38 )
+position = Vector2( 2375.07, -4010.92 )
 
 [node name="erbaccia28" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.98, -3985 )
-
-[node name="erbaccia35" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2015.35, -4659.8 )
-
-[node name="erbaccia36" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2109.3, -4659.8 )
-
-[node name="erbaccia37" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2196.11, -4659.8 )
-
-[node name="erbaccia38" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2280.55, -4658.62 )
-
-[node name="erbaccia39" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2364.98, -4658.62 )
-
-[node name="erbaccia40" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2452.98, -4658.62 )
-
-[node name="erbaccia41" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.98, -4656.24 )
-
-[node name="erbaccia42" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1381.57, -4662.8 )
-
-[node name="erbaccia49" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4664.3 )
-
-[node name="erbaccia50" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4583.34 )
-
-[node name="erbaccia51" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4499.21 )
-
-[node name="erbaccia52" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4413.49 )
-
-[node name="erbaccia53" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4327.77 )
-
-[node name="erbaccia54" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4245.22 )
-
-[node name="erbaccia55" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4159.5 )
-
-[node name="erbaccia56" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1293.17, -4076.96 )
-
-[node name="erbaccia57" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.87, -4583.34 )
-
-[node name="erbaccia58" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.87, -4499.21 )
-
-[node name="erbaccia59" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.87, -4413.49 )
-
-[node name="erbaccia62" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.87, -4159.5 )
+position = Vector2( 2233.8, -4010.92 )
 
 [node name="erbaccia63" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2540.87, -4076.96 )
-
-[node name="erbaccia43" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1475.52, -4662.8 )
-
-[node name="erbaccia44" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1563.83, -4662.8 )
-
-[node name="erbaccia45" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1646.76, -4661.61 )
-
-[node name="erbaccia46" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1738.69, -4661.61 )
-
-[node name="erbaccia47" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1828.19, -4661.61 )
-
-[node name="erbaccia48" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1920.68, -4659.23 )
+position = Vector2( 2090.85, -4007.56 )
 
 [node name="erbaccia29" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1294.67, -3988.56 )
+position = Vector2( 1737.67, -4010.92 )
 
 [node name="erbaccia30" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1388.61, -3988.56 )
+position = Vector2( 1586.31, -4010.92 )
 
 [node name="erbaccia31" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1475.43, -3988.56 )
+position = Vector2( 1445.04, -4010.92 )
 
-[node name="erbaccia32" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1559.86, -3987.38 )
+[node name="erbaccia67" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1302.09, -4007.56 )
 
-[node name="erbaccia33" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1644.29, -3987.38 )
+[node name="erbaccia42" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1299.16, -4642.62 )
 
-[node name="erbaccia34" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1732.3, -3987.38 )
+[node name="erbaccia52" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1302.53, -4132.76 )
+
+[node name="erbaccia53" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1302.53, -4260.62 )
+
+[node name="erbaccia54" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1302.53, -4388.44 )
+
+[node name="erbaccia55" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1302.53, -4514.8 )
+
+[node name="erbaccia62" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2520.69, -4144.36 )
+
+[node name="erbaccia68" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2532.46, -4504.27 )
+
+[node name="erbaccia44" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1439.38, -4639.25 )
+
+[node name="erbaccia48" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1575.91, -4640.73 )
+
+[node name="erbaccia43" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1719.61, -4642.62 )
+
+[node name="erbaccia45" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1859.83, -4639.25 )
+
+[node name="erbaccia49" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1996.36, -4640.73 )
+
+[node name="erbaccia46" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2131.65, -4642.62 )
+
+[node name="erbaccia47" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2271.86, -4639.25 )
+
+[node name="erbaccia50" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2408.4, -4640.73 )
+
+[node name="erbaccia51" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2537.9, -4640.73 )
 
 [node name="erbaccia19" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2561.23, -1350.29 )
-
-[node name="erbaccia20" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2468.73, -832.298 )
-
-[node name="erbaccia21" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2552.82, -830.616 )
+position = Vector2( 2529.14, -1259.68 )
 
 [node name="erbaccia10" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2478.82, -1425.97 )
+position = Vector2( 2390.1, -1395.77 )
+
+[node name="erbaccia8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1449.97, -1394.29 )
+
+[node name="erbaccia20" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1312.4, -1261.36 )
+
+[node name="erbaccia21" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1453.12, -1259.68 )
 
 [node name="erbaccia11" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2473.78, -753.253 )
+position = Vector2( 1314.08, -1395.77 )
+
+[node name="erbaccia9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1449.97, -914.806 )
+
+[node name="erbaccia61" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1312.4, -781.87 )
+
+[node name="erbaccia64" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1453.12, -780.19 )
+
+[node name="erbaccia12" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1314.08, -916.278 )
+
+[node name="erbaccia13" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2522.21, -914.806 )
+
+[node name="erbaccia65" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2384.64, -781.87 )
+
+[node name="erbaccia66" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2525.36, -780.19 )
+
+[node name="erbaccia14" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2386.32, -916.278 )
 
 [node name="erbaccia2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3209.38, 264.725 )
+position = Vector2( 3212.94, 200.58 )
 
 [node name="erbaccia3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3208.19, 352.726 )
+position = Vector2( 3211.75, 324.217 )
 
 [node name="erbaccia4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4444.97, 250.454 )
+position = Vector2( 4437.78, 324.217 )
 
 [node name="erbaccia5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4443.78, 344.401 )
+position = Vector2( 4437.78, 201.446 )
 
 [node name="cuore 1 idle_0" type="Sprite" parent="."]
 position = Vector2( 265.934, -1054.04 )
@@ -754,7 +656,7 @@ position = Vector2( 2289.47, -4449.31 )
 collision_mask = 3
 
 [node name="slime6" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1604.99, -4078.79 )
+position = Vector2( 1604.99, -4082.15 )
 collision_mask = 3
 
 [node name="pp11" parent="." instance=ExtResource( 21 )]
@@ -1486,7 +1388,7 @@ collision_layer = 1
 collision_mask = 2147483649
 
 [node name="chiave" parent="." instance=ExtResource( 38 )]
-position = Vector2( -611.94, 306.049 )
+position = Vector2( -615.504, 306.049 )
 [connection signal="killed" from="slime" to="doorsx" method="_on_slime_killed"]
 [connection signal="killed" from="slime2" to="doorsx3" method="_on_slime2_killed"]
 [connection signal="killed" from="slime2" to="doornosp4" method="_on_slime2_killed"]
